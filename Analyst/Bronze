@@ -1,1 +1,209 @@
+/* =====================================================================
+   PT ADYARAKSA — BRONZE LAYER
+   HR People Analytics
+   ===================================================================== */
 
+-- =========================================================
+-- Create database & schema
+-- =========================================================
+IF DB_ID('AdyaraksaHR') IS NULL
+    CREATE DATABASE AdyaraksaHR;
+GO
+
+USE AdyaraksaHR;
+GO
+
+IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = 'bronze')
+    EXEC('CREATE SCHEMA bronze');
+GO
+
+-- =========================================================
+-- Create table: bronze.employees
+-- =========================================================
+IF OBJECT_ID('bronze.employees', 'U') IS NOT NULL
+    DROP TABLE bronze.employees;
+GO
+
+CREATE TABLE bronze.employees (
+    emp_id         VARCHAR(20),
+    full_name      NVARCHAR(100),
+    email          VARCHAR(120),
+    dept_id        VARCHAR(10),
+    position       VARCHAR(80),
+    hire_date      DATE,
+    birth_date     DATE,
+    gender         VARCHAR(10),
+    marital_status VARCHAR(20),
+    education      VARCHAR(10),
+    city           VARCHAR(50),
+    status         VARCHAR(20),
+    manager_id     VARCHAR(20)
+);
+GO
+
+-- =========================================================
+-- Create table: bronze.departments
+-- =========================================================
+IF OBJECT_ID('bronze.departments', 'U') IS NOT NULL
+    DROP TABLE bronze.departments;
+GO
+
+CREATE TABLE bronze.departments (
+    dept_id           VARCHAR(10),
+    dept_name         VARCHAR(80),
+    division          VARCHAR(40),
+    location          VARCHAR(50),
+    head_emp_id       VARCHAR(20),
+    annual_budget_idr BIGINT
+);
+GO
+
+-- =========================================================
+-- Create table: bronze.attendance
+-- =========================================================
+IF OBJECT_ID('bronze.attendance', 'U') IS NOT NULL
+    DROP TABLE bronze.attendance;
+GO
+
+CREATE TABLE bronze.attendance (
+    record_id  VARCHAR(20),
+    emp_id     VARCHAR(20),
+    date       DATE,
+    check_in   TIME(0),
+    check_out  TIME(0),
+    work_hours DECIMAL(5,2),
+    status     VARCHAR(20)
+);
+GO
+
+-- =========================================================
+-- Create table: bronze.performance
+-- =========================================================
+IF OBJECT_ID('bronze.performance', 'U') IS NOT NULL
+    DROP TABLE bronze.performance;
+GO
+
+CREATE TABLE bronze.performance (
+    review_id      VARCHAR(20),
+    emp_id         VARCHAR(20),
+    review_period  VARCHAR(20),
+    review_date    DATE,
+    overall_score  DECIMAL(3,2),
+    reviewer_id    VARCHAR(20),
+    kpi_score      DECIMAL(3,2),
+    attitude_score DECIMAL(3,2),
+    notes          NVARCHAR(500)
+);
+GO
+
+-- =========================================================
+-- Create table: bronze.salary_history
+-- =========================================================
+IF OBJECT_ID('bronze.salary_history', 'U') IS NOT NULL
+    DROP TABLE bronze.salary_history;
+GO
+
+CREATE TABLE bronze.salary_history (
+    record_id       VARCHAR(20),
+    emp_id          VARCHAR(20),
+    effective_date  VARCHAR(20),
+    base_salary_idr BIGINT,
+    allowances_idr  BIGINT,
+    total_idr       BIGINT,
+    change_reason   VARCHAR(30)
+);
+GO
+
+-- =========================================================
+-- Load data
+-- =========================================================
+TRUNCATE TABLE bronze.employees;
+
+BULK INSERT bronze.employees
+FROM 'C:\data\employees.csv'
+WITH (
+    FORMAT = 'CSV',
+    FIELDQUOTE = '"',
+    FIRSTROW = 2,
+    FIELDTERMINATOR = ',',
+    ROWTERMINATOR = '0x0d0a',   -- CRLF; jika error coba '0x0a'
+    TABLOCK
+);
+GO
+
+TRUNCATE TABLE bronze.departments;
+
+BULK INSERT bronze.departments
+FROM 'C:\data\departments.csv'
+WITH (
+    FORMAT = 'CSV',
+    FIELDQUOTE = '"',
+    FIRSTROW = 2,
+    FIELDTERMINATOR = ',',
+    ROWTERMINATOR = '0x0d0a',
+    TABLOCK
+);
+GO
+
+TRUNCATE TABLE bronze.attendance;
+
+BULK INSERT bronze.attendance
+FROM 'C:\data\attendance.csv'
+WITH (
+    FORMAT = 'CSV',
+    FIELDQUOTE = '"',
+    FIRSTROW = 2,
+    FIELDTERMINATOR = ',',
+    ROWTERMINATOR = '0x0d0a',
+    TABLOCK
+);
+GO
+
+TRUNCATE TABLE bronze.performance;
+
+BULK INSERT bronze.performance
+FROM 'C:\data\performance.csv'
+WITH (
+    FORMAT = 'CSV',
+    FIELDQUOTE = '"',
+    FIRSTROW = 2,
+    FIELDTERMINATOR = ',',
+    ROWTERMINATOR = '0x0d0a',
+    TABLOCK
+);
+GO
+
+TRUNCATE TABLE bronze.salary_history;
+
+BULK INSERT bronze.salary_history
+FROM 'C:\data\salary_history.csv'
+WITH (
+    FORMAT = 'CSV',
+    FIELDQUOTE = '"',
+    FIRSTROW = 2,
+    FIELDTERMINATOR = ',',
+    ROWTERMINATOR = '0x0d0a',
+    TABLOCK
+);
+GO
+
+-- =========================================================
+-- Cek jumlah data
+-- =========================================================
+SELECT 'employees'      AS tabel, COUNT(*) AS total_baris FROM bronze.employees
+UNION ALL SELECT 'departments',    COUNT(*) FROM bronze.departments
+UNION ALL SELECT 'attendance',     COUNT(*) FROM bronze.attendance
+UNION ALL SELECT 'performance',    COUNT(*) FROM bronze.performance
+UNION ALL SELECT 'salary_history', COUNT(*) FROM bronze.salary_history;
+-- Ekspektasi: 500 / 15 / 3.000 / 600 / 1.500
+GO
+
+-- =========================================================
+-- Cek isi data
+-- =========================================================
+SELECT TOP 100 * FROM bronze.employees;
+SELECT TOP 100 * FROM bronze.departments;
+SELECT TOP 100 * FROM bronze.attendance;
+SELECT TOP 100 * FROM bronze.performance;
+SELECT TOP 100 * FROM bronze.salary_history;
+GO
