@@ -1,0 +1,234 @@
+/* ============================================================
+   LAYER 3 - GOLD
+   ============================================================ */
+
+-- Q1. Peta headcount per departemen & kota
+CREATE OR ALTER VIEW gold.vw_q1_headcount AS
+SELECT
+    d.dept_name, d.division,
+    COUNT(*) AS headcount_aktif
+FROM silver.employees e
+JOIN silver.departments d ON d.dept_id = e.dept_id
+WHERE e.status = 'active'
+GROUP BY d.dept_name, d.division;
+GO
+CREATE OR ALTER VIEW gold.vw_q1_headcount_kota AS
+SELECT city, COUNT(*) AS headcount_aktif
+FROM silver.employees WHERE status = 'active' GROUP BY city;
+GO
+
+-- Q2. Potret demografi
+CREATE OR ALTER VIEW gold.vw_q2_demografi AS
+SELECT gender, education, marital_status, city, COUNT(*) AS jml
+FROM silver.employees
+GROUP BY gender, education, marital_status, city;
+GO
+CREATE OR ALTER VIEW gold.vw_q2_gender_per_dept AS
+SELECT d.dept_name,
+       COUNT(*) AS n,
+       CAST(SUM(CASE WHEN e.gender='Male' THEN 1 ELSE 0 END)*100.0/COUNT(*) AS DECIMAL(5,1)) AS pct_male
+FROM silver.employees e
+JOIN silver.departments d ON d.dept_id=e.dept_id
+WHERE e.status='active'
+GROUP BY d.dept_name;
+GO
+
+-- Q3. Sebaran status & sinyal turnover
+CREATE OR ALTER VIEW gold.vw_q3_status AS
+SELECT status, COUNT(*) AS jml,
+       CAST(COUNT(*)*100.0/SUM(COUNT(*)) OVER () AS DECIMAL(5,1)) AS pct
+FROM silver.employees GROUP BY status;
+GO
+CREATE OR ALTER VIEW gold.vw_q3_resign_per_dept AS
+SELECT d.dept_name,
+       COUNT(*) AS total_pernah,
+       SUM(CASE WHEN e.status='resigned' THEN 1 ELSE 0 END) AS resigned,
+       CAST(SUM(CASE WHEN e.status='resigned' THEN 1 ELSE 0 END)*100.0/COUNT(*) AS DECIMAL(5,1)) AS resign_rate_pct
+FROM silver.employees e
+JOIN silver.departments d ON d.dept_id=e.dept_id
+GROUP BY d.dept_name;
+GO
+
+-- Q4. Tenure per departemen & divisi + kaitan resign
+CREATE OR ALTER VIEW gold.vw_q4_tenure AS
+SELECT d.dept_name, d.division,
+       CAST(AVG(CASE WHEN e.status='active' THEN e.tenure_years END) AS DECIMAL(5,2)) AS avg_tenure_aktif,
+       CAST(SUM(CASE WHEN e.status='resigned' THEN 1 ELSE 0 END)*100.0/COUNT(*) AS DECIMAL(5,1)) AS resign_rate_pct
+FROM silver.employees e
+JOIN silver.departments d ON d.dept_id=e.dept_id
+GROUP BY d.dept_name, d.division;
+GO
+
+-- Q5. Tren skor performance 2022-2024 (mid vs annual)
+CREATE OR ALTER VIEW gold.vw_q5_tren_performance AS
+SELECT review_period, review_year, review_cycle,
+       CAST(AVG(overall_score)  AS DECIMAL(4,2)) AS avg_overall,
+       CAST(AVG(kpi_score)      AS DECIMAL(4,2)) AS avg_kpi,
+       CAST(AVG(attitude_score) AS DECIMAL(4,2)) AS avg_attitude
+FROM silver.performance
+GROUP BY review_period, review_year, review_cycle;
+GO
+
+-- Q6. Disiplin absensi Q4 2024 (late rate & work hours)
+CREATE OR ALTER VIEW gold.vw_q6_absensi AS
+SELECT d.dept_name,
+       COUNT(*) AS total_record,
+       CAST(SUM(CASE WHEN a.status='late'   THEN 1 ELSE 0 END)*100.0/COUNT(*) AS DECIMAL(5,1)) AS late_rate_pct,
+       CAST(SUM(CASE WHEN a.status='absent' THEN 1 ELSE 0 END)*100.0/COUNT(*) AS DECIMAL(5,1)) AS absent_rate_pct,
+       -- rata-rata jam kerja: exclude 30 baris lupa clock-out (lihat catatan Silver)
+       CAST(AVG(CASE WHEN a.is_hari_kerja=1 AND a.is_lupa_clockout=0
+                     THEN a.work_hours END) AS DECIMAL(5,2)) AS avg_work_hours
+FROM silver.attendance a
+JOIN silver.employees e   ON e.emp_id = a.emp_id
+JOIN silver.departments d ON d.dept_id = e.dept_id
+GROUP BY d.dept_name;
+GO
+
+-- Q7. Audit kualitas data payroll (laporan before/after)
+CREATE OR ALTER VIEW gold.vw_q7_audit_payroll AS
+SELECT
+    (SELECT COUNT(*) FROM bronze.salary_history)                        AS baris_mentah,
+    (SELECT COUNT(*) FROM bronze.salary_history
+      WHERE effective_date LIKE '[0-9][0-9][0-9][0-9]-%')               AS format_iso,
+    (SELECT COUNT(*) FROM bronze.salary_history
+      WHERE effective_date LIKE '%/%')                                  AS format_ddmmyyyy_slash,
+    (SELECT COUNT(*) FROM bronze.salary_history
+      WHERE effective_date LIKE '[0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]') AS format_ddmmyyyy_dash,
+    (SELECT COUNT(*) FROM silver.salary_history)                        AS baris_bersih,
+    (SELECT COUNT(*) FROM bronze.salary_history)
+      - (SELECT COUNT(*) FROM silver.salary_history)                    AS duplikat_dibuang,
+    (SELECT COUNT(*) FROM silver.salary_history WHERE effective_date IS NULL) AS gagal_parse;
+GO
+
+-- Q8. Salary band per level + pay equity per gender
+CREATE OR ALTER VIEW gold.vw_q8_salary_band AS
+WITH latest AS (
+    SELECT s.*, ROW_NUMBER() OVER (PARTITION BY s.emp_id ORDER BY s.effective_date DESC) rn
+    FROM silver.salary_history s
+)
+SELECT e.level_jabatan,
+       COUNT(*)                                                        AS jml_karyawan,
+       CAST(PERCENTILE_CONT(0.25) WITHIN GROUP (ORDER BY l.total_idr)
+            OVER (PARTITION BY e.level_jabatan) / 1e6 AS DECIMAL(8,1)) AS p25_jt,
+       CAST(PERCENTILE_CONT(0.5)  WITHIN GROUP (ORDER BY l.total_idr)
+            OVER (PARTITION BY e.level_jabatan) / 1e6 AS DECIMAL(8,1)) AS median_jt,
+       CAST(PERCENTILE_CONT(0.75) WITHIN GROUP (ORDER BY l.total_idr)
+            OVER (PARTITION BY e.level_jabatan) / 1e6 AS DECIMAL(8,1)) AS p75_jt
+FROM latest l
+JOIN silver.employees e ON e.emp_id = l.emp_id
+WHERE l.rn = 1
+GROUP BY e.level_jabatan, l.total_idr;
+GO
+-- Catatan: PERCENTILE_CONT versi window; untuk hasil satu-baris-per-level
+-- gunakan agregasi berikut pada konsumsi akhir:
+CREATE OR ALTER VIEW gold.vw_q8_pay_equity AS
+WITH latest AS (
+    SELECT s.*, ROW_NUMBER() OVER (PARTITION BY s.emp_id ORDER BY s.effective_date DESC) rn
+    FROM silver.salary_history s
+)
+SELECT DISTINCT
+    e.level_jabatan, e.gender,
+    CAST(PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY l.total_idr)
+         OVER (PARTITION BY e.level_jabatan, e.gender) / 1e6 AS DECIMAL(8,1)) AS median_gaji_jt
+FROM latest l
+JOIN silver.employees e ON e.emp_id = l.emp_id
+WHERE l.rn = 1;
+GO
+
+-- Q9. Retention deep-dive: cohort + skor vs status + tim yatim (self-join)
+CREATE OR ALTER VIEW gold.vw_q9_cohort_retention AS
+SELECT hire_year,
+       COUNT(*) AS jml_hire,
+       CAST(SUM(CASE WHEN status='active' THEN 1 ELSE 0 END)*100.0/COUNT(*) AS DECIMAL(5,1)) AS retention_pct
+FROM silver.employees GROUP BY hire_year;
+GO
+CREATE OR ALTER VIEW gold.vw_q9_skor_vs_status AS
+WITH avg_skor AS (
+    SELECT emp_id, AVG(overall_score) AS avg_score
+    FROM silver.performance GROUP BY emp_id
+)
+SELECT
+    CASE WHEN a.avg_score >= 4.0 THEN 'top_performer' ELSE 'lainnya' END AS grup,
+    COUNT(*) AS jml,
+    CAST(SUM(CASE WHEN e.status='resigned' THEN 1 ELSE 0 END)*100.0/COUNT(*) AS DECIMAL(5,1)) AS resign_rate_pct
+FROM avg_skor a
+JOIN silver.employees e ON e.emp_id = a.emp_id
+GROUP BY CASE WHEN a.avg_score >= 4.0 THEN 'top_performer' ELSE 'lainnya' END;
+GO
+CREATE OR ALTER VIEW gold.vw_q9_tim_yatim AS
+SELECT e.emp_id, e.full_name, e.dept_id, e.manager_id,
+       m.full_name AS nama_manajer, m.status AS status_manajer
+FROM silver.employees e
+JOIN silver.employees m ON m.emp_id = e.manager_id      -- self-join
+WHERE e.status = 'active' AND m.status IN ('resigned','terminated');
+GO
+
+-- Q10. Jalur kenaikan gaji: first vs latest + change_reason
+CREATE OR ALTER VIEW gold.vw_q10_salary_growth AS
+WITH ranked AS (
+    SELECT s.*,
+        ROW_NUMBER() OVER (PARTITION BY emp_id ORDER BY effective_date ASC)  rn_first,
+        ROW_NUMBER() OVER (PARTITION BY emp_id ORDER BY effective_date DESC) rn_last
+    FROM silver.salary_history s
+),
+fl AS (
+    SELECT f.emp_id,
+           f.effective_date AS tgl_awal,  f.total_idr AS gaji_awal,
+           l.effective_date AS tgl_akhir, l.total_idr AS gaji_akhir,
+           DATEDIFF(DAY, f.effective_date, l.effective_date) / 365.25 AS tahun
+    FROM ranked f
+    JOIN ranked l ON l.emp_id = f.emp_id AND l.rn_last = 1
+    WHERE f.rn_first = 1
+)
+SELECT fl.*, e.status, e.full_name,
+    CAST((gaji_akhir * 1.0 / gaji_awal - 1) * 100 AS DECIMAL(8,1)) AS growth_total_pct,
+    CAST((POWER(gaji_akhir * 1.0 / gaji_awal, 1.0 / NULLIF(tahun, 0)) - 1) * 100
+         AS DECIMAL(8,1)) AS growth_annualized_pct
+FROM fl
+JOIN silver.employees e ON e.emp_id = fl.emp_id
+WHERE tahun > 0.5;
+GO
+CREATE OR ALTER VIEW gold.vw_q10_kenaikan_per_alasan AS
+WITH urut AS (
+    SELECT emp_id, effective_date, total_idr, change_reason,
+        LAG(total_idr) OVER (PARTITION BY emp_id ORDER BY effective_date) AS gaji_sebelum
+    FROM silver.salary_history
+)
+SELECT change_reason,
+       COUNT(*) AS jml_kejadian,
+       CAST(AVG((total_idr * 1.0 / gaji_sebelum - 1) * 100) AS DECIMAL(6,1)) AS avg_kenaikan_pct
+FROM urut
+WHERE gaji_sebelum IS NOT NULL
+GROUP BY change_reason;
+GO
+
+-- E1 (Tambahan). Promosi vs annual review: dihargai atau tidak?
+--     (konsumsi vw_q10_kenaikan_per_alasan; disorot terpisah karena
+--      temuannya material: promosi 8,3% ~ annual review 8,8%)
+CREATE OR ALTER VIEW gold.vw_e1_promosi_vs_review AS
+SELECT * FROM gold.vw_q10_kenaikan_per_alasan
+WHERE change_reason IN ('promotion','annual_review','market_adjustment','correction');
+GO
+
+-- E2 (Tambahan). Span of control manajer + rekap tim yatim
+CREATE OR ALTER VIEW gold.vw_e2_span_of_control AS
+SELECT e.manager_id,
+       m.full_name  AS nama_manajer,
+       m.status     AS status_manajer,
+       COUNT(*)     AS jml_bawahan_aktif
+FROM silver.employees e
+JOIN silver.employees m ON m.emp_id = e.manager_id
+WHERE e.status = 'active'
+GROUP BY e.manager_id, m.full_name, m.status;
+GO
+
+-- E3 (Tambahan). Absent rate per departemen (di luar late)
+CREATE OR ALTER VIEW gold.vw_e3_absent_per_dept AS
+SELECT d.dept_name,
+       CAST(SUM(CASE WHEN a.status='absent' THEN 1 ELSE 0 END)*100.0/COUNT(*) AS DECIMAL(5,1)) AS absent_rate_pct,
+       CAST(SUM(CASE WHEN a.status='wfh'    THEN 1 ELSE 0 END)*100.0/COUNT(*) AS DECIMAL(5,1)) AS wfh_rate_pct
+FROM silver.attendance a
+JOIN silver.employees e   ON e.emp_id = a.emp_id
+JOIN silver.departments d ON d.dept_id = e.dept_id
+GROUP BY d.dept_name;
+GO
