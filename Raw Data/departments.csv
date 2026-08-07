@@ -1,0 +1,16 @@
+dept_id,dept_name,division,location,head_emp_id,annual_budget_idr
+D01,Engineering - Backend,Technology,Jakarta,EMP0104,6506640008
+D02,Engineering - Frontend,Technology,Jakarta,EMP0036,8366710477
+D03,Data & Analytics,Technology,Jakarta,EMP0362,1035236295
+D04,Product,Technology,Jakarta,EMP0172,1647181551
+D05,Marketing,Business,Jakarta,EMP0413,6227783030
+D06,Sales,Business,Surabaya,EMP0313,8728631945
+D07,Finance,Corporate,Jakarta,EMP0099,4399143287
+D08,HR,Corporate,Jakarta,EMP0209,1627442454
+D09,Legal,Corporate,Jakarta,EMP0378,8626371177
+D10,Operations,Support,Surabaya,EMP0017,7627958969
+D11,Customer Success,Support,Bandung,EMP0060,8909351013
+D12,IT Infrastructure,Technology,Jakarta,EMP0261,4557315473
+D13,Security,Technology,Jakarta,EMP0030,4069538076
+D14,Design,Business,Bandung,EMP0350,2902502763
+D15,QA,Technology,Surabaya,EMP0466,5271497065

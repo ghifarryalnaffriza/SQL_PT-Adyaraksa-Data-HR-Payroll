@@ -1,0 +1,501 @@
+emp_id,full_name,email,dept_id,position,hire_date,birth_date,gender,marital_status,education,city,status,manager_id
+EMP0001,Omar Tampubolon,omar.tampubolon.emp0001@ptsejahtera.co.id,D15,Automation Engineer,2015-10-29,1978-08-16,Male,Married,S1,Jakarta,resigned,EMP0486
+EMP0002,Hadi Permana,hadi.permana.emp0002@ptsejahtera.co.id,D05,Head of Marketing,2022-02-06,1999-08-07,Male,Married,S2,Jakarta,resigned,
+EMP0003,Sasa Maulana,sasa.maulana.emp0003@ptsejahtera.co.id,D08,Head of People,2021-10-15,1994-04-19,Female,Single,D3,Jakarta,active,
+EMP0004,Candra Ardiansyah,candra.ardiansyah.emp0004@ptsejahtera.co.id,D08,HR Business Partner,2019-08-22,1990-03-16,Male,Married,S2,Jakarta,active,EMP0035
+EMP0005,Fikri Usman,fikri.usman.emp0005@ptsejahtera.co.id,D02,UI Engineer,2019-10-15,1989-01-07,Male,Married,S1,Jakarta,active,EMP0436
+EMP0006,Tono Ramadhan,tono.ramadhan.emp0006@ptsejahtera.co.id,D15,Automation Engineer,2015-10-02,1979-02-03,Male,Single,D3,Surabaya,active,EMP0430
+EMP0007,Hilman Santoso,hilman.santoso.emp0007@ptsejahtera.co.id,D12,System Administrator,2024-02-08,1980-11-01,Male,Divorced,SMA,Jakarta,active,EMP0321
+EMP0008,Ria Prasetya,ria.prasetya.emp0008@ptsejahtera.co.id,D02,Tech Lead Frontend,2018-12-19,1993-12-21,Female,Single,S1,Jakarta,active,EMP0009
+EMP0009,Oki Tanuwijaya,oki.tanuwijaya.emp0009@ptsejahtera.co.id,D02,Engineering Manager,2020-09-09,1984-07-17,Male,Married,S2,Jakarta,active,EMP0112
+EMP0010,Cinta Santoso,cinta.santoso.emp0010@ptsejahtera.co.id,D06,Business Development,2019-02-14,1980-02-26,Female,Married,S1,Jakarta,active,EMP0427
+EMP0011,Gilang Irawan,gilang.irawan.emp0011@ptsejahtera.co.id,D13,Penetration Tester,2021-11-18,1999-12-22,Male,Single,S1,Jakarta,resigned,EMP0167
+EMP0012,Bunga Hidayat,bunga.hidayat.emp0012@ptsejahtera.co.id,D05,Marketing Manager,2018-10-23,1990-09-30,Female,Single,S1,Bandung,resigned,EMP0300
+EMP0013,Rina Jatmiko,rina.jatmiko.emp0013@ptsejahtera.co.id,D11,Support Engineer,2015-10-13,1981-05-13,Female,Single,D3,Surabaya,active,EMP0055
+EMP0014,Ujang Putri,ujang.putri.emp0014@ptsejahtera.co.id,D07,FP&A Analyst,2020-02-02,1990-04-17,Male,Married,S1,Semarang,active,EMP0440
+EMP0015,Nadia Usman,nadia.usman.emp0015@ptsejahtera.co.id,D06,Business Development,2021-09-08,1978-10-23,Female,Single,S1,Semarang,terminated,EMP0427
+EMP0016,Tika Wirawan,tika.wirawan.emp0016@ptsejahtera.co.id,D10,Operations Staff,2022-07-23,1978-08-29,Female,Married,S2,Jakarta,active,EMP0158
+EMP0017,Erika Effendi,erika.effendi.emp0017@ptsejahtera.co.id,D10,COO,2019-08-24,1987-04-03,Female,Married,S3,Jakarta,active,
+EMP0018,Nugroho Tanuwijaya,nugroho.tanuwijaya.emp0018@ptsejahtera.co.id,D07,Finance Staff,2018-03-06,1996-10-29,Male,Divorced,S1,Denpasar,active,EMP0440
+EMP0019,Dian Wibowo,dian.wibowo.emp0019@ptsejahtera.co.id,D07,CFO,2015-08-13,1975-05-06,Female,Married,S1,Jakarta,active,
+EMP0020,Bella Yudhoyono,bella.yudhoyono.emp0020@ptsejahtera.co.id,D03,Data Engineer,2018-03-31,1989-09-19,Female,Single,SMA,Jakarta,active,EMP0109
+EMP0021,Nia Valentino,nia.valentino.emp0021@ptsejahtera.co.id,D07,Accountant,2016-06-13,1992-01-21,Female,Divorced,S1,Jakarta,resigned,EMP0451
+EMP0022,Oki Irawan,oki.irawan.emp0022@ptsejahtera.co.id,D14,Senior Designer,2015-10-23,1992-10-23,Female,Single,S2,Bandung,active,EMP0051
+EMP0023,Agus Cahyadi,agus.cahyadi.emp0023@ptsejahtera.co.id,D15,QA Engineer,2024-09-01,1989-01-16,Male,Divorced,S2,Jakarta,active,EMP0286
+EMP0024,Dimas Tampubolon,dimas.tampubolon.emp0024@ptsejahtera.co.id,D11,Support Engineer,2018-03-31,1980-03-02,Male,Married,SMA,Jakarta,active,EMP0106
+EMP0025,Reza Nugroho,reza.nugroho.emp0025@ptsejahtera.co.id,D13,Penetration Tester,2020-02-28,1991-03-26,Male,Single,S2,Jakarta,active,EMP0030
+EMP0026,Made Anggraini,made.anggraini.emp0026@ptsejahtera.co.id,D07,CFO,2019-06-29,1998-07-03,Male,Single,S2,Bandung,resigned,
+EMP0027,Oki Valentino,oki.valentino.emp0027@ptsejahtera.co.id,D06,Account Executive,2018-09-26,1982-07-17,Male,Single,S3,Jakarta,active,EMP0216
+EMP0028,Maya Gunadi,maya.gunadi.emp0028@ptsejahtera.co.id,D09,Paralegal,2023-09-15,1990-09-03,Female,Married,S1,Jakarta,active,EMP0107
+EMP0029,Eka Santoso,eka.santoso.emp0029@ptsejahtera.co.id,D03,Data Engineer,2017-03-19,1982-10-13,Female,Divorced,S1,Jakarta,active,EMP0174
+EMP0030,Hana Hidayat,hana.hidayat.emp0030@ptsejahtera.co.id,D13,CISO,2020-03-15,2000-04-15,Female,Divorced,S2,Jakarta,active,
+EMP0031,Reza Nainggolan,reza.nainggolan.emp0031@ptsejahtera.co.id,D06,Account Executive,2019-12-07,1978-01-23,Male,Married,S2,Jakarta,active,EMP0361
+EMP0032,Mega Kurniawan,mega.kurniawan.emp0032@ptsejahtera.co.id,D10,Operations Staff,2018-12-12,1997-10-04,Female,Single,S1,Jakarta,active,EMP0308
+EMP0033,Leo Budiman,leo.budiman.emp0033@ptsejahtera.co.id,D01,Software Engineer,2019-02-19,1987-11-17,Male,Single,D3,Jakarta,active,EMP0492
+EMP0034,Rangga Wahyudi,rangga.wahyudi.emp0034@ptsejahtera.co.id,D08,Head of People,2021-03-20,1976-11-03,Male,Married,S1,Bandung,active,
+EMP0035,Reza Laksana,reza.laksana.emp0035@ptsejahtera.co.id,D08,Head of People,2016-09-09,1977-10-10,Male,Married,D3,Bandung,active,
+EMP0036,Sinta Tampubolon,sinta.tampubolon.emp0036@ptsejahtera.co.id,D02,Engineering Manager,2022-03-31,1982-09-28,Female,Single,S1,Bandung,active,EMP0207
+EMP0037,Gina Budiman,gina.budiman.emp0037@ptsejahtera.co.id,D09,Head of Legal,2021-11-02,1982-02-13,Female,Married,S1,Jakarta,resigned,
+EMP0038,Lutfi Wahyudi,lutfi.wahyudi.emp0038@ptsejahtera.co.id,D07,Finance Manager,2022-08-12,1977-05-07,Male,Married,D3,Surabaya,active,EMP0335
+EMP0039,Sandi Santoso,sandi.santoso.emp0039@ptsejahtera.co.id,D09,Compliance Officer,2018-03-09,1986-04-21,Male,Divorced,S1,Yogyakarta,active,EMP0171
+EMP0040,Ria Kusuma,ria.kusuma.emp0040@ptsejahtera.co.id,D10,Ops Analyst,2018-12-03,1988-11-30,Female,Married,S1,Surabaya,active,EMP0017
+EMP0041,Joko Iskandar,joko.iskandar.emp0041@ptsejahtera.co.id,D09,Compliance Officer,2022-03-20,1989-09-25,Male,Married,S3,Surabaya,active,EMP0107
+EMP0042,Juwita Octavianus,juwita.octavianus.emp0042@ptsejahtera.co.id,D11,Support Engineer,2020-09-13,1991-03-26,Female,Single,S1,Bandung,active,EMP0059
+EMP0043,Oki Hidayat,oki.hidayat.emp0043@ptsejahtera.co.id,D04,Senior PM,2023-08-05,1996-10-24,Male,Married,S1,Jakarta,active,EMP0265
+EMP0044,Rama Saputra,rama.saputra.emp0044@ptsejahtera.co.id,D02,UI Engineer,2024-06-20,1979-07-16,Male,Divorced,S3,Jakarta,active,EMP0112
+EMP0045,Sasa Susanto,sasa.susanto.emp0045@ptsejahtera.co.id,D11,CS Lead,2024-10-29,1980-11-17,Female,Divorced,S2,Jakarta,active,EMP0483
+EMP0046,Sari Nugroho,sari.nugroho.emp0046@ptsejahtera.co.id,D03,Head of Data,2024-01-27,1982-06-05,Female,Married,SMA,Surabaya,active,
+EMP0047,Caca Utama,caca.utama.emp0047@ptsejahtera.co.id,D11,CS Specialist,2019-12-25,1987-10-13,Female,Married,S1,Surabaya,active,EMP0319
+EMP0048,Yanto Anggraini,yanto.anggraini.emp0048@ptsejahtera.co.id,D05,SEO Specialist,2024-05-13,1983-09-14,Male,Married,S2,Surabaya,active,EMP0465
+EMP0049,Leo Yudhoyono,leo.yudhoyono.emp0049@ptsejahtera.co.id,D05,SEO Specialist,2020-08-21,1998-08-29,Male,Married,S1,Bandung,active,EMP0367
+EMP0050,Adi Laksana,adi.laksana.emp0050@ptsejahtera.co.id,D03,Data Engineer,2015-08-02,1996-07-22,Male,Married,S3,Jakarta,active,EMP0325
+EMP0051,Made Tampubolon,made.tampubolon.emp0051@ptsejahtera.co.id,D14,Head of Design,2024-07-18,1980-08-04,Male,Married,D3,Jakarta,active,
+EMP0052,Umar Kurniawan,umar.kurniawan.emp0052@ptsejahtera.co.id,D08,Head of People,2016-08-26,1994-08-16,Male,Single,S1,Jakarta,active,
+EMP0053,Jefri Tanuwijaya,jefri.tanuwijaya.emp0053@ptsejahtera.co.id,D15,QA Engineer,2019-08-27,1977-05-22,Male,Married,S3,Jakarta,resigned,EMP0486
+EMP0054,Winda Anggraini,winda.anggraini.emp0054@ptsejahtera.co.id,D07,Finance Staff,2019-03-16,1985-01-26,Female,Single,S1,Jakarta,active,EMP0099
+EMP0055,Kartika Tampubolon,kartika.tampubolon.emp0055@ptsejahtera.co.id,D11,CS Lead,2023-11-16,1981-07-20,Female,Married,SMA,Jakarta,active,EMP0114
+EMP0056,Lutfi Darmawan,lutfi.darmawan.emp0056@ptsejahtera.co.id,D12,DevOps Engineer,2023-07-06,1996-01-16,Male,Married,SMA,Jakarta,active,EMP0496
+EMP0057,Joko Pratama,joko.pratama.emp0057@ptsejahtera.co.id,D05,Content Marketer,2024-05-13,1981-09-15,Male,Divorced,S3,Jakarta,active,EMP0300
+EMP0058,Gilang Lestari,gilang.lestari.emp0058@ptsejahtera.co.id,D13,Security Manager,2017-08-31,1988-07-05,Male,Single,SMA,Surabaya,active,EMP0303
+EMP0059,Eka Zulkarnain,eka.zulkarnain.emp0059@ptsejahtera.co.id,D11,Head of CS,2020-02-16,1977-10-26,Female,Single,S2,Jakarta,active,
+EMP0060,Yanto Pratama,yanto.pratama.emp0060@ptsejahtera.co.id,D11,Head of CS,2021-06-13,1985-11-07,Male,Married,S1,Medan,active,
+EMP0061,Gilang Wijaya,gilang.wijaya.emp0061@ptsejahtera.co.id,D10,Operations Manager,2017-09-12,2000-08-06,Male,Married,S1,Jakarta,active,EMP0192
+EMP0062,Joko Gunadi,joko.gunadi.emp0062@ptsejahtera.co.id,D06,Sales Executive,2020-11-24,1999-05-29,Male,Divorced,S3,Jakarta,active,EMP0439
+EMP0063,Ayu Wahyudi,ayu.wahyudi.emp0063@ptsejahtera.co.id,D14,Design Lead,2015-06-28,1992-05-09,Female,Married,S1,Jakarta,active,EMP0051
+EMP0064,Agus Tanuwijaya,agus.tanuwijaya.emp0064@ptsejahtera.co.id,D13,Security Engineer,2018-11-13,1985-10-25,Male,Single,S1,Bandung,active,EMP0167
+EMP0065,Rama Susanto,rama.susanto.emp0065@ptsejahtera.co.id,D06,Business Development,2018-10-18,1982-11-08,Male,Married,S2,Bandung,active,EMP0216
+EMP0066,Wati Permana,wati.permana.emp0066@ptsejahtera.co.id,D02,Tech Lead Frontend,2015-06-01,1988-02-29,Female,Married,SMA,Surabaya,active,EMP0207
+EMP0067,Adi Susanto,adi.susanto.emp0067@ptsejahtera.co.id,D06,Sales Manager,2020-10-12,1992-11-11,Male,Divorced,S2,Bandung,active,EMP0439
+EMP0068,Hendra Susanto,hendra.susanto.emp0068@ptsejahtera.co.id,D13,SOC Analyst,2018-03-17,1991-01-05,Male,Single,S1,Semarang,active,EMP0058
+EMP0069,Jaya Lestari,jaya.lestari.emp0069@ptsejahtera.co.id,D13,Security Manager,2019-11-25,1992-12-10,Male,Married,S2,Jakarta,active,EMP0337
+EMP0070,Tegar Hidayat,tegar.hidayat.emp0070@ptsejahtera.co.id,D08,HR Manager,2019-02-13,1998-04-17,Male,Married,D3,Jakarta,resigned,EMP0034
+EMP0071,Erika Kusuma,erika.kusuma.emp0071@ptsejahtera.co.id,D07,CFO,2024-03-22,1983-02-04,Female,Divorced,S1,Jakarta,active,
+EMP0072,Pipit Santoso,pipit.santoso.emp0072@ptsejahtera.co.id,D02,UI Engineer,2022-05-31,1988-04-05,Female,Married,S2,Jakarta,resigned,EMP0217
+EMP0073,Gilang Nugroho,gilang.nugroho.emp0073@ptsejahtera.co.id,D12,IT Manager,2018-12-10,1995-01-21,Male,Single,S1,Jakarta,active,EMP0235
+EMP0074,Hilman Kurniawan,hilman.kurniawan.emp0074@ptsejahtera.co.id,D11,Customer Success Manager,2015-11-04,1993-03-22,Male,Married,S3,Jakarta,active,EMP0164
+EMP0075,Umar Pratama,umar.pratama.emp0075@ptsejahtera.co.id,D03,Head of Data,2022-08-09,1994-08-28,Male,Single,S1,Surabaya,resigned,
+EMP0076,Hadi Anggraini,hadi.anggraini.emp0076@ptsejahtera.co.id,D13,Security Manager,2019-01-23,1992-03-04,Male,Divorced,SMA,Jakarta,resigned,EMP0058
+EMP0077,Sari Ramadhan,sari.ramadhan.emp0077@ptsejahtera.co.id,D08,Recruiter,2019-03-04,1994-11-30,Female,Single,S1,Jakarta,active,EMP0482
+EMP0078,Ujang Utama,ujang.utama.emp0078@ptsejahtera.co.id,D07,Finance Manager,2022-04-14,1987-07-03,Male,Married,D3,Jakarta,active,EMP0301
+EMP0079,Bambang Valentino,bambang.valentino.emp0079@ptsejahtera.co.id,D03,Analytics Engineer,2020-10-21,1992-05-11,Male,Divorced,D3,Bandung,active,EMP0344
+EMP0080,Iwan Yudhoyono,iwan.yudhoyono.emp0080@ptsejahtera.co.id,D05,SEO Specialist,2017-05-28,1987-10-23,Male,Married,S1,Jakarta,active,EMP0465
+EMP0081,Nuri Permana,nuri.permana.emp0081@ptsejahtera.co.id,D14,UI Designer,2020-01-26,1982-09-29,Female,Married,D3,Jakarta,active,EMP0187
+EMP0082,Olivia Prasetya,olivia.prasetya.emp0082@ptsejahtera.co.id,D06,Sales Executive,2021-03-02,1999-04-27,Female,Married,S1,Makassar,active,EMP0393
+EMP0083,Umar Tampubolon,umar.tampubolon.emp0083@ptsejahtera.co.id,D12,DevOps Engineer,2023-11-25,1991-03-20,Male,Divorced,S1,Jakarta,resigned,EMP0261
+EMP0084,Oka Putra,oka.putra.emp0084@ptsejahtera.co.id,D13,SOC Analyst,2017-08-27,1997-02-28,Male,Single,S1,Jakarta,active,EMP0337
+EMP0085,Winda Cahyadi,winda.cahyadi.emp0085@ptsejahtera.co.id,D13,Penetration Tester,2016-06-15,1978-11-13,Female,Single,S1,Bandung,active,EMP0272
+EMP0086,Catur Tampubolon,catur.tampubolon.emp0086@ptsejahtera.co.id,D12,IT Manager,2020-11-23,1993-06-05,Male,Married,D3,Surabaya,resigned,EMP0138
+EMP0087,Octavia Rahmawati,octavia.rahmawati.emp0087@ptsejahtera.co.id,D11,Customer Success Manager,2020-01-18,1995-11-24,Female,Divorced,S1,Jakarta,active,EMP0164
+EMP0088,Putu Yudhoyono,putu.yudhoyono.emp0088@ptsejahtera.co.id,D09,Head of Legal,2017-01-15,1980-10-15,Male,Married,S3,Jakarta,active,
+EMP0089,Gunawan Lestari,gunawan.lestari.emp0089@ptsejahtera.co.id,D09,Paralegal,2018-05-30,1982-05-21,Male,Married,S1,Surabaya,resigned,EMP0428
+EMP0090,Doni Tanuwijaya,doni.tanuwijaya.emp0090@ptsejahtera.co.id,D09,Legal Manager,2024-06-26,1978-07-16,Male,Married,S1,Jakarta,active,EMP0435
+EMP0091,Jihan Permana,jihan.permana.emp0091@ptsejahtera.co.id,D11,CS Lead,2021-11-21,1998-12-06,Female,Single,S3,Jakarta,active,EMP0373
+EMP0092,Vino Kartika,vino.kartika.emp0092@ptsejahtera.co.id,D10,Ops Analyst,2016-12-02,1990-02-22,Male,Divorced,SMA,Surabaya,active,EMP0017
+EMP0093,Bunga Kusuma,bunga.kusuma.emp0093@ptsejahtera.co.id,D01,Engineering Manager,2017-12-20,1984-06-15,Female,Divorced,S2,Surabaya,active,EMP0416
+EMP0094,Bunga Effendi,bunga.effendi.emp0094@ptsejahtera.co.id,D15,QA Manager,2018-04-01,1988-07-20,Female,Married,S1,Jakarta,active,EMP0278
+EMP0095,Bella Iskandar,bella.iskandar.emp0095@ptsejahtera.co.id,D08,HR Generalist,2022-09-21,1977-09-08,Female,Married,S2,Jakarta,active,EMP0141
+EMP0096,Fikri Darmawan,fikri.darmawan.emp0096@ptsejahtera.co.id,D08,HR Business Partner,2018-10-25,1981-06-11,Male,Married,S1,Jakarta,active,EMP0034
+EMP0097,Ucok Yulianto,ucok.yulianto.emp0097@ptsejahtera.co.id,D03,Data Engineer,2020-10-10,2000-03-12,Male,Single,S1,Surabaya,active,EMP0242
+EMP0098,Faisal Cahyadi,faisal.cahyadi.emp0098@ptsejahtera.co.id,D02,UI Engineer,2020-01-16,1986-02-13,Male,Married,D3,Jakarta,resigned,EMP0436
+EMP0099,Fajar Maulana,fajar.maulana.emp0099@ptsejahtera.co.id,D07,CFO,2019-09-09,1986-02-19,Male,Married,S1,Jakarta,active,
+EMP0100,Panji Putra,panji.putra.emp0100@ptsejahtera.co.id,D13,SOC Analyst,2020-08-02,1998-02-02,Male,Married,S2,Jakarta,active,EMP0218
+EMP0101,Nadia Effendi,nadia.effendi.emp0101@ptsejahtera.co.id,D01,Software Engineer,2019-05-30,1997-09-03,Female,Married,S1,Denpasar,active,EMP0492
+EMP0102,Candra Kartika,candra.kartika.emp0102@ptsejahtera.co.id,D06,Sales Executive,2015-07-27,1987-08-15,Male,Married,S2,Jakarta,active,EMP0223
+EMP0103,Kirana Handoko,kirana.handoko.emp0103@ptsejahtera.co.id,D01,Software Engineer,2019-11-01,1981-01-03,Female,Married,S1,Bandung,active,EMP0298
+EMP0104,Dimas Utama,dimas.utama.emp0104@ptsejahtera.co.id,D01,Tech Lead Backend,2015-07-29,2000-07-31,Male,Divorced,S1,Jakarta,active,EMP0355
+EMP0105,Wisnu Irawan,wisnu.irawan.emp0105@ptsejahtera.co.id,D05,Marketing Specialist,2019-05-02,1997-08-14,Male,Married,S3,Jakarta,active,EMP0367
+EMP0106,Kevin Mahendra,kevin.mahendra.emp0106@ptsejahtera.co.id,D11,Head of CS,2016-05-01,1980-10-09,Male,Single,S2,Surabaya,active,
+EMP0107,Yoga Sutanto,yoga.sutanto.emp0107@ptsejahtera.co.id,D09,Legal Manager,2023-06-20,1981-06-21,Male,Married,S3,Surabaya,active,EMP0088
+EMP0108,Bella Firmansyah,bella.firmansyah.emp0108@ptsejahtera.co.id,D01,Software Engineer,2015-06-09,1981-02-23,Female,Married,S2,Jakarta,active,EMP0284
+EMP0109,Taufik Cahyadi,taufik.cahyadi.emp0109@ptsejahtera.co.id,D03,Head of Data,2020-10-12,1981-04-09,Male,Married,S1,Jakarta,active,
+EMP0110,Tika Yulianto,tika.yulianto.emp0110@ptsejahtera.co.id,D10,Operations Manager,2021-08-28,1990-02-02,Female,Divorced,S3,Jakarta,active,EMP0061
+EMP0111,Yanto Effendi,yanto.effendi.emp0111@ptsejahtera.co.id,D12,Infrastructure Lead,2018-05-12,1996-04-20,Male,Single,S1,Denpasar,active,EMP0235
+EMP0112,Ria Ramadhan,ria.ramadhan.emp0112@ptsejahtera.co.id,D02,Tech Lead Frontend,2021-07-18,1988-10-19,Female,Single,S2,Jakarta,active,EMP0009
+EMP0113,Iwan Octavianus,iwan.octavianus.emp0113@ptsejahtera.co.id,D13,Penetration Tester,2021-06-23,1985-03-17,Male,Single,S2,Jakarta,active,EMP0220
+EMP0114,Vino Gunadi,vino.gunadi.emp0114@ptsejahtera.co.id,D11,Head of CS,2023-09-08,1992-01-21,Male,Married,S1,Yogyakarta,active,
+EMP0115,Dedi Jatmiko,dedi.jatmiko.emp0115@ptsejahtera.co.id,D12,IT Support,2017-02-20,1975-11-07,Male,Married,S1,Jakarta,active,EMP0235
+EMP0116,Dina Saputra,dina.saputra.emp0116@ptsejahtera.co.id,D07,Accountant,2019-08-08,1997-07-05,Female,Divorced,S2,Jakarta,terminated,EMP0038
+EMP0117,Gunawan Tampubolon,gunawan.tampubolon.emp0117@ptsejahtera.co.id,D03,Head of Data,2017-04-29,2000-02-28,Male,Married,S2,Jakarta,resigned,
+EMP0118,Ujang Wahyudi,ujang.wahyudi.emp0118@ptsejahtera.co.id,D06,Account Executive,2020-02-26,1998-11-30,Male,Married,S3,Jakarta,active,EMP0427
+EMP0119,Vicky Ramadhan,vicky.ramadhan.emp0119@ptsejahtera.co.id,D13,Security Manager,2021-11-03,1996-09-19,Male,Married,S1,Jakarta,active,EMP0069
+EMP0120,Kevin Irawan,kevin.irawan.emp0120@ptsejahtera.co.id,D05,Content Marketer,2018-05-04,1987-12-19,Male,Married,S2,Jakarta,active,EMP0415
+EMP0121,Panji Darmawan,panji.darmawan.emp0121@ptsejahtera.co.id,D06,Business Development,2023-12-02,1987-04-08,Male,Married,D3,Bandung,active,EMP0313
+EMP0122,Una Wahyudi,una.wahyudi.emp0122@ptsejahtera.co.id,D15,Automation Engineer,2024-03-06,1990-06-25,Female,Married,S1,Medan,active,EMP0286
+EMP0123,Eko Maulana,eko.maulana.emp0123@ptsejahtera.co.id,D12,IT Support,2018-11-19,1994-11-04,Male,Married,S2,Surabaya,terminated,EMP0138
+EMP0124,Candra Putra,candra.putra.emp0124@ptsejahtera.co.id,D14,Head of Design,2018-01-15,2000-03-18,Male,Married,S1,Jakarta,active,
+EMP0125,Made Mahendra,made.mahendra.emp0125@ptsejahtera.co.id,D12,Infrastructure Lead,2017-09-07,1985-11-16,Male,Single,S3,Jakarta,active,EMP0235
+EMP0126,Doni Nainggolan,doni.nainggolan.emp0126@ptsejahtera.co.id,D04,Product Manager,2016-02-15,1993-07-16,Male,Married,S2,Jakarta,resigned,EMP0172
+EMP0127,Kartika Ramadhan,kartika.ramadhan.emp0127@ptsejahtera.co.id,D13,SOC Analyst,2015-01-22,1999-09-08,Female,Married,S2,Surabaya,active,EMP0119
+EMP0128,Karina Darmawan,karina.darmawan.emp0128@ptsejahtera.co.id,D11,CS Specialist,2023-06-24,1987-11-20,Female,Married,S1,Jakarta,active,EMP0243
+EMP0129,Gunawan Yudhoyono,gunawan.yudhoyono.emp0129@ptsejahtera.co.id,D02,Engineering Manager,2017-08-09,1999-01-02,Male,Single,S1,Bandung,active,EMP0467
+EMP0130,Fikri Hidayat,fikri.hidayat.emp0130@ptsejahtera.co.id,D15,QA Engineer,2024-05-18,1992-10-22,Male,Married,S1,Jakarta,active,EMP0278
+EMP0131,Linda Susanto,linda.susanto.emp0131@ptsejahtera.co.id,D01,Backend Engineer,2021-05-15,1979-10-25,Female,Married,S1,Jakarta,active,EMP0202
+EMP0132,Krisna Octavianus,krisna.octavianus.emp0132@ptsejahtera.co.id,D09,Head of Legal,2020-07-16,1981-01-07,Male,Divorced,S2,Jakarta,active,
+EMP0133,Jaya Putra,jaya.putra.emp0133@ptsejahtera.co.id,D13,Security Engineer,2018-09-16,1982-04-16,Male,Married,S1,Surabaya,active,EMP0119
+EMP0134,Yusuf Wijaya,yusuf.wijaya.emp0134@ptsejahtera.co.id,D12,System Administrator,2023-11-13,1988-03-26,Male,Divorced,S1,Medan,terminated,EMP0221
+EMP0135,Vina Mahendra,vina.mahendra.emp0135@ptsejahtera.co.id,D14,Design Lead,2024-04-10,1994-03-09,Female,Divorced,S1,Jakarta,active,EMP0187
+EMP0136,Juwita Yulianto,juwita.yulianto.emp0136@ptsejahtera.co.id,D11,Customer Success Manager,2017-01-26,1981-04-22,Female,Married,S1,Jakarta,active,EMP0106
+EMP0137,Galih Wijaya,galih.wijaya.emp0137@ptsejahtera.co.id,D05,SEO Specialist,2017-08-22,1995-01-15,Male,Married,S1,Bandung,active,EMP0300
+EMP0138,Mega Kartika,mega.kartika.emp0138@ptsejahtera.co.id,D12,Infrastructure Lead,2015-02-16,1986-09-25,Female,Married,S1,Jakarta,active,EMP0221
+EMP0139,Fitri Prasetya,fitri.prasetya.emp0139@ptsejahtera.co.id,D02,Tech Lead Frontend,2018-06-10,1982-03-01,Female,Married,S3,Semarang,active,EMP0436
+EMP0140,Oki Sihombing,oki.sihombing.emp0140@ptsejahtera.co.id,D02,UI Engineer,2019-02-14,1984-11-27,Male,Married,S1,Jakarta,terminated,EMP0129
+EMP0141,Naufal Saputra,naufal.saputra.emp0141@ptsejahtera.co.id,D08,Head of People,2019-03-11,1993-08-27,Male,Divorced,S2,Bandung,active,
+EMP0142,Yanto Prasetya,yanto.prasetya.emp0142@ptsejahtera.co.id,D14,UX Designer,2023-07-18,1986-02-06,Male,Divorced,D3,Bandung,resigned,EMP0124
+EMP0143,Ujang Budiman,ujang.budiman.emp0143@ptsejahtera.co.id,D09,Legal Manager,2015-11-16,2000-04-22,Male,Single,SMA,Jakarta,active,EMP0132
+EMP0144,Rangga Putra,rangga.putra.emp0144@ptsejahtera.co.id,D10,Process Analyst,2016-09-05,1982-05-19,Male,Married,S3,Bandung,active,EMP0061
+EMP0145,Iqbal Lestari,iqbal.lestari.emp0145@ptsejahtera.co.id,D11,CS Specialist,2023-01-15,1996-12-04,Male,Single,S3,Semarang,active,EMP0059
+EMP0146,Jefri Hartono,jefri.hartono.emp0146@ptsejahtera.co.id,D08,HR Business Partner,2020-10-03,1993-08-20,Male,Married,SMA,Bandung,active,EMP0379
+EMP0147,Jane Ramadhan,jane.ramadhan.emp0147@ptsejahtera.co.id,D13,Security Manager,2023-02-10,1975-12-23,Female,Married,S1,Bandung,resigned,EMP0337
+EMP0148,Siti Valentino,siti.valentino.emp0148@ptsejahtera.co.id,D04,Product Analyst,2015-10-27,1977-01-12,Female,Married,S1,Jakarta,active,EMP0157
+EMP0149,Hadi Handoko,hadi.handoko.emp0149@ptsejahtera.co.id,D01,Software Engineer,2020-04-17,1976-06-03,Male,Married,S2,Jakarta,active,EMP0416
+EMP0150,Wati Yudhoyono,wati.yudhoyono.emp0150@ptsejahtera.co.id,D03,Analytics Engineer,2019-03-14,1992-02-27,Female,Married,S2,Bandung,active,EMP0026
+EMP0151,Arif Kusuma,arif.kusuma.emp0151@ptsejahtera.co.id,D11,Head of CS,2016-06-28,1990-08-07,Male,Single,S1,Jakarta,active,
+EMP0152,Yanto Yulianto,yanto.yulianto.emp0152@ptsejahtera.co.id,D09,Paralegal,2023-03-01,1984-12-27,Male,Single,SMA,Jakarta,active,EMP0435
+EMP0153,Nanda Cahyadi,nanda.cahyadi.emp0153@ptsejahtera.co.id,D11,Head of CS,2019-10-04,1998-11-11,Male,Married,S1,Jakarta,resigned,
+EMP0154,Farah Cahyadi,farah.cahyadi.emp0154@ptsejahtera.co.id,D06,Account Executive,2018-02-03,1983-06-16,Female,Single,SMA,Jakarta,active,EMP0313
+EMP0155,Dina Mahendra,dina.mahendra.emp0155@ptsejahtera.co.id,D13,Security Engineer,2017-09-12,1984-03-30,Female,Single,D3,Semarang,active,EMP0337
+EMP0156,Citra Budiman,citra.budiman.emp0156@ptsejahtera.co.id,D10,Operations Staff,2017-09-29,1976-12-25,Female,Married,S2,Jakarta,resigned,EMP0308
+EMP0157,Egi Handoko,egi.handoko.emp0157@ptsejahtera.co.id,D04,Product Manager,2016-07-27,1997-08-08,Male,Married,S1,Surabaya,active,EMP0265
+EMP0158,Panji Jatmiko,panji.jatmiko.emp0158@ptsejahtera.co.id,D10,Operations Manager,2017-08-28,1988-07-15,Male,Married,S3,Jakarta,active,EMP0308
+EMP0159,Doni Zulkarnain,doni.zulkarnain.emp0159@ptsejahtera.co.id,D05,Marketing Manager,2015-09-07,1999-12-22,Male,Divorced,S1,Medan,resigned,EMP0367
+EMP0160,Gilang Irawan,gilang.irawan.emp0160@ptsejahtera.co.id,D08,HR Generalist,2018-11-11,1992-02-05,Male,Divorced,S1,Medan,active,EMP0379
+EMP0161,Dina Zulkarnain,dina.zulkarnain.emp0161@ptsejahtera.co.id,D03,Data Engineer,2019-03-22,1983-04-01,Female,Divorced,S2,Surabaya,active,EMP0109
+EMP0162,Eka Wibowo,eka.wibowo.emp0162@ptsejahtera.co.id,D05,Content Marketer,2024-01-14,1995-10-09,Female,Single,S3,Jakarta,active,EMP0465
+EMP0163,Edo Zulkarnain,edo.zulkarnain.emp0163@ptsejahtera.co.id,D09,Head of Legal,2016-07-03,1992-06-03,Male,Married,S1,Jakarta,active,
+EMP0164,Anita Sutanto,anita.sutanto.emp0164@ptsejahtera.co.id,D11,Customer Success Manager,2020-01-17,1991-08-24,Female,Single,S3,Surabaya,active,EMP0114
+EMP0165,Yuni Hartono,yuni.hartono.emp0165@ptsejahtera.co.id,D05,SEO Specialist,2022-07-22,1976-10-09,Female,Single,S1,Jakarta,active,EMP0413
+EMP0166,Candra Darmawan,candra.darmawan.emp0166@ptsejahtera.co.id,D04,Senior PM,2018-05-26,1975-09-09,Male,Married,S1,Jakarta,active,EMP0172
+EMP0167,Nuri Valentino,nuri.valentino.emp0167@ptsejahtera.co.id,D13,CISO,2017-09-20,1984-03-04,Female,Married,S1,Jakarta,active,
+EMP0168,Reza Yudhoyono,reza.yudhoyono.emp0168@ptsejahtera.co.id,D05,SEO Specialist,2020-03-24,1998-12-09,Male,Married,S1,Jakarta,active,EMP0465
+EMP0169,Hesti Utama,hesti.utama.emp0169@ptsejahtera.co.id,D09,Compliance Officer,2020-03-23,1979-06-04,Female,Married,S1,Surabaya,active,EMP0143
+EMP0170,Anita Utama,anita.utama.emp0170@ptsejahtera.co.id,D06,Sales Director,2015-07-07,2000-03-26,Female,Married,S1,Surabaya,active,
+EMP0171,Agus Halim,agus.halim.emp0171@ptsejahtera.co.id,D09,Head of Legal,2021-06-30,1993-09-24,Male,Married,S1,Jakarta,active,
+EMP0172,Zahra Sutanto,zahra.sutanto.emp0172@ptsejahtera.co.id,D04,Product Director,2021-05-22,1986-01-09,Female,Married,S3,Jakarta,active,
+EMP0173,Sinta Halim,sinta.halim.emp0173@ptsejahtera.co.id,D13,CISO,2023-02-11,1997-01-02,Female,Married,S1,Jakarta,resigned,
+EMP0174,Vicky Nugroho,vicky.nugroho.emp0174@ptsejahtera.co.id,D03,Head of Data,2020-06-23,1983-04-04,Male,Divorced,SMA,Jakarta,active,
+EMP0175,Sasa Susanto,sasa.susanto.emp0175@ptsejahtera.co.id,D14,UI Designer,2024-03-04,1977-03-05,Female,Single,S2,Jakarta,active,EMP0051
+EMP0176,Rama Nainggolan,rama.nainggolan.emp0176@ptsejahtera.co.id,D04,Product Manager,2022-12-06,1981-10-10,Male,Single,S1,Bandung,active,EMP0269
+EMP0177,Rangga Cahyadi,rangga.cahyadi.emp0177@ptsejahtera.co.id,D06,Sales Executive,2021-12-05,1996-09-03,Male,Married,SMA,Medan,active,EMP0361
+EMP0178,Budi Handoko,budi.handoko.emp0178@ptsejahtera.co.id,D09,Compliance Officer,2015-02-18,1975-10-02,Male,Divorced,S1,Bandung,active,EMP0435
+EMP0179,Yanto Maulana,yanto.maulana.emp0179@ptsejahtera.co.id,D01,Engineering Manager,2024-02-13,1994-04-25,Male,Married,D3,Jakarta,active,EMP0448
+EMP0180,Lukman Gunadi,lukman.gunadi.emp0180@ptsejahtera.co.id,D03,Senior Data Analyst,2017-02-25,1998-08-13,Male,Married,S1,Jakarta,active,EMP0021
+EMP0181,Ika Yulianto,ika.yulianto.emp0181@ptsejahtera.co.id,D02,UI Engineer,2019-07-22,1995-08-04,Female,Divorced,S1,Jakarta,active,EMP0217
+EMP0182,Doni Iskandar,doni.iskandar.emp0182@ptsejahtera.co.id,D11,Customer Success Manager,2022-05-01,1976-06-03,Male,Single,S2,Bandung,active,EMP0164
+EMP0183,Arif Wahyudi,arif.wahyudi.emp0183@ptsejahtera.co.id,D09,Compliance Officer,2015-08-18,1975-06-04,Male,Married,D3,Medan,active,EMP0401
+EMP0184,Nia Ardiansyah,nia.ardiansyah.emp0184@ptsejahtera.co.id,D11,CS Lead,2021-05-06,1979-04-12,Female,Divorced,SMA,Bandung,terminated,EMP0400
+EMP0185,Egi Putri,egi.putri.emp0185@ptsejahtera.co.id,D15,QA Manager,2020-05-01,1987-02-28,Male,Single,D3,Jakarta,resigned,EMP0486
+EMP0186,Kevin Handoko,kevin.handoko.emp0186@ptsejahtera.co.id,D10,Operations Staff,2017-01-04,1989-02-08,Male,Single,S1,Jakarta,active,EMP0110
+EMP0187,Rina Wirawan,rina.wirawan.emp0187@ptsejahtera.co.id,D14,Design Lead,2015-11-12,1988-06-04,Female,Married,S1,Bandung,active,EMP0452
+EMP0188,Bagus Ramadhan,bagus.ramadhan.emp0188@ptsejahtera.co.id,D15,QA Manager,2018-09-20,1992-03-20,Male,Married,D3,Jakarta,terminated,EMP0094
+EMP0189,Rangga Valentino,rangga.valentino.emp0189@ptsejahtera.co.id,D06,Sales Executive,2016-02-05,1994-08-10,Male,Married,D3,Jakarta,active,EMP0427
+EMP0190,Tegar Laksana,tegar.laksana.emp0190@ptsejahtera.co.id,D13,Penetration Tester,2021-09-05,1992-10-17,Male,Married,SMA,Jakarta,active,EMP0272
+EMP0191,Ika Budiman,ika.budiman.emp0191@ptsejahtera.co.id,D08,HR Business Partner,2018-12-28,1999-10-22,Female,Married,S2,Jakarta,active,EMP0209
+EMP0192,Wati Ramadhan,wati.ramadhan.emp0192@ptsejahtera.co.id,D10,COO,2015-12-18,1988-04-01,Female,Married,D3,Jakarta,active,
+EMP0193,Indah Kurniawan,indah.kurniawan.emp0193@ptsejahtera.co.id,D03,Analytics Engineer,2022-12-25,1981-12-02,Female,Married,S1,Medan,active,EMP0362
+EMP0194,Wisnu Santoso,wisnu.santoso.emp0194@ptsejahtera.co.id,D02,Frontend Engineer,2018-06-16,1994-12-13,Male,Married,S1,Surabaya,resigned,EMP0008
+EMP0195,Made Permana,made.permana.emp0195@ptsejahtera.co.id,D02,Senior Frontend Engineer,2019-11-01,1995-02-18,Male,Divorced,S3,Jakarta,active,EMP0008
+EMP0196,Satria Zulkarnain,satria.zulkarnain.emp0196@ptsejahtera.co.id,D02,Frontend Engineer,2016-01-03,1990-11-16,Male,Divorced,D3,Bandung,active,EMP0436
+EMP0197,Reza Wahyudi,reza.wahyudi.emp0197@ptsejahtera.co.id,D01,Backend Engineer,2019-08-22,1992-05-24,Male,Single,S3,Jakarta,active,EMP0202
+EMP0198,Farah Jatmiko,farah.jatmiko.emp0198@ptsejahtera.co.id,D09,Paralegal,2022-09-08,1992-01-29,Female,Married,S1,Yogyakarta,active,EMP0401
+EMP0199,Ika Iskandar,ika.iskandar.emp0199@ptsejahtera.co.id,D05,SEO Specialist,2016-08-20,1977-11-02,Female,Married,S2,Jakarta,active,EMP0465
+EMP0200,Jihan Zulkarnain,jihan.zulkarnain.emp0200@ptsejahtera.co.id,D05,SEO Specialist,2023-10-11,1978-06-14,Female,Married,S1,Jakarta,resigned,EMP0288
+EMP0201,Galih Usman,galih.usman.emp0201@ptsejahtera.co.id,D11,Support Engineer,2021-08-29,1983-10-09,Male,Married,D3,Jakarta,active,EMP0151
+EMP0202,Rama Iskandar,rama.iskandar.emp0202@ptsejahtera.co.id,D01,Tech Lead Backend,2018-09-22,1992-01-16,Male,Married,S2,Jakarta,active,EMP0299
+EMP0203,Sandi Ardiansyah,sandi.ardiansyah.emp0203@ptsejahtera.co.id,D14,Head of Design,2016-07-11,1988-06-23,Male,Married,S1,Surabaya,active,
+EMP0204,Naufal Rahmawati,naufal.rahmawati.emp0204@ptsejahtera.co.id,D03,Analytics Engineer,2018-07-31,1988-01-28,Male,Married,S1,Jakarta,on_leave,EMP0344
+EMP0205,Reza Wahyudi,reza.wahyudi.emp0205@ptsejahtera.co.id,D05,SEO Specialist,2019-02-04,1980-02-09,Male,Divorced,S1,Jakarta,active,EMP0367
+EMP0206,Zulkifli Hidayat,zulkifli.hidayat.emp0206@ptsejahtera.co.id,D11,Head of CS,2015-04-21,1995-09-16,Male,Married,S2,Jakarta,on_leave,
+EMP0207,Maman Sihombing,maman.sihombing.emp0207@ptsejahtera.co.id,D02,Tech Lead Frontend,2022-07-19,1997-05-25,Male,Married,S1,Jakarta,active,EMP0036
+EMP0208,Eka Halim,eka.halim.emp0208@ptsejahtera.co.id,D11,CS Specialist,2023-01-08,1993-12-24,Female,Married,D3,Jakarta,active,EMP0319
+EMP0209,Hesti Laksana,hesti.laksana.emp0209@ptsejahtera.co.id,D08,Head of People,2019-06-30,1998-12-21,Female,Divorced,S2,Surabaya,active,
+EMP0210,Zulkifli Susanto,zulkifli.susanto.emp0210@ptsejahtera.co.id,D13,Security Manager,2022-11-13,1999-01-31,Male,Divorced,D3,Jakarta,active,EMP0234
+EMP0211,Lestari Yudhoyono,lestari.yudhoyono.emp0211@ptsejahtera.co.id,D04,Senior PM,2016-11-12,1976-12-26,Female,Divorced,S2,Jakarta,active,EMP0172
+EMP0212,Ria Ardiansyah,ria.ardiansyah.emp0212@ptsejahtera.co.id,D02,Frontend Engineer,2016-02-08,1986-08-10,Female,Married,S3,Jakarta,active,EMP0112
+EMP0213,Taufik Irawan,taufik.irawan.emp0213@ptsejahtera.co.id,D10,Process Analyst,2017-06-24,1994-12-30,Male,Married,S2,Jakarta,resigned,EMP0433
+EMP0214,Jane Yudhoyono,jane.yudhoyono.emp0214@ptsejahtera.co.id,D11,Head of CS,2022-09-29,1997-06-13,Female,Married,S1,Jakarta,active,
+EMP0215,Bunga Darmawan,bunga.darmawan.emp0215@ptsejahtera.co.id,D02,UI Engineer,2019-08-31,1978-11-07,Female,Single,S1,Surabaya,on_leave,EMP0336
+EMP0216,Tari Iskandar,tari.iskandar.emp0216@ptsejahtera.co.id,D06,Sales Director,2023-10-18,1984-04-12,Female,Divorced,S2,Surabaya,active,
+EMP0217,Tari Darmawan,tari.darmawan.emp0217@ptsejahtera.co.id,D02,Tech Lead Frontend,2023-02-05,1995-04-18,Female,Married,D3,Bandung,active,EMP0129
+EMP0218,Mega Susanto,mega.susanto.emp0218@ptsejahtera.co.id,D13,Security Engineer,2015-04-03,1990-05-22,Female,Single,S1,Jakarta,resigned,EMP0210
+EMP0219,Farah Gunadi,farah.gunadi.emp0219@ptsejahtera.co.id,D03,Head of Data,2016-10-17,1989-11-05,Female,Divorced,S2,Jakarta,resigned,
+EMP0220,Jane Wibowo,jane.wibowo.emp0220@ptsejahtera.co.id,D13,CISO,2022-01-23,1983-04-11,Female,Married,S2,Surabaya,active,
+EMP0221,Catur Pratama,catur.pratama.emp0221@ptsejahtera.co.id,D12,Infrastructure Lead,2024-11-26,1983-11-07,Male,Married,S2,Surabaya,active,EMP0125
+EMP0222,Bagus Wijaya,bagus.wijaya.emp0222@ptsejahtera.co.id,D12,DevOps Engineer,2017-04-22,1987-06-27,Male,Single,D3,Jakarta,resigned,EMP0321
+EMP0223,Tia Hidayat,tia.hidayat.emp0223@ptsejahtera.co.id,D06,Sales Manager,2017-03-18,1995-07-11,Female,Single,S1,Bandung,active,EMP0393
+EMP0224,Omar Gunadi,omar.gunadi.emp0224@ptsejahtera.co.id,D11,CS Lead,2021-09-11,1992-06-07,Male,Divorced,S2,Surabaya,active,EMP0091
+EMP0225,Nugroho Tanuwijaya,nugroho.tanuwijaya.emp0225@ptsejahtera.co.id,D06,Sales Director,2021-12-03,1982-09-27,Male,Married,D3,Surabaya,active,
+EMP0226,Rama Rahmawati,rama.rahmawati.emp0226@ptsejahtera.co.id,D02,Senior Frontend Engineer,2018-06-04,1980-03-31,Male,Married,S1,Jakarta,terminated,EMP0139
+EMP0227,Rina Firmansyah,rina.firmansyah.emp0227@ptsejahtera.co.id,D07,FP&A Analyst,2021-09-08,1981-03-08,Female,Divorced,S2,Jakarta,active,EMP0301
+EMP0228,Gilang Hidayat,gilang.hidayat.emp0228@ptsejahtera.co.id,D08,Head of People,2022-10-11,1982-10-09,Male,Divorced,S1,Surabaya,active,
+EMP0229,Omar Maulana,omar.maulana.emp0229@ptsejahtera.co.id,D03,Senior Data Analyst,2018-07-12,1995-03-26,Male,Divorced,SMA,Jakarta,active,EMP0174
+EMP0230,Vicky Wijaya,vicky.wijaya.emp0230@ptsejahtera.co.id,D08,HR Business Partner,2017-03-10,1992-03-22,Male,Divorced,S3,Jakarta,resigned,EMP0228
+EMP0231,Prasetyo Zulkarnain,prasetyo.zulkarnain.emp0231@ptsejahtera.co.id,D11,Support Engineer,2019-08-30,1994-11-29,Male,Married,S1,Jakarta,terminated,EMP0114
+EMP0232,Indah Jatmiko,indah.jatmiko.emp0232@ptsejahtera.co.id,D01,Senior Backend Engineer,2018-04-11,1976-06-19,Female,Married,S1,Surabaya,resigned,EMP0355
+EMP0233,Tia Maulana,tia.maulana.emp0233@ptsejahtera.co.id,D03,Analytics Engineer,2021-05-05,1997-03-21,Female,Divorced,S3,Yogyakarta,active,EMP0109
+EMP0234,Nugroho Jatmiko,nugroho.jatmiko.emp0234@ptsejahtera.co.id,D02,UI Engineer,2023-09-10,1999-05-13,Male,Married,S3,Bandung,resigned,EMP0336
+EMP0235,Dian Wirawan,dian.wirawan.emp0235@ptsejahtera.co.id,D12,IT Manager,2021-02-15,1984-10-20,Female,Married,D3,Semarang,active,EMP0125
+EMP0236,Galih Iskandar,galih.iskandar.emp0236@ptsejahtera.co.id,D14,UI Designer,2020-01-17,1986-10-15,Male,Married,D3,Jakarta,active,EMP0454
+EMP0237,Iqbal Lestari,iqbal.lestari.emp0237@ptsejahtera.co.id,D13,SOC Analyst,2017-05-09,1990-09-23,Male,Divorced,S2,Yogyakarta,active,EMP0119
+EMP0238,Ulfa Mahendra,ulfa.mahendra.emp0238@ptsejahtera.co.id,D03,Senior Data Analyst,2024-02-15,1984-04-13,Female,Single,S1,Surabaya,resigned,EMP0046
+EMP0239,Tia Kurniawan,tia.kurniawan.emp0239@ptsejahtera.co.id,D10,Process Analyst,2016-11-20,1989-07-08,Female,Married,S1,Bandung,active,EMP0192
+EMP0240,Ika Firmansyah,ika.firmansyah.emp0240@ptsejahtera.co.id,D15,QA Engineer,2016-07-09,1993-06-18,Female,Single,S1,Jakarta,active,EMP0486
+EMP0241,Putu Sihombing,putu.sihombing.emp0241@ptsejahtera.co.id,D14,UX Designer,2017-10-19,1981-07-24,Male,Married,S1,Jakarta,resigned,EMP0135
+EMP0242,Anggi Effendi,anggi.effendi.emp0242@ptsejahtera.co.id,D03,Head of Data,2022-02-03,1987-01-20,Female,Married,S2,Surabaya,active,
+EMP0243,Jefri Setiawan,jefri.setiawan.emp0243@ptsejahtera.co.id,D11,Customer Success Manager,2019-07-09,1998-02-16,Male,Married,S1,Jakarta,active,EMP0327
+EMP0244,Krisna Effendi,krisna.effendi.emp0244@ptsejahtera.co.id,D06,Business Development,2015-01-11,1979-03-07,Male,Married,S1,Medan,active,EMP0361
+EMP0245,Hadi Handoko,hadi.handoko.emp0245@ptsejahtera.co.id,D07,Accountant,2019-10-26,1984-07-02,Male,Married,S1,Jakarta,active,EMP0304
+EMP0246,Pipit Maulana,pipit.maulana.emp0246@ptsejahtera.co.id,D06,Business Development,2021-06-25,1980-11-09,Female,Divorced,S2,Jakarta,active,EMP0223
+EMP0247,Sinta Ramadhan,sinta.ramadhan.emp0247@ptsejahtera.co.id,D13,Security Engineer,2015-07-08,1979-06-20,Female,Married,SMA,Jakarta,active,EMP0069
+EMP0248,Oka Nugroho,oka.nugroho.emp0248@ptsejahtera.co.id,D08,HR Manager,2015-01-03,1994-03-11,Male,Married,S1,Bandung,terminated,EMP0035
+EMP0249,Nanda Nugroho,nanda.nugroho.emp0249@ptsejahtera.co.id,D14,Senior Designer,2016-01-18,1991-03-03,Male,Married,D3,Denpasar,active,EMP0444
+EMP0250,Winda Prasetya,winda.prasetya.emp0250@ptsejahtera.co.id,D15,Senior QA,2015-08-01,1992-10-11,Female,Married,S1,Surabaya,active,EMP0002
+EMP0251,Gilang Octavianus,gilang.octavianus.emp0251@ptsejahtera.co.id,D02,Frontend Engineer,2015-01-05,1984-07-28,Male,Married,D3,Bandung,active,EMP0036
+EMP0252,Octavia Kartika,octavia.kartika.emp0252@ptsejahtera.co.id,D04,Product Analyst,2022-08-17,1994-12-18,Female,Single,SMA,Jakarta,resigned,EMP0262
+EMP0253,Tegar Lestari,tegar.lestari.emp0253@ptsejahtera.co.id,D14,Design Lead,2022-10-13,1980-12-05,Male,Married,D3,Jakarta,terminated,EMP0444
+EMP0254,Diah Wahyudi,diah.wahyudi.emp0254@ptsejahtera.co.id,D02,Frontend Engineer,2016-02-27,1989-01-20,Female,Married,S1,Surabaya,on_leave,EMP0036
+EMP0255,Rama Wahyudi,rama.wahyudi.emp0255@ptsejahtera.co.id,D13,SOC Analyst,2022-03-12,1981-05-29,Male,Single,S3,Jakarta,resigned,EMP0303
+EMP0256,Dewi Mahendra,dewi.mahendra.emp0256@ptsejahtera.co.id,D11,CS Specialist,2019-12-08,1990-10-02,Female,Married,S1,Surabaya,active,EMP0319
+EMP0257,Edo Mahendra,edo.mahendra.emp0257@ptsejahtera.co.id,D11,Support Engineer,2024-08-23,1984-09-29,Male,Single,D3,Jakarta,active,EMP0459
+EMP0258,Putri Wirawan,putri.wirawan.emp0258@ptsejahtera.co.id,D02,Engineering Manager,2023-03-10,1992-03-23,Female,Married,S2,Bandung,resigned,EMP0129
+EMP0259,Panji Permana,panji.permana.emp0259@ptsejahtera.co.id,D04,Senior PM,2022-03-25,1978-10-12,Male,Married,S3,Jakarta,active,EMP0477
+EMP0260,Lutfi Yudhoyono,lutfi.yudhoyono.emp0260@ptsejahtera.co.id,D12,IT Support,2024-07-04,1988-07-13,Male,Married,S3,Bandung,active,EMP0321
+EMP0261,Putu Putra,putu.putra.emp0261@ptsejahtera.co.id,D12,IT Manager,2018-04-25,1977-06-13,Female,Married,S2,Surabaya,active,EMP0221
+EMP0262,Bagus Lestari,bagus.lestari.emp0262@ptsejahtera.co.id,D04,Product Director,2022-02-26,1978-03-09,Male,Divorced,SMA,Jakarta,active,
+EMP0263,Wisnu Rahmawati,wisnu.rahmawati.emp0263@ptsejahtera.co.id,D03,Analytics Engineer,2024-08-26,2000-06-30,Male,Married,S1,Surabaya,active,EMP0174
+EMP0264,Zulkifli Ramadhan,zulkifli.ramadhan.emp0264@ptsejahtera.co.id,D03,Analytics Engineer,2023-08-22,1978-04-10,Male,Single,D3,Jakarta,active,EMP0344
+EMP0265,Andi Halim,andi.halim.emp0265@ptsejahtera.co.id,D04,Product Manager,2015-09-05,1992-11-07,Male,Divorced,S1,Jakarta,active,EMP0269
+EMP0266,Rangga Yudhoyono,rangga.yudhoyono.emp0266@ptsejahtera.co.id,D07,FP&A Analyst,2022-11-14,1993-01-16,Male,Single,S3,Jakarta,resigned,EMP0019
+EMP0267,Tia Mahendra,tia.mahendra.emp0267@ptsejahtera.co.id,D03,Data Engineer,2015-12-09,1988-11-25,Female,Single,S3,Jakarta,resigned,EMP0242
+EMP0268,Bayu Saputra,bayu.saputra.emp0268@ptsejahtera.co.id,D09,Legal Manager,2019-05-20,1977-12-19,Male,Married,S2,Jakarta,active,EMP0132
+EMP0269,Eka Hartono,eka.hartono.emp0269@ptsejahtera.co.id,D04,Product Manager,2019-11-15,1980-03-15,Female,Married,SMA,Jakarta,active,EMP0477
+EMP0270,Oki Prasetya,oki.prasetya.emp0270@ptsejahtera.co.id,D12,DevOps Engineer,2016-05-04,1975-07-27,Male,Married,SMA,Jakarta,active,EMP0125
+EMP0271,Tika Effendi,tika.effendi.emp0271@ptsejahtera.co.id,D06,Business Development,2020-10-19,1986-08-18,Female,Married,S1,Surabaya,active,EMP0067
+EMP0272,Putu Valentino,putu.valentino.emp0272@ptsejahtera.co.id,D13,Security Manager,2023-03-22,1980-04-18,Male,Single,S1,Jakarta,active,EMP0119
+EMP0273,Erika Kurniawan,erika.kurniawan.emp0273@ptsejahtera.co.id,D09,Legal Counsel,2017-12-13,2000-11-12,Female,Single,S2,Jakarta,active,EMP0360
+EMP0274,Krisna Firmansyah,krisna.firmansyah.emp0274@ptsejahtera.co.id,D06,Sales Executive,2020-08-08,2000-06-05,Male,Married,S1,Jakarta,active,EMP0393
+EMP0275,Umar Halim,umar.halim.emp0275@ptsejahtera.co.id,D13,Security Engineer,2021-06-08,1980-03-04,Male,Married,S3,Surabaya,active,EMP0058
+EMP0276,Siti Susanto,siti.susanto.emp0276@ptsejahtera.co.id,D14,UI Designer,2017-09-28,1977-01-23,Female,Married,S1,Jakarta,active,EMP0444
+EMP0277,Zara Saputra,zara.saputra.emp0277@ptsejahtera.co.id,D03,Data Analyst,2021-03-14,1993-10-23,Female,Married,S1,Jakarta,active,EMP0362
+EMP0278,Galih Zulkarnain,galih.zulkarnain.emp0278@ptsejahtera.co.id,D15,QA Lead,2018-01-16,1978-06-30,Male,Divorced,S1,Bandung,active,EMP0430
+EMP0279,Nuri Firmansyah,nuri.firmansyah.emp0279@ptsejahtera.co.id,D11,Customer Success Manager,2017-01-04,1985-01-04,Female,Divorced,SMA,Jakarta,active,EMP0114
+EMP0280,Dimas Setiawan,dimas.setiawan.emp0280@ptsejahtera.co.id,D15,Automation Engineer,2024-09-17,1987-08-31,Male,Married,S1,Semarang,active,EMP0286
+EMP0281,Kurnia Irawan,kurnia.irawan.emp0281@ptsejahtera.co.id,D08,HR Generalist,2019-02-20,1984-01-01,Male,Married,S1,Jakarta,active,EMP0209
+EMP0282,Galih Cahyadi,galih.cahyadi.emp0282@ptsejahtera.co.id,D06,Business Development,2020-07-13,1983-10-07,Male,Divorced,S1,Bandung,active,EMP0427
+EMP0283,Tono Wijaya,tono.wijaya.emp0283@ptsejahtera.co.id,D15,Automation Engineer,2015-04-08,1985-06-14,Male,Divorced,S1,Surabaya,active,EMP0434
+EMP0284,Andi Sutanto,andi.sutanto.emp0284@ptsejahtera.co.id,D01,Tech Lead Backend,2024-07-09,1988-10-17,Male,Single,S1,Bandung,active,EMP0298
+EMP0285,Sasa Anggraini,sasa.anggraini.emp0285@ptsejahtera.co.id,D07,FP&A Analyst,2015-09-03,1981-05-21,Female,Married,D3,Jakarta,active,EMP0301
+EMP0286,Eko Wibowo,eko.wibowo.emp0286@ptsejahtera.co.id,D15,QA Manager,2019-08-19,1991-09-16,Male,Married,D3,Surabaya,active,EMP0094
+EMP0287,Lukman Firmansyah,lukman.firmansyah.emp0287@ptsejahtera.co.id,D03,Analytics Engineer,2015-11-03,2000-06-21,Male,Single,S2,Jakarta,active,EMP0242
+EMP0288,Putu Anggraini,putu.anggraini.emp0288@ptsejahtera.co.id,D05,Marketing Manager,2024-07-17,1989-02-17,Male,Married,S1,Jakarta,active,EMP0300
+EMP0289,Olivia Budiman,olivia.budiman.emp0289@ptsejahtera.co.id,D05,Content Marketer,2015-11-02,1984-02-04,Female,Married,D3,Bandung,active,EMP0367
+EMP0290,Tono Santoso,tono.santoso.emp0290@ptsejahtera.co.id,D03,Analytics Engineer,2020-03-23,1989-02-01,Male,Married,D3,Yogyakarta,active,EMP0362
+EMP0291,Yanto Tanuwijaya,yanto.tanuwijaya.emp0291@ptsejahtera.co.id,D13,SOC Analyst,2020-01-26,1988-10-30,Male,Married,S1,Jakarta,active,EMP0337
+EMP0292,Nuri Kusuma,nuri.kusuma.emp0292@ptsejahtera.co.id,D03,Data Engineer,2024-04-07,1976-10-22,Female,Married,S1,Jakarta,active,EMP0109
+EMP0293,Surya Kusuma,surya.kusuma.emp0293@ptsejahtera.co.id,D12,DevOps Engineer,2018-12-28,1992-10-10,Male,Divorced,SMA,Jakarta,active,EMP0496
+EMP0294,Mega Halim,mega.halim.emp0294@ptsejahtera.co.id,D14,UX Designer,2015-05-08,1993-02-20,Female,Married,S3,Bandung,resigned,EMP0454
+EMP0295,Galih Santoso,galih.santoso.emp0295@ptsejahtera.co.id,D08,HR Generalist,2024-01-06,1981-04-09,Male,Single,SMA,Jakarta,active,EMP0482
+EMP0296,Fitri Yudhoyono,fitri.yudhoyono.emp0296@ptsejahtera.co.id,D04,Associate PM,2017-03-22,1992-12-20,Female,Married,D3,Jakarta,active,EMP0172
+EMP0297,Hesti Setiawan,hesti.setiawan.emp0297@ptsejahtera.co.id,D01,Software Engineer,2017-03-20,1994-11-22,Female,Married,D3,Bandung,resigned,EMP0284
+EMP0298,Ria Lestari,ria.lestari.emp0298@ptsejahtera.co.id,D01,Tech Lead Backend,2015-07-27,1982-07-15,Female,Divorced,S2,Jakarta,active,EMP0299
+EMP0299,Anggi Effendi,anggi.effendi.emp0299@ptsejahtera.co.id,D01,Tech Lead Backend,2022-08-30,1994-02-20,Female,Married,S1,Surabaya,active,EMP0298
+EMP0300,Candra Hidayat,candra.hidayat.emp0300@ptsejahtera.co.id,D05,Marketing Manager,2020-01-01,1981-09-01,Male,Single,S1,Surabaya,active,EMP0455
+EMP0301,Linda Effendi,linda.effendi.emp0301@ptsejahtera.co.id,D07,CFO,2020-05-16,1977-09-26,Female,Single,S1,Jakarta,active,
+EMP0302,Bagus Permana,bagus.permana.emp0302@ptsejahtera.co.id,D07,Accountant,2022-03-17,1998-08-02,Male,Married,S3,Surabaya,active,EMP0335
+EMP0303,Ayu Wahyudi,ayu.wahyudi.emp0303@ptsejahtera.co.id,D13,Security Manager,2020-05-18,1999-06-05,Female,Married,S1,Jakarta,active,EMP0272
+EMP0304,Rangga Rahmawati,rangga.rahmawati.emp0304@ptsejahtera.co.id,D07,Finance Manager,2017-01-06,1976-03-03,Male,Married,S1,Jakarta,active,EMP0038
+EMP0305,Bunga Yudhoyono,bunga.yudhoyono.emp0305@ptsejahtera.co.id,D05,Marketing Specialist,2024-01-26,1996-02-28,Female,Divorced,S1,Jakarta,active,EMP0413
+EMP0306,Egi Nugroho,egi.nugroho.emp0306@ptsejahtera.co.id,D02,Senior Frontend Engineer,2022-05-14,1985-10-26,Male,Married,S3,Surabaya,active,EMP0336
+EMP0307,Gunawan Wirawan,gunawan.wirawan.emp0307@ptsejahtera.co.id,D04,Product Analyst,2024-06-29,1992-06-03,Male,Married,S1,Jakarta,active,EMP0176
+EMP0308,Wahyu Anggraini,wahyu.anggraini.emp0308@ptsejahtera.co.id,D10,Operations Manager,2024-01-16,1991-02-04,Male,Divorced,SMA,Jakarta,active,EMP0158
+EMP0309,Vicky Jatmiko,vicky.jatmiko.emp0309@ptsejahtera.co.id,D10,Ops Analyst,2021-04-25,1983-06-12,Male,Married,S3,Bandung,active,EMP0110
+EMP0310,Nadia Hidayat,nadia.hidayat.emp0310@ptsejahtera.co.id,D08,HR Generalist,2016-01-05,1977-07-09,Female,Married,S1,Bandung,active,EMP0035
+EMP0311,Ayu Gunadi,ayu.gunadi.emp0311@ptsejahtera.co.id,D08,HR Generalist,2018-09-20,1984-01-14,Female,Married,S1,Jakarta,active,EMP0209
+EMP0312,Wahyu Rahmawati,wahyu.rahmawati.emp0312@ptsejahtera.co.id,D01,Software Engineer,2016-08-28,1981-05-09,Male,Single,S3,Jakarta,active,EMP0299
+EMP0313,Wisnu Setiawan,wisnu.setiawan.emp0313@ptsejahtera.co.id,D06,Sales Director,2021-07-28,1979-07-14,Male,Married,S1,Jakarta,active,
+EMP0314,Reza Permana,reza.permana.emp0314@ptsejahtera.co.id,D03,Analytics Engineer,2023-11-18,1996-11-08,Male,Married,S1,Jakarta,active,EMP0362
+EMP0315,Umi Wibowo,umi.wibowo.emp0315@ptsejahtera.co.id,D11,Head of CS,2024-02-19,1982-11-12,Female,Married,S1,Jakarta,terminated,
+EMP0316,Maman Permana,maman.permana.emp0316@ptsejahtera.co.id,D03,Data Analyst,2022-11-15,2000-09-11,Male,Married,SMA,Jakarta,active,EMP0344
+EMP0317,Yusuf Laksana,yusuf.laksana.emp0317@ptsejahtera.co.id,D06,Business Development,2017-06-23,2000-05-14,Male,Single,S2,Bandung,active,EMP0439
+EMP0318,Rina Sutanto,rina.sutanto.emp0318@ptsejahtera.co.id,D12,IT Support,2017-09-01,1990-07-23,Female,Married,S1,Jakarta,active,EMP0261
+EMP0319,Juwita Tampubolon,juwita.tampubolon.emp0319@ptsejahtera.co.id,D11,CS Lead,2020-01-04,1975-07-06,Female,Married,S1,Surabaya,active,EMP0059
+EMP0320,Galih Sihombing,galih.sihombing.emp0320@ptsejahtera.co.id,D02,UI Engineer,2017-11-17,1979-11-06,Male,Single,SMA,Jakarta,active,EMP0009
+EMP0321,Zara Budiman,zara.budiman.emp0321@ptsejahtera.co.id,D12,IT Manager,2016-11-12,1993-07-28,Female,Married,S2,Surabaya,active,EMP0125
+EMP0322,Ucok Handoko,ucok.handoko.emp0322@ptsejahtera.co.id,D07,Finance Staff,2024-04-17,1996-07-04,Male,Divorced,S1,Bandung,active,EMP0301
+EMP0323,Tika Budiman,tika.budiman.emp0323@ptsejahtera.co.id,D02,Frontend Engineer,2018-04-22,1975-11-25,Female,Married,S1,Bandung,resigned,EMP0066
+EMP0324,Made Setiawan,made.setiawan.emp0324@ptsejahtera.co.id,D06,Account Executive,2024-12-15,1991-11-04,Male,Married,D3,Yogyakarta,active,EMP0313
+EMP0325,Juwita Sutanto,juwita.sutanto.emp0325@ptsejahtera.co.id,D10,Process Analyst,2020-05-31,1976-05-22,Female,Married,S1,Jakarta,resigned,EMP0308
+EMP0326,Hilman Nugroho,hilman.nugroho.emp0326@ptsejahtera.co.id,D01,Software Engineer,2018-09-18,1984-03-21,Male,Married,S2,Makassar,active,EMP0492
+EMP0327,Una Halim,una.halim.emp0327@ptsejahtera.co.id,D11,CS Lead,2018-05-03,1985-08-27,Female,Single,SMA,Surabaya,active,EMP0136
+EMP0328,Catur Jatmiko,catur.jatmiko.emp0328@ptsejahtera.co.id,D09,Compliance Officer,2016-09-21,1977-06-12,Male,Married,SMA,Bandung,resigned,EMP0360
+EMP0329,Gilang Kusuma,gilang.kusuma.emp0329@ptsejahtera.co.id,D05,Head of Marketing,2020-05-21,1983-12-16,Male,Single,SMA,Jakarta,on_leave,
+EMP0330,Bayu Nugroho,bayu.nugroho.emp0330@ptsejahtera.co.id,D11,CS Lead,2015-12-02,1996-03-29,Male,Single,S1,Bandung,resigned,EMP0373
+EMP0331,Catur Darmawan,catur.darmawan.emp0331@ptsejahtera.co.id,D08,Recruiter,2016-01-09,1999-05-29,Male,Married,S1,Jakarta,active,EMP0228
+EMP0332,Yoga Wahyudi,yoga.wahyudi.emp0332@ptsejahtera.co.id,D06,Account Executive,2019-12-31,1977-01-01,Male,Married,S2,Jakarta,resigned,EMP0225
+EMP0333,Leo Halim,leo.halim.emp0333@ptsejahtera.co.id,D04,Senior PM,2021-04-30,1977-10-06,Male,Married,D3,Makassar,resigned,EMP0262
+EMP0334,Indah Prasetya,indah.prasetya.emp0334@ptsejahtera.co.id,D06,Business Development,2019-08-23,1985-03-16,Female,Divorced,SMA,Jakarta,active,EMP0313
+EMP0335,Bagus Gunadi,bagus.gunadi.emp0335@ptsejahtera.co.id,D07,CFO,2022-09-15,1996-04-19,Male,Divorced,S1,Jakarta,active,
+EMP0336,Karina Iskandar,karina.iskandar.emp0336@ptsejahtera.co.id,D02,Tech Lead Frontend,2024-07-29,1976-07-22,Female,Divorced,S3,Medan,active,EMP0467
+EMP0337,Rina Lestari,rina.lestari.emp0337@ptsejahtera.co.id,D13,CISO,2016-12-09,1982-07-01,Female,Married,S1,Jakarta,active,
+EMP0338,Putu Susanto,putu.susanto.emp0338@ptsejahtera.co.id,D07,Finance Staff,2022-08-30,1994-07-13,Male,Married,S1,Jakarta,active,EMP0440
+EMP0339,Iwan Rahmawati,iwan.rahmawati.emp0339@ptsejahtera.co.id,D15,QA Engineer,2015-12-23,1992-05-29,Male,Divorced,S2,Jakarta,active,EMP0434
+EMP0340,Reza Kurniawan,reza.kurniawan.emp0340@ptsejahtera.co.id,D09,Compliance Officer,2024-10-17,1975-07-22,Male,Divorced,S3,Bandung,resigned,EMP0428
+EMP0341,Fikri Lestari,fikri.lestari.emp0341@ptsejahtera.co.id,D07,Accountant,2016-08-30,2000-06-01,Male,Divorced,D3,Jakarta,active,EMP0304
+EMP0342,Lestari Jatmiko,lestari.jatmiko.emp0342@ptsejahtera.co.id,D13,Security Engineer,2023-10-24,1987-11-01,Female,Divorced,S1,Jakarta,active,EMP0069
+EMP0343,Edo Halim,edo.halim.emp0343@ptsejahtera.co.id,D07,FP&A Analyst,2021-06-01,1996-03-21,Male,Single,S1,Surabaya,active,EMP0071
+EMP0344,Jihan Yulianto,jihan.yulianto.emp0344@ptsejahtera.co.id,D03,Head of Data,2021-10-29,1993-01-07,Female,Single,S2,Jakarta,active,
+EMP0345,Sandi Sihombing,sandi.sihombing.emp0345@ptsejahtera.co.id,D04,Product Manager,2023-05-13,1996-04-25,Male,Married,S1,Jakarta,terminated,EMP0477
+EMP0346,Ayu Sutanto,ayu.sutanto.emp0346@ptsejahtera.co.id,D14,Senior Designer,2018-06-27,1987-07-30,Female,Married,D3,Jakarta,resigned,EMP0051
+EMP0347,Egi Permana,egi.permana.emp0347@ptsejahtera.co.id,D05,SEO Specialist,2023-09-06,1989-05-24,Male,Married,S2,Yogyakarta,resigned,EMP0300
+EMP0348,Kurnia Putra,kurnia.putra.emp0348@ptsejahtera.co.id,D08,HR Business Partner,2024-03-28,1993-04-07,Male,Married,S3,Yogyakarta,active,EMP0052
+EMP0349,Yoga Hartono,yoga.hartono.emp0349@ptsejahtera.co.id,D09,Paralegal,2015-09-26,1988-12-15,Male,Divorced,S2,Jakarta,active,EMP0360
+EMP0350,Putri Yudhoyono,putri.yudhoyono.emp0350@ptsejahtera.co.id,D14,Head of Design,2024-11-10,2000-07-05,Female,Single,S1,Jakarta,active,EMP0075
+EMP0351,Zaki Putra,zaki.putra.emp0351@ptsejahtera.co.id,D14,UI Designer,2017-10-18,1976-06-25,Male,Married,SMA,Jakarta,active,EMP0135
+EMP0352,Wisnu Tampubolon,wisnu.tampubolon.emp0352@ptsejahtera.co.id,D04,Senior PM,2019-02-17,1995-10-28,Male,Divorced,S2,Surabaya,active,EMP0172
+EMP0353,Nuri Ramadhan,nuri.ramadhan.emp0353@ptsejahtera.co.id,D01,Senior Backend Engineer,2019-03-06,1996-12-04,Female,Divorced,S2,Jakarta,active,EMP0299
+EMP0354,Wahyu Darmawan,wahyu.darmawan.emp0354@ptsejahtera.co.id,D10,Process Analyst,2018-12-03,1990-06-11,Male,Married,S1,Jakarta,active,EMP0061
+EMP0355,Kurnia Maulana,kurnia.maulana.emp0355@ptsejahtera.co.id,D01,Tech Lead Backend,2015-07-23,1982-04-23,Male,Divorced,S1,Jakarta,active,EMP0104
+EMP0356,Cinta Octavianus,cinta.octavianus.emp0356@ptsejahtera.co.id,D04,Associate PM,2018-01-07,1993-05-15,Female,Divorced,SMA,Jakarta,resigned,EMP0157
+EMP0357,Dewi Darmawan,dewi.darmawan.emp0357@ptsejahtera.co.id,D15,Senior QA,2022-04-05,1982-10-08,Female,Divorced,SMA,Jakarta,active,EMP0430
+EMP0358,Doni Halim,doni.halim.emp0358@ptsejahtera.co.id,D10,Operations Manager,2022-12-29,1987-05-09,Male,Married,S2,Yogyakarta,active,EMP0192
+EMP0359,Tari Cahyadi,tari.cahyadi.emp0359@ptsejahtera.co.id,D05,Content Marketer,2020-03-26,1988-07-21,Female,Divorced,S2,Jakarta,active,EMP0288
+EMP0360,Made Wijaya,made.wijaya.emp0360@ptsejahtera.co.id,D09,Legal Manager,2021-04-18,1987-09-06,Male,Married,D3,Jakarta,active,EMP0088
+EMP0361,Naufal Setiawan,naufal.setiawan.emp0361@ptsejahtera.co.id,D06,Sales Manager,2022-03-08,1989-08-02,Male,Married,S1,Medan,active,EMP0393
+EMP0362,Mega Putra,mega.putra.emp0362@ptsejahtera.co.id,D03,Head of Data,2023-08-02,1985-10-12,Female,Single,S2,Jakarta,active,
+EMP0363,Olivia Ramadhan,olivia.ramadhan.emp0363@ptsejahtera.co.id,D03,Data Analyst,2022-05-08,1997-04-23,Female,Married,S1,Makassar,terminated,EMP0344
+EMP0364,Fikri Yulianto,fikri.yulianto.emp0364@ptsejahtera.co.id,D07,Finance Staff,2021-07-16,2000-08-29,Male,Married,S1,Jakarta,active,EMP0038
+EMP0365,Cinta Ramadhan,cinta.ramadhan.emp0365@ptsejahtera.co.id,D09,Compliance Officer,2022-07-14,1991-01-30,Female,Divorced,S1,Bandung,on_leave,EMP0132
+EMP0366,Vino Prasetya,vino.prasetya.emp0366@ptsejahtera.co.id,D15,QA Manager,2017-01-11,1988-03-06,Male,Single,S2,Jakarta,resigned,EMP0286
+EMP0367,Putu Valentino,putu.valentino.emp0367@ptsejahtera.co.id,D05,Head of Marketing,2023-07-22,1983-03-19,Male,Married,D3,Makassar,active,
+EMP0368,Doni Tanuwijaya,doni.tanuwijaya.emp0368@ptsejahtera.co.id,D04,Senior PM,2019-09-19,1989-11-11,Male,Married,S1,Jakarta,active,EMP0265
+EMP0369,Maman Cahyadi,maman.cahyadi.emp0369@ptsejahtera.co.id,D14,UI Designer,2020-04-11,1977-05-29,Male,Divorced,D3,Jakarta,active,EMP0124
+EMP0370,Miko Putra,miko.putra.emp0370@ptsejahtera.co.id,D09,Legal Counsel,2024-09-23,1992-02-14,Male,Divorced,S1,Surabaya,active,EMP0107
+EMP0371,Edo Hartono,edo.hartono.emp0371@ptsejahtera.co.id,D14,UX Designer,2016-07-16,1983-12-26,Male,Married,S2,Jakarta,active,EMP0350
+EMP0372,Intan Saputra,intan.saputra.emp0372@ptsejahtera.co.id,D06,Account Executive,2023-09-26,1978-08-17,Female,Married,S1,Jakarta,active,EMP0225
+EMP0373,Wahyu Rahmawati,wahyu.rahmawati.emp0373@ptsejahtera.co.id,D11,Customer Success Manager,2015-01-20,1995-04-12,Male,Married,S1,Jakarta,active,EMP0106
+EMP0374,Vino Jatmiko,vino.jatmiko.emp0374@ptsejahtera.co.id,D13,SOC Analyst,2020-06-28,1978-12-13,Male,Married,S2,Jakarta,active,EMP0119
+EMP0375,Gilang Yulianto,gilang.yulianto.emp0375@ptsejahtera.co.id,D07,FP&A Analyst,2019-04-20,1975-03-18,Male,Single,S3,Surabaya,active,EMP0099
+EMP0376,Adi Usman,adi.usman.emp0376@ptsejahtera.co.id,D06,Sales Executive,2018-08-12,1998-10-27,Male,Married,SMA,Jakarta,active,EMP0393
+EMP0377,Budi Nainggolan,budi.nainggolan.emp0377@ptsejahtera.co.id,D12,DevOps Engineer,2017-07-15,1990-06-12,Male,Married,S1,Surabaya,active,EMP0125
+EMP0378,Lestari Wahyudi,lestari.wahyudi.emp0378@ptsejahtera.co.id,D09,Head of Legal,2018-06-07,1982-06-29,Female,Single,SMA,Surabaya,active,
+EMP0379,Mega Maulana,mega.maulana.emp0379@ptsejahtera.co.id,D08,Head of People,2021-09-08,1998-07-06,Female,Married,S2,Jakarta,active,
+EMP0380,Putri Sutanto,putri.sutanto.emp0380@ptsejahtera.co.id,D15,Automation Engineer,2019-01-11,1983-06-15,Female,Married,S2,Jakarta,active,EMP0117
+EMP0381,Agus Wibowo,agus.wibowo.emp0381@ptsejahtera.co.id,D04,Associate PM,2017-05-15,1975-12-26,Male,Divorced,S3,Jakarta,active,EMP0265
+EMP0382,Vino Lestari,vino.lestari.emp0382@ptsejahtera.co.id,D06,Sales Executive,2019-03-17,1986-06-22,Male,Divorced,SMA,Surabaya,terminated,EMP0216
+EMP0383,Fajar Prasetya,fajar.prasetya.emp0383@ptsejahtera.co.id,D02,Frontend Engineer,2015-07-17,1980-03-12,Male,Married,S2,Yogyakarta,active,EMP0008
+EMP0384,Arif Lestari,arif.lestari.emp0384@ptsejahtera.co.id,D09,Legal Manager,2020-04-27,1981-11-13,Male,Married,SMA,Bandung,active,EMP0090
+EMP0385,Mega Zulkarnain,mega.zulkarnain.emp0385@ptsejahtera.co.id,D11,Customer Success Manager,2022-06-06,1998-05-04,Female,Married,S1,Jakarta,active,EMP0426
+EMP0386,Dina Santoso,dina.santoso.emp0386@ptsejahtera.co.id,D09,Head of Legal,2016-04-27,1987-09-06,Female,Single,D3,Bandung,active,
+EMP0387,Prasetyo Putra,prasetyo.putra.emp0387@ptsejahtera.co.id,D10,Ops Analyst,2023-09-22,1986-10-18,Male,Divorced,S1,Denpasar,resigned,EMP0308
+EMP0388,Vicky Tampubolon,vicky.tampubolon.emp0388@ptsejahtera.co.id,D07,Finance Manager,2016-10-18,1976-10-07,Male,Divorced,S2,Jakarta,active,EMP0301
+EMP0389,Anita Sihombing,anita.sihombing.emp0389@ptsejahtera.co.id,D15,Automation Engineer,2018-09-16,1985-07-09,Female,Single,SMA,Jakarta,active,EMP0486
+EMP0390,Kurnia Lestari,kurnia.lestari.emp0390@ptsejahtera.co.id,D14,Head of Design,2022-07-03,1997-03-01,Male,Married,D3,Bandung,on_leave,
+EMP0391,Satria Setiawan,satria.setiawan.emp0391@ptsejahtera.co.id,D12,IT Support,2017-11-14,1985-05-15,Male,Married,S1,Surabaya,active,EMP0321
+EMP0392,Iwan Cahyadi,iwan.cahyadi.emp0392@ptsejahtera.co.id,D01,Software Engineer,2024-02-13,1982-11-02,Male,Single,S1,Jakarta,resigned,EMP0355
+EMP0393,Vera Ramadhan,vera.ramadhan.emp0393@ptsejahtera.co.id,D06,Sales Director,2023-04-14,1980-03-13,Female,Single,SMA,Bandung,active,
+EMP0394,Andi Permana,andi.permana.emp0394@ptsejahtera.co.id,D11,CS Specialist,2018-09-08,1991-01-14,Male,Married,S1,Surabaya,resigned,EMP0319
+EMP0395,Kurnia Utama,kurnia.utama.emp0395@ptsejahtera.co.id,D14,Senior Designer,2017-01-19,1980-02-09,Male,Married,S2,Jakarta,on_leave,EMP0187
+EMP0396,Krisna Kurniawan,krisna.kurniawan.emp0396@ptsejahtera.co.id,D14,Design Lead,2022-09-26,1996-06-14,Male,Married,S1,Medan,resigned,EMP0452
+EMP0397,Nugroho Permana,nugroho.permana.emp0397@ptsejahtera.co.id,D12,IT Support,2024-06-20,1982-02-24,Male,Single,S2,Jakarta,active,EMP0321
+EMP0398,Naufal Jatmiko,naufal.jatmiko.emp0398@ptsejahtera.co.id,D11,Support Engineer,2017-01-12,1992-01-13,Male,Married,SMA,Jakarta,active,EMP0074
+EMP0399,Putu Darmawan,putu.darmawan.emp0399@ptsejahtera.co.id,D15,Automation Engineer,2016-04-07,1993-06-13,Male,Married,SMA,Jakarta,resigned,EMP0466
+EMP0400,Hadi Halim,hadi.halim.emp0400@ptsejahtera.co.id,D11,CS Lead,2015-02-20,1998-07-17,Male,Divorced,S1,Jakarta,active,EMP0319
+EMP0401,Sinta Gunadi,sinta.gunadi.emp0401@ptsejahtera.co.id,D09,Head of Legal,2016-01-26,1994-06-01,Female,Married,S2,Jakarta,active,
+EMP0402,Tari Prasetya,tari.prasetya.emp0402@ptsejahtera.co.id,D11,Support Engineer,2016-08-31,2000-01-17,Female,Divorced,SMA,Surabaya,active,EMP0087
+EMP0403,Andi Octavianus,andi.octavianus.emp0403@ptsejahtera.co.id,D15,Senior QA,2020-09-01,1996-01-19,Male,Married,S1,Jakarta,active,EMP0434
+EMP0404,Hana Wirawan,hana.wirawan.emp0404@ptsejahtera.co.id,D08,Recruiter,2017-09-13,1989-11-04,Female,Married,SMA,Jakarta,terminated,EMP0379
+EMP0405,Rangga Wibowo,rangga.wibowo.emp0405@ptsejahtera.co.id,D09,Compliance Officer,2019-07-10,1985-07-17,Male,Single,S2,Yogyakarta,active,EMP0410
+EMP0406,Iqbal Jatmiko,iqbal.jatmiko.emp0406@ptsejahtera.co.id,D08,HR Generalist,2024-08-09,1997-05-11,Male,Married,S1,Bandung,active,EMP0482
+EMP0407,Nuri Effendi,nuri.effendi.emp0407@ptsejahtera.co.id,D12,IT Support,2016-02-25,1993-02-04,Female,Married,SMA,Jakarta,active,EMP0421
+EMP0408,Siti Kusuma,siti.kusuma.emp0408@ptsejahtera.co.id,D13,Penetration Tester,2021-12-10,1988-08-30,Female,Divorced,S3,Medan,active,EMP0167
+EMP0409,Anita Octavianus,anita.octavianus.emp0409@ptsejahtera.co.id,D11,Support Engineer,2018-10-28,1991-04-20,Female,Single,S1,Jakarta,active,EMP0164
+EMP0410,Krisna Sutanto,krisna.sutanto.emp0410@ptsejahtera.co.id,D09,Head of Legal,2021-09-23,1996-03-22,Male,Married,S2,Jakarta,active,
+EMP0411,Nugroho Santoso,nugroho.santoso.emp0411@ptsejahtera.co.id,D13,SOC Analyst,2015-01-09,1990-04-24,Male,Married,S1,Jakarta,active,EMP0272
+EMP0412,Taufik Utama,taufik.utama.emp0412@ptsejahtera.co.id,D12,IT Support,2015-07-07,1982-05-13,Male,Married,S1,Jakarta,active,EMP0421
+EMP0413,Caca Santoso,caca.santoso.emp0413@ptsejahtera.co.id,D05,Head of Marketing,2017-03-13,1983-05-31,Female,Single,S2,Jakarta,active,
+EMP0414,Candra Cahyadi,candra.cahyadi.emp0414@ptsejahtera.co.id,D14,UX Designer,2023-01-14,1990-02-27,Male,Single,S2,Jakarta,resigned,EMP0135
+EMP0415,Dian Nainggolan,dian.nainggolan.emp0415@ptsejahtera.co.id,D14,Head of Design,2016-05-19,1995-03-18,Female,Married,S3,Bandung,resigned,
+EMP0416,Putri Effendi,putri.effendi.emp0416@ptsejahtera.co.id,D01,Engineering Manager,2023-04-04,1977-03-06,Female,Divorced,S2,Jakarta,active,EMP0104
+EMP0417,Lia Firmansyah,lia.firmansyah.emp0417@ptsejahtera.co.id,D13,SOC Analyst,2022-10-04,2000-12-14,Female,Married,S1,Surabaya,terminated,EMP0272
+EMP0418,Made Wahyudi,made.wahyudi.emp0418@ptsejahtera.co.id,D11,Head of CS,2021-10-18,1989-06-09,Male,Divorced,S2,Semarang,resigned,
+EMP0419,Dina Laksana,dina.laksana.emp0419@ptsejahtera.co.id,D15,Senior QA,2018-01-25,1992-11-05,Female,Married,S1,Jakarta,active,EMP0286
+EMP0420,Jefri Permana,jefri.permana.emp0420@ptsejahtera.co.id,D03,Analytics Engineer,2021-10-03,1997-12-24,Male,Married,S3,Surabaya,active,EMP0174
+EMP0421,Olivia Tampubolon,olivia.tampubolon.emp0421@ptsejahtera.co.id,D12,Infrastructure Lead,2022-02-04,1984-09-30,Female,Married,S1,Jakarta,active,EMP0261
+EMP0422,Linda Ramadhan,linda.ramadhan.emp0422@ptsejahtera.co.id,D06,Account Executive,2022-12-19,1982-12-23,Female,Divorced,S3,Jakarta,active,EMP0225
+EMP0423,Reza Tampubolon,reza.tampubolon.emp0423@ptsejahtera.co.id,D02,UI Engineer,2021-04-22,1996-07-19,Male,Divorced,S2,Jakarta,active,EMP0036
+EMP0424,Yanto Maulana,yanto.maulana.emp0424@ptsejahtera.co.id,D15,Automation Engineer,2024-01-24,1975-07-29,Male,Divorced,D3,Jakarta,active,EMP0286
+EMP0425,Bambang Wahyudi,bambang.wahyudi.emp0425@ptsejahtera.co.id,D03,Data Analyst,2022-07-08,1977-07-16,Male,Married,S1,Surabaya,active,EMP0046
+EMP0426,Tika Maulana,tika.maulana.emp0426@ptsejahtera.co.id,D11,CS Lead,2016-08-22,1977-10-13,Female,Married,S1,Jakarta,active,EMP0045
+EMP0427,Una Susanto,una.susanto.emp0427@ptsejahtera.co.id,D06,Sales Director,2016-02-24,2000-03-15,Female,Married,S3,Jakarta,active,
+EMP0428,Bagus Anggraini,bagus.anggraini.emp0428@ptsejahtera.co.id,D09,Legal Manager,2022-10-09,1977-02-08,Male,Married,S2,Jakarta,active,EMP0143
+EMP0429,Dina Ramadhan,dina.ramadhan.emp0429@ptsejahtera.co.id,D06,Business Development,2015-08-09,1975-08-01,Female,Married,S1,Jakarta,active,EMP0313
+EMP0430,Gina Wibowo,gina.wibowo.emp0430@ptsejahtera.co.id,D15,QA Lead,2023-06-20,1999-07-09,Female,Divorced,S1,Bandung,active,EMP0286
+EMP0431,Zaki Maulana,zaki.maulana.emp0431@ptsejahtera.co.id,D08,HR Business Partner,2022-08-28,1978-05-05,Male,Married,S1,Medan,resigned,EMP0379
+EMP0432,Satria Lestari,satria.lestari.emp0432@ptsejahtera.co.id,D07,Finance Staff,2019-10-22,1987-07-09,Male,Divorced,S1,Jakarta,active,EMP0388
+EMP0433,Putu Nugroho,putu.nugroho.emp0433@ptsejahtera.co.id,D10,Operations Manager,2015-01-24,1989-10-29,Male,Married,S1,Bandung,active,EMP0017
+EMP0434,Dian Saputra,dian.saputra.emp0434@ptsejahtera.co.id,D15,QA Lead,2021-09-10,1977-04-13,Female,Divorced,S1,Surabaya,active,EMP0486
+EMP0435,Mira Jatmiko,mira.jatmiko.emp0435@ptsejahtera.co.id,D09,Legal Manager,2015-10-26,1989-04-04,Female,Divorced,S1,Jakarta,active,EMP0472
+EMP0436,Yusuf Gunadi,yusuf.gunadi.emp0436@ptsejahtera.co.id,D02,Engineering Manager,2016-10-14,1993-08-28,Male,Divorced,S3,Jakarta,active,EMP0207
+EMP0437,Dimas Kusuma,dimas.kusuma.emp0437@ptsejahtera.co.id,D06,Account Executive,2024-11-27,1984-07-27,Male,Married,S1,Jakarta,active,EMP0225
+EMP0438,Wisnu Maulana,wisnu.maulana.emp0438@ptsejahtera.co.id,D04,Product Analyst,2020-12-12,1996-04-20,Male,Divorced,SMA,Jakarta,active,EMP0157
+EMP0439,Nugroho Prasetya,nugroho.prasetya.emp0439@ptsejahtera.co.id,D06,Sales Director,2017-09-11,1985-12-08,Male,Single,S1,Jakarta,active,
+EMP0440,Yulia Lestari,yulia.lestari.emp0440@ptsejahtera.co.id,D07,Finance Manager,2021-01-21,1987-09-08,Female,Single,S3,Surabaya,active,EMP0304
+EMP0441,Yoga Firmansyah,yoga.firmansyah.emp0441@ptsejahtera.co.id,D13,Penetration Tester,2019-12-31,1996-11-01,Male,Single,S1,Jakarta,resigned,EMP0167
+EMP0442,Yuni Rahmawati,yuni.rahmawati.emp0442@ptsejahtera.co.id,D09,Legal Counsel,2016-01-29,1982-07-05,Female,Divorced,S3,Jakarta,active,EMP0268
+EMP0443,Siti Nainggolan,siti.nainggolan.emp0443@ptsejahtera.co.id,D02,Senior Frontend Engineer,2022-07-08,1984-07-24,Female,Married,D3,Jakarta,active,EMP0467
+EMP0444,Bayu Handoko,bayu.handoko.emp0444@ptsejahtera.co.id,D14,Design Lead,2022-04-02,1978-03-27,Male,Married,SMA,Bandung,active,EMP0051
+EMP0445,Intan Tampubolon,intan.tampubolon.emp0445@ptsejahtera.co.id,D06,Sales Executive,2015-12-25,1978-04-15,Female,Single,S1,Bandung,resigned,EMP0427
+EMP0446,Hendra Irawan,hendra.irawan.emp0446@ptsejahtera.co.id,D02,Engineering Manager,2024-03-19,1985-03-18,Male,Married,S2,Yogyakarta,active,EMP0129
+EMP0447,Bagus Budiman,bagus.budiman.emp0447@ptsejahtera.co.id,D11,Support Engineer,2019-11-09,1989-03-11,Male,Single,S2,Jakarta,active,EMP0091
+EMP0448,Oka Handoko,oka.handoko.emp0448@ptsejahtera.co.id,D01,Engineering Manager,2015-09-17,1977-01-15,Male,Single,S1,Jakarta,active,EMP0299
+EMP0449,Rangga Santoso,rangga.santoso.emp0449@ptsejahtera.co.id,D05,Marketing Manager,2021-10-20,1978-11-18,Male,Married,S2,Bandung,terminated,EMP0465
+EMP0450,Arif Yulianto,arif.yulianto.emp0450@ptsejahtera.co.id,D14,UI Designer,2020-04-25,1982-01-05,Male,Divorced,S1,Surabaya,on_leave,EMP0350
+EMP0451,Putri Valentino,putri.valentino.emp0451@ptsejahtera.co.id,D07,CFO,2018-04-23,1981-06-18,Female,Married,S1,Bandung,active,
+EMP0452,Andi Irawan,andi.irawan.emp0452@ptsejahtera.co.id,D14,Head of Design,2016-08-02,1980-07-12,Male,Single,SMA,Jakarta,active,
+EMP0453,Catur Handoko,catur.handoko.emp0453@ptsejahtera.co.id,D09,Legal Counsel,2018-06-02,1984-06-03,Male,Married,S1,Surabaya,active,EMP0401
+EMP0454,Edo Octavianus,edo.octavianus.emp0454@ptsejahtera.co.id,D14,Head of Design,2016-08-06,1982-03-22,Male,Married,S1,Jakarta,active,
+EMP0455,Gadis Putra,gadis.putra.emp0455@ptsejahtera.co.id,D02,Senior Frontend Engineer,2022-07-11,2000-06-12,Female,Single,S3,Bandung,resigned,EMP0066
+EMP0456,Leo Octavianus,leo.octavianus.emp0456@ptsejahtera.co.id,D09,Legal Counsel,2018-04-05,1978-01-08,Male,Married,D3,Bandung,active,EMP0163
+EMP0457,Adi Usman,adi.usman.emp0457@ptsejahtera.co.id,D10,COO,2018-09-17,1991-01-08,Male,Married,S1,Surabaya,terminated,
+EMP0458,Lukman Maulana,lukman.maulana.emp0458@ptsejahtera.co.id,D10,Operations Staff,2017-03-03,1989-04-03,Male,Married,S2,Jakarta,active,EMP0358
+EMP0459,Ria Mahendra,ria.mahendra.emp0459@ptsejahtera.co.id,D11,CS Lead,2022-10-11,1981-11-01,Female,Divorced,S1,Jakarta,active,EMP0182
+EMP0460,Panji Ardiansyah,panji.ardiansyah.emp0460@ptsejahtera.co.id,D03,Data Analyst,2018-07-06,1986-01-16,Male,Married,S2,Jakarta,resigned,EMP0109
+EMP0461,Jihan Utama,jihan.utama.emp0461@ptsejahtera.co.id,D03,Data Engineer,2024-11-04,1996-07-12,Female,Married,S2,Jakarta,active,EMP0174
+EMP0462,Umi Yudhoyono,umi.yudhoyono.emp0462@ptsejahtera.co.id,D05,SEO Specialist,2021-03-09,1979-11-19,Female,Married,D3,Surabaya,active,EMP0288
+EMP0463,Jihan Permana,jihan.permana.emp0463@ptsejahtera.co.id,D15,QA Manager,2017-03-15,1986-10-22,Female,Single,D3,Jakarta,resigned,EMP0430
+EMP0464,Ayu Firmansyah,ayu.firmansyah.emp0464@ptsejahtera.co.id,D11,Customer Success Manager,2024-02-11,2000-12-19,Female,Married,S1,Surabaya,resigned,EMP0385
+EMP0465,Dedi Irawan,dedi.irawan.emp0465@ptsejahtera.co.id,D05,Head of Marketing,2021-01-19,1996-03-05,Male,Married,S1,Jakarta,active,
+EMP0466,Anggi Wibowo,anggi.wibowo.emp0466@ptsejahtera.co.id,D15,QA Manager,2023-03-23,1988-01-20,Female,Married,S2,Medan,active,EMP0278
+EMP0467,Rangga Firmansyah,rangga.firmansyah.emp0467@ptsejahtera.co.id,D02,Tech Lead Frontend,2019-01-30,1997-07-11,Male,Single,S1,Jakarta,active,EMP0217
+EMP0468,Vino Wirawan,vino.wirawan.emp0468@ptsejahtera.co.id,D09,Paralegal,2020-01-02,1982-02-21,Male,Married,S1,Surabaya,active,EMP0360
+EMP0469,Naufal Tanuwijaya,naufal.tanuwijaya.emp0469@ptsejahtera.co.id,D01,Senior Backend Engineer,2023-07-16,1996-11-15,Male,Married,D3,Jakarta,active,EMP0284
+EMP0470,Iwan Utama,iwan.utama.emp0470@ptsejahtera.co.id,D04,Product Manager,2022-07-01,1984-04-10,Male,Divorced,S1,Semarang,terminated,EMP0269
+EMP0471,Zara Darmawan,zara.darmawan.emp0471@ptsejahtera.co.id,D15,Automation Engineer,2024-11-19,1977-01-30,Female,Single,S1,Jakarta,active,EMP0466
+EMP0472,Lestari Tampubolon,lestari.tampubolon.emp0472@ptsejahtera.co.id,D09,Legal Manager,2024-05-12,1986-10-24,Female,Divorced,S3,Jakarta,active,EMP0360
+EMP0473,Vina Wahyudi,vina.wahyudi.emp0473@ptsejahtera.co.id,D11,Support Engineer,2019-02-05,1978-06-29,Female,Divorced,S1,Jakarta,active,EMP0214
+EMP0474,Yulia Wibowo,yulia.wibowo.emp0474@ptsejahtera.co.id,D09,Compliance Officer,2018-12-16,1990-06-24,Female,Married,S2,Jakarta,active,EMP0171
+EMP0475,Siti Firmansyah,siti.firmansyah.emp0475@ptsejahtera.co.id,D15,Senior QA,2019-12-07,1982-06-06,Female,Married,D3,Jakarta,active,EMP0486
+EMP0476,Satria Octavianus,satria.octavianus.emp0476@ptsejahtera.co.id,D05,Content Marketer,2016-09-07,1983-05-21,Male,Married,S1,Surabaya,active,EMP0288
+EMP0477,Nuri Prasetya,nuri.prasetya.emp0477@ptsejahtera.co.id,D04,Product Director,2024-02-05,1989-10-24,Female,Single,S2,Jakarta,active,
+EMP0478,Lia Darmawan,lia.darmawan.emp0478@ptsejahtera.co.id,D04,Product Analyst,2016-10-22,1993-06-07,Female,Single,S1,Surabaya,active,EMP0172
+EMP0479,Eko Permana,eko.permana.emp0479@ptsejahtera.co.id,D10,Process Analyst,2016-10-21,1981-01-16,Male,Divorced,SMA,Jakarta,active,EMP0110
+EMP0480,Surya Hartono,surya.hartono.emp0480@ptsejahtera.co.id,,New Hire - Onboarding,2016-11-12,1986-08-02,Male,Married,S3,Jakarta,active,
+EMP0481,Bella Laksana,bella.laksana.emp0481@ptsejahtera.co.id,D10,Operations Staff,2024-11-07,1987-09-19,Female,Single,S1,Jakarta,active,EMP0192
+EMP0482,Hesti Laksana,hesti.laksana.emp0482@ptsejahtera.co.id,D08,HR Manager,2016-11-29,1984-11-03,Female,Married,S1,Jakarta,active,EMP0034
+EMP0483,Yusuf Mahendra,yusuf.mahendra.emp0483@ptsejahtera.co.id,D11,Head of CS,2017-12-19,1982-07-10,Male,Married,S2,Yogyakarta,active,
+EMP0484,Hadi Wibowo,hadi.wibowo.emp0484@ptsejahtera.co.id,D07,FP&A Analyst,2016-06-25,1979-11-14,Male,Single,S1,Jakarta,active,EMP0451
+EMP0485,Taufik Firmansyah,taufik.firmansyah.emp0485@ptsejahtera.co.id,D11,Support Engineer,2024-04-08,1981-09-16,Male,Divorced,D3,Bandung,active,EMP0224
+EMP0486,Wahyu Darmawan,wahyu.darmawan.emp0486@ptsejahtera.co.id,D15,QA Manager,2021-09-22,1976-10-01,Male,Divorced,S3,Bandung,active,EMP0434
+EMP0487,Nuri Kusuma,nuri.kusuma.emp0487@ptsejahtera.co.id,D08,HR Business Partner,2021-10-07,1999-03-11,Female,Single,S2,Surabaya,active,EMP0379
+EMP0488,Taufik Zulkarnain,taufik.zulkarnain.emp0488@ptsejahtera.co.id,D06,Sales Executive,2022-10-28,1998-10-07,Male,Married,S1,Jakarta,resigned,EMP0225
+EMP0489,Naufal Yudhoyono,naufal.yudhoyono.emp0489@ptsejahtera.co.id,D07,Finance Manager,2021-08-09,2000-11-04,Male,Single,S2,Bandung,on_leave,EMP0440
+EMP0490,Rama Halim,rama.halim.emp0490@ptsejahtera.co.id,,New Hire - Onboarding,2020-05-08,1985-06-06,Male,Single,S1,Jakarta,active,
+EMP0491,Una Zulkarnain,una.zulkarnain.emp0491@ptsejahtera.co.id,D05,Content Marketer,2015-01-23,1975-04-27,Female,Divorced,S3,Jakarta,active,EMP0413
+EMP0492,Oka Gunadi,oka.gunadi.emp0492@ptsejahtera.co.id,D01,Tech Lead Backend,2022-05-05,1984-03-19,Male,Married,S2,Jakarta,active,EMP0202
+EMP0493,Wisnu Santoso,wisnu.santoso.emp0493@ptsejahtera.co.id,D03,Analytics Engineer,2022-04-22,1986-05-18,Male,Married,S3,Jakarta,active,EMP0174
+EMP0494,Erika Jatmiko,erika.jatmiko.emp0494@ptsejahtera.co.id,D06,Business Development,2018-02-02,1992-10-29,Female,Married,S2,Bandung,active,EMP0067
+EMP0495,Lia Hidayat,lia.hidayat.emp0495@ptsejahtera.co.id,D06,Business Development,2021-03-22,1996-09-12,Female,Married,S1,Jakarta,active,EMP0216
+EMP0496,Ucok Yudhoyono,ucok.yudhoyono.emp0496@ptsejahtera.co.id,D12,IT Manager,2023-04-02,1981-03-12,Male,Single,S1,Yogyakarta,active,EMP0073
+EMP0497,Jefri Sihombing,jefri.sihombing.emp0497@ptsejahtera.co.id,D03,Data Analyst,2017-05-28,1997-10-20,Male,Married,S1,Jakarta,active,EMP0344
+EMP0498,Endah Nugroho,endah.nugroho.emp0498@ptsejahtera.co.id,D07,Finance Staff,2024-01-08,1979-02-01,Female,Married,S2,Surabaya,active,EMP0019
+EMP0499,Hilman Kusuma,hilman.kusuma.emp0499@ptsejahtera.co.id,D02,UI Engineer,2017-06-27,1991-08-20,Male,Single,SMA,Jakarta,active,EMP0036
+EMP0500,Bagus Yulianto,bagus.yulianto.emp0500@ptsejahtera.co.id,,New Hire - Onboarding,2021-11-19,1998-05-16,Male,Married,SMA,Jakarta,active,

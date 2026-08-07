@@ -1,0 +1,601 @@
+review_id,emp_id,review_period,review_date,overall_score,reviewer_id,kpi_score,attitude_score,notes
+PRF0001,EMP0475,2024-annual,2025-01-20,2.7,EMP0486,2.6,4.5,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0002,EMP0103,2024-mid,2024-07-15,3.3,EMP0298,1.6,3.9,"Performa di bawah ekspektasi, perlu PIP."
+PRF0003,EMP0194,2022-mid,2022-07-15,3.9,EMP0008,2.1,2.4,"Top performer, kandidat kuat untuk promosi."
+PRF0004,EMP0421,2022-mid,2022-07-15,4.7,EMP0261,3.3,3.6,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0005,EMP0046,2022-mid,2022-07-15,1.6,EMP0301,4.7,4.5,"Solid performer, reliable dalam menyelesaikan task."
+PRF0006,EMP0499,2023-mid,2023-07-15,2.5,EMP0036,3.6,4.1,"Performa di bawah ekspektasi, perlu PIP."
+PRF0007,EMP0423,2022-annual,2023-01-20,4.2,EMP0036,2.1,3.5,"Top performer, kandidat kuat untuk promosi."
+PRF0008,EMP0444,2023-mid,2023-07-15,5.0,EMP0051,4.4,5.0,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0009,EMP0169,2024-mid,2024-07-15,4.6,EMP0143,2.6,2.1,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0010,EMP0372,2023-annual,2024-01-20,3.8,EMP0225,4.4,2.5,"Solid performer, reliable dalam menyelesaikan task."
+PRF0011,EMP0455,2022-annual,2023-01-20,3.4,EMP0066,4.5,3.4,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0012,EMP0251,2023-annual,2024-01-20,4.1,EMP0036,4.5,2.6,"Top performer, kandidat kuat untuk promosi."
+PRF0013,EMP0381,2024-mid,2024-07-15,4.7,EMP0265,2.2,3.3,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0014,EMP0298,2024-mid,2024-07-15,3.3,EMP0299,4.9,2.4,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0015,EMP0092,2023-annual,2024-01-20,4.8,EMP0017,4.1,3.6,"Top performer, kandidat kuat untuk promosi."
+PRF0016,EMP0022,2022-annual,2023-01-20,3.0,EMP0051,3.4,4.0,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0017,EMP0044,2023-annual,2024-01-20,2.2,EMP0112,2.0,3.4,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0018,EMP0147,2024-mid,2024-07-15,4.9,EMP0337,4.0,2.4,"Performa di bawah ekspektasi, perlu PIP."
+PRF0019,EMP0317,2022-mid,2022-07-15,5.0,EMP0439,3.2,3.7,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0020,EMP0125,2022-mid,2022-07-15,2.4,EMP0235,4.9,4.9,"Performa konsisten, target tercapai sepanjang periode."
+PRF0021,EMP0135,2023-mid,2023-07-15,2.9,EMP0187,3.8,2.7,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0022,EMP0436,2024-mid,2024-07-15,2.4,EMP0207,3.7,4.4,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0023,EMP0486,2024-mid,2024-07-15,4.1,EMP0434,4.8,4.1,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0024,EMP0004,2024-annual,2025-01-20,2.3,EMP0035,4.6,2.5,Sangat baik dalam stakeholder management.
+PRF0025,EMP0413,2024-mid,2024-07-15,4.5,EMP0052,4.5,3.4,Sangat baik dalam stakeholder management.
+PRF0026,EMP0257,2022-mid,2022-07-15,4.0,EMP0459,1.6,2.8,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0027,EMP0456,2024-mid,2024-07-15,2.7,EMP0163,2.7,3.8,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0028,EMP0234,2022-mid,2022-07-15,1.7,EMP0336,1.9,3.4,Perlu lebih disiplin dalam time management.
+PRF0029,EMP0435,2023-mid,2023-07-15,3.7,EMP0472,4.4,2.5,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0030,EMP0451,2022-annual,2023-01-20,4.7,EMP0427,3.1,4.7,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0031,EMP0093,2024-mid,2024-07-15,4.0,EMP0416,4.3,2.1,Perlu lebih disiplin dalam time management.
+PRF0032,EMP0487,2022-annual,2023-01-20,4.9,EMP0379,2.7,3.0,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0033,EMP0196,2024-annual,2025-01-20,2.9,EMP0436,3.6,4.4,Sangat baik dalam stakeholder management.
+PRF0034,EMP0174,2024-annual,2025-01-20,4.9,EMP0106,4.3,4.7,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0035,EMP0419,2023-mid,2023-07-15,3.8,EMP0286,2.5,2.3,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0036,EMP0357,2024-annual,2025-01-20,4.9,EMP0430,3.4,4.9,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0037,EMP0194,2024-mid,2024-07-15,4.3,EMP0008,3.0,4.4,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0038,EMP0480,2022-annual,2023-01-20,4.5,EMP0172,3.1,3.6,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0039,EMP0025,2023-mid,2023-07-15,4.3,EMP0030,4.6,3.1,"Performa konsisten, target tercapai sepanjang periode."
+PRF0040,EMP0401,2023-mid,2023-07-15,4.9,EMP0141,2.5,4.0,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0041,EMP0304,2023-annual,2024-01-20,2.4,EMP0038,3.8,3.5,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0042,EMP0239,2023-mid,2023-07-15,2.2,EMP0192,4.0,3.9,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0043,EMP0240,2023-annual,2024-01-20,4.9,EMP0486,2.1,3.6,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0044,EMP0323,2024-mid,2024-07-15,2.7,EMP0066,3.1,4.1,"Performa konsisten, target tercapai sepanjang periode."
+PRF0045,EMP0465,2022-mid,2022-07-15,3.8,EMP0003,3.0,2.5,Sangat baik dalam stakeholder management.
+PRF0046,EMP0056,2024-annual,2025-01-20,3.7,EMP0496,4.8,3.7,"Solid performer, reliable dalam menyelesaikan task."
+PRF0047,EMP0098,2023-annual,2024-01-20,3.9,EMP0436,2.5,2.5,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0048,EMP0320,2024-mid,2024-07-15,1.6,EMP0009,2.9,3.9,"Solid performer, reliable dalam menyelesaikan task."
+PRF0049,EMP0117,2022-mid,2022-07-15,2.2,EMP0151,1.8,4.8,"Performa konsisten, target tercapai sepanjang periode."
+PRF0050,EMP0384,2023-mid,2023-07-15,2.3,EMP0090,4.8,3.7,"Performa konsisten, target tercapai sepanjang periode."
+PRF0051,EMP0413,2023-mid,2023-07-15,1.9,EMP0367,4.0,3.5,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0052,EMP0255,2023-annual,2024-01-20,4.5,EMP0303,2.8,3.6,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0053,EMP0075,2023-annual,2024-01-20,3.0,EMP0167,3.7,3.0,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0054,EMP0477,2023-mid,2023-07-15,4.2,EMP0242,1.8,3.6,"Performa konsisten, target tercapai sepanjang periode."
+PRF0055,EMP0172,2024-annual,2025-01-20,2.8,EMP0051,2.3,3.4,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0056,EMP0055,2022-mid,2022-07-15,4.3,EMP0114,2.6,3.4,"Top performer, kandidat kuat untuk promosi."
+PRF0057,EMP0209,2022-mid,2022-07-15,3.8,EMP0337,3.2,3.5,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0058,EMP0297,2024-mid,2024-07-15,1.7,EMP0284,2.6,3.1,"Solid performer, reliable dalam menyelesaikan task."
+PRF0059,EMP0486,2023-mid,2023-07-15,3.0,EMP0434,3.7,3.4,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0060,EMP0287,2024-mid,2024-07-15,3.5,EMP0242,4.6,3.1,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0061,EMP0251,2022-mid,2022-07-15,2.7,EMP0036,2.7,3.7,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0062,EMP0434,2022-mid,2022-07-15,1.6,EMP0486,2.7,4.7,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0063,EMP0479,2023-mid,2023-07-15,3.9,EMP0110,2.9,3.7,Sangat baik dalam stakeholder management.
+PRF0064,EMP0356,2022-annual,2023-01-20,1.8,EMP0157,1.9,3.5,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0065,EMP0094,2022-mid,2022-07-15,4.6,EMP0278,4.4,4.7,"Performa di bawah ekspektasi, perlu PIP."
+PRF0066,EMP0105,2023-annual,2024-01-20,2.3,EMP0367,2.7,2.5,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0067,EMP0385,2024-mid,2024-07-15,2.0,EMP0426,4.5,4.7,"Top performer, kandidat kuat untuk promosi."
+PRF0068,EMP0321,2023-annual,2024-01-20,4.3,EMP0125,1.7,3.4,Sangat baik dalam stakeholder management.
+PRF0069,EMP0033,2022-mid,2022-07-15,4.2,EMP0492,3.8,3.5,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0070,EMP0499,2024-mid,2024-07-15,4.2,EMP0036,2.9,2.9,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0071,EMP0102,2023-mid,2023-07-15,1.7,EMP0223,3.7,2.6,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0072,EMP0247,2023-annual,2024-01-20,4.4,EMP0069,2.8,2.9,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0073,EMP0369,2024-annual,2025-01-20,2.6,EMP0124,1.7,2.6,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0074,EMP0038,2022-annual,2023-01-20,4.3,EMP0335,2.0,3.9,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0075,EMP0362,2024-mid,2024-07-15,4.6,EMP0335,3.1,2.1,Perlu lebih disiplin dalam time management.
+PRF0076,EMP0343,2024-mid,2024-07-15,4.2,EMP0071,2.0,4.9,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0077,EMP0484,2024-mid,2024-07-15,4.4,EMP0451,2.8,4.6,"Top performer, kandidat kuat untuk promosi."
+PRF0078,EMP0317,2024-mid,2024-07-15,4.0,EMP0439,1.8,2.5,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0079,EMP0392,2022-annual,2023-01-20,4.6,EMP0355,2.5,4.2,"Top performer, kandidat kuat untuk promosi."
+PRF0080,EMP0269,2023-mid,2023-07-15,3.5,EMP0477,5.0,3.3,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0081,EMP0403,2022-mid,2022-07-15,3.8,EMP0434,4.3,2.1,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0082,EMP0407,2022-annual,2023-01-20,1.8,EMP0421,4.3,2.3,"Performa di bawah ekspektasi, perlu PIP."
+PRF0083,EMP0398,2024-mid,2024-07-15,4.7,EMP0074,2.8,4.5,"Top performer, kandidat kuat untuk promosi."
+PRF0084,EMP0326,2024-annual,2025-01-20,2.7,EMP0492,3.5,3.7,"Performa konsisten, target tercapai sepanjang periode."
+PRF0085,EMP0261,2024-mid,2024-07-15,4.0,EMP0221,2.5,4.5,"Solid performer, reliable dalam menyelesaikan task."
+PRF0086,EMP0482,2024-mid,2024-07-15,4.7,EMP0034,1.8,4.4,Sangat baik dalam stakeholder management.
+PRF0087,EMP0066,2023-annual,2024-01-20,2.3,EMP0207,2.0,2.9,"Performa konsisten, target tercapai sepanjang periode."
+PRF0088,EMP0055,2024-annual,2025-01-20,1.8,EMP0114,4.7,2.3,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0089,EMP0495,2023-mid,2023-07-15,1.9,EMP0216,4.3,4.2,Perlu lebih disiplin dalam time management.
+PRF0090,EMP0377,2023-annual,2024-01-20,4.9,EMP0125,2.4,3.5,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0091,EMP0026,2022-annual,2023-01-20,1.7,EMP0214,2.3,4.3,"Solid performer, reliable dalam menyelesaikan task."
+PRF0092,EMP0110,2024-mid,2024-07-15,3.0,EMP0061,2.1,3.4,"Performa di bawah ekspektasi, perlu PIP."
+PRF0093,EMP0367,2023-annual,2024-01-20,1.8,EMP0174,3.2,2.9,"Top performer, kandidat kuat untuk promosi."
+PRF0094,EMP0408,2024-mid,2024-07-15,1.9,EMP0167,1.9,2.1,"Top performer, kandidat kuat untuk promosi."
+PRF0095,EMP0481,2024-mid,2024-07-15,3.7,EMP0192,4.6,4.1,"Performa di bawah ekspektasi, perlu PIP."
+PRF0096,EMP0367,2023-mid,2023-07-15,5.0,EMP0035,1.6,2.9,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0097,EMP0481,2022-annual,2023-01-20,2.6,EMP0192,1.6,3.9,"Solid performer, reliable dalam menyelesaikan task."
+PRF0098,EMP0278,2023-mid,2023-07-15,1.7,EMP0430,3.4,3.6,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0099,EMP0399,2024-annual,2025-01-20,3.5,EMP0466,3.9,2.9,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0100,EMP0303,2024-mid,2024-07-15,2.1,EMP0272,1.9,3.7,Sangat baik dalam stakeholder management.
+PRF0101,EMP0278,2023-annual,2024-01-20,3.5,EMP0430,3.6,3.5,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0102,EMP0278,2024-annual,2025-01-20,3.8,EMP0430,2.2,3.2,"Performa di bawah ekspektasi, perlu PIP."
+PRF0103,EMP0055,2024-mid,2024-07-15,4.0,EMP0114,3.9,2.3,"Top performer, kandidat kuat untuk promosi."
+PRF0104,EMP0421,2023-mid,2023-07-15,2.3,EMP0261,3.0,4.6,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0105,EMP0310,2023-annual,2024-01-20,3.2,EMP0035,5.0,4.9,Perlu lebih disiplin dalam time management.
+PRF0106,EMP0212,2024-annual,2025-01-20,4.6,EMP0112,5.0,4.7,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0107,EMP0128,2022-mid,2022-07-15,1.5,EMP0243,3.8,4.1,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0108,EMP0386,2024-mid,2024-07-15,1.8,EMP0262,1.9,3.5,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0109,EMP0005,2024-annual,2025-01-20,3.2,EMP0436,1.6,4.4,"Performa konsisten, target tercapai sepanjang periode."
+PRF0110,EMP0003,2023-annual,2024-01-20,2.3,EMP0051,2.2,2.5,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0111,EMP0125,2023-annual,2024-01-20,4.6,EMP0235,2.4,4.9,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0112,EMP0317,2023-mid,2023-07-15,3.6,EMP0439,3.0,4.9,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0113,EMP0333,2024-mid,2024-07-15,2.4,EMP0262,3.3,4.3,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0114,EMP0331,2024-annual,2025-01-20,1.7,EMP0228,4.0,3.4,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0115,EMP0353,2023-mid,2023-07-15,4.0,EMP0299,2.8,4.6,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0116,EMP0426,2023-mid,2023-07-15,2.0,EMP0045,1.8,3.1,Perlu lebih disiplin dalam time management.
+PRF0117,EMP0166,2023-annual,2024-01-20,2.2,EMP0172,2.9,4.5,Sangat baik dalam stakeholder management.
+PRF0118,EMP0371,2024-annual,2025-01-20,3.2,EMP0350,3.7,4.2,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0119,EMP0356,2023-mid,2023-07-15,3.8,EMP0157,4.5,4.2,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0120,EMP0475,2023-mid,2023-07-15,1.7,EMP0486,4.2,4.1,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0121,EMP0147,2022-mid,2022-07-15,4.9,EMP0337,4.9,4.9,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0122,EMP0464,2022-mid,2022-07-15,4.5,EMP0385,3.6,4.6,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0123,EMP0244,2023-annual,2024-01-20,1.7,EMP0361,2.9,3.4,"Performa konsisten, target tercapai sepanjang periode."
+PRF0124,EMP0313,2022-annual,2023-01-20,3.6,EMP0167,2.5,4.7,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0125,EMP0405,2023-annual,2024-01-20,4.4,EMP0410,2.9,4.1,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0126,EMP0071,2023-annual,2024-01-20,4.0,EMP0452,5.0,2.7,Perlu lebih disiplin dalam time management.
+PRF0127,EMP0346,2023-mid,2023-07-15,3.1,EMP0051,1.6,2.3,Sangat baik dalam stakeholder management.
+PRF0128,EMP0151,2024-annual,2025-01-20,3.3,EMP0151,1.5,2.1,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0129,EMP0121,2023-mid,2023-07-15,4.5,EMP0313,1.7,4.0,"Performa di bawah ekspektasi, perlu PIP."
+PRF0130,EMP0419,2023-annual,2024-01-20,3.0,EMP0286,2.4,2.6,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0131,EMP0453,2023-mid,2023-07-15,4.5,EMP0401,4.3,3.2,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0132,EMP0306,2022-mid,2022-07-15,3.4,EMP0336,3.2,2.9,Perlu lebih disiplin dalam time management.
+PRF0133,EMP0373,2023-annual,2024-01-20,3.4,EMP0106,3.3,2.6,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0134,EMP0017,2024-annual,2025-01-20,2.1,EMP0344,3.1,3.8,"Performa konsisten, target tercapai sepanjang periode."
+PRF0135,EMP0137,2022-annual,2023-01-20,4.4,EMP0300,3.2,2.4,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0136,EMP0180,2024-mid,2024-07-15,2.6,EMP0454,3.4,4.1,Sangat baik dalam stakeholder management.
+PRF0137,EMP0352,2024-mid,2024-07-15,2.8,EMP0172,4.8,4.2,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0138,EMP0109,2024-mid,2024-07-15,5.0,EMP0151,1.9,3.9,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0139,EMP0280,2023-mid,2023-07-15,4.6,EMP0286,4.8,4.3,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0140,EMP0338,2024-annual,2025-01-20,4.7,EMP0440,3.3,2.5,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0141,EMP0250,2024-mid,2024-07-15,3.0,EMP0109,3.4,4.7,"Performa di bawah ekspektasi, perlu PIP."
+PRF0142,EMP0232,2023-mid,2023-07-15,4.0,EMP0355,2.2,4.6,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0143,EMP0275,2023-mid,2023-07-15,3.7,EMP0058,2.0,2.7,"Performa konsisten, target tercapai sepanjang periode."
+PRF0144,EMP0243,2024-mid,2024-07-15,1.6,EMP0327,3.9,3.2,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0145,EMP0412,2022-annual,2023-01-20,2.8,EMP0421,2.6,3.3,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0146,EMP0364,2023-annual,2024-01-20,2.5,EMP0038,3.0,3.4,Perlu lebih disiplin dalam time management.
+PRF0147,EMP0174,2023-annual,2024-01-20,1.8,EMP0124,2.3,4.3,"Top performer, kandidat kuat untuk promosi."
+PRF0148,EMP0359,2024-mid,2024-07-15,1.6,EMP0288,2.3,3.4,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0149,EMP0038,2023-annual,2024-01-20,4.6,EMP0335,3.5,3.4,"Performa konsisten, target tercapai sepanjang periode."
+PRF0150,EMP0260,2024-mid,2024-07-15,1.9,EMP0321,2.8,2.9,"Performa di bawah ekspektasi, perlu PIP."
+PRF0151,EMP0164,2022-annual,2023-01-20,1.9,EMP0114,4.1,2.8,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0152,EMP0162,2024-annual,2025-01-20,1.8,EMP0465,3.0,3.6,Perlu lebih disiplin dalam time management.
+PRF0153,EMP0021,2023-annual,2024-01-20,2.6,EMP0451,2.2,3.1,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0154,EMP0459,2024-annual,2025-01-20,1.8,EMP0182,3.4,2.4,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0155,EMP0109,2022-mid,2022-07-15,4.7,EMP0171,4.5,4.6,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0156,EMP0239,2024-annual,2025-01-20,1.8,EMP0192,3.6,3.2,Perlu lebih disiplin dalam time management.
+PRF0157,EMP0362,2022-mid,2022-07-15,4.2,EMP0017,2.7,4.1,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0158,EMP0438,2024-annual,2025-01-20,2.8,EMP0157,2.7,2.8,Perlu lebih disiplin dalam time management.
+PRF0159,EMP0459,2023-annual,2024-01-20,2.9,EMP0182,4.9,3.1,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0160,EMP0252,2023-annual,2024-01-20,2.4,EMP0262,4.5,4.3,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0161,EMP0050,2024-annual,2025-01-20,3.2,EMP0106,1.8,2.8,"Performa konsisten, target tercapai sepanjang periode."
+PRF0162,EMP0344,2022-annual,2023-01-20,2.5,EMP0088,4.3,2.8,Sangat baik dalam stakeholder management.
+PRF0163,EMP0167,2024-annual,2025-01-20,2.5,EMP0151,2.7,3.7,Sangat baik dalam stakeholder management.
+PRF0164,EMP0014,2024-annual,2025-01-20,2.9,EMP0440,3.0,2.0,"Performa konsisten, target tercapai sepanjang periode."
+PRF0165,EMP0338,2022-mid,2022-07-15,4.5,EMP0440,1.8,4.9,Sangat baik dalam stakeholder management.
+PRF0166,EMP0267,2024-mid,2024-07-15,4.9,EMP0242,2.0,4.3,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0167,EMP0289,2022-annual,2023-01-20,4.9,EMP0367,2.8,3.8,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0168,EMP0208,2024-mid,2024-07-15,2.4,EMP0319,1.9,2.3,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0169,EMP0082,2022-annual,2023-01-20,4.0,EMP0393,4.2,4.2,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0170,EMP0099,2022-annual,2023-01-20,2.9,EMP0099,3.4,3.6,Sangat baik dalam stakeholder management.
+PRF0171,EMP0388,2024-annual,2025-01-20,4.3,EMP0301,1.7,3.7,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0172,EMP0272,2023-mid,2023-07-15,3.9,EMP0119,3.1,4.9,"Solid performer, reliable dalam menyelesaikan task."
+PRF0173,EMP0150,2022-mid,2022-07-15,2.4,EMP0088,4.2,3.8,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0174,EMP0124,2022-annual,2023-01-20,3.9,EMP0174,4.7,2.1,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0175,EMP0220,2024-mid,2024-07-15,2.2,EMP0034,4.3,4.4,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0176,EMP0180,2022-annual,2023-01-20,4.1,EMP0465,4.8,2.7,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0177,EMP0299,2023-mid,2023-07-15,3.3,EMP0298,2.4,2.8,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0178,EMP0370,2022-mid,2022-07-15,4.1,EMP0107,3.2,3.4,"Performa konsisten, target tercapai sepanjang periode."
+PRF0179,EMP0396,2022-annual,2023-01-20,3.9,EMP0452,2.1,3.5,"Solid performer, reliable dalam menyelesaikan task."
+PRF0180,EMP0416,2022-annual,2023-01-20,2.7,EMP0104,3.8,3.0,Perlu lebih disiplin dalam time management.
+PRF0181,EMP0446,2024-annual,2025-01-20,1.9,EMP0129,4.3,3.8,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0182,EMP0436,2023-annual,2024-01-20,2.4,EMP0207,3.6,3.2,"Solid performer, reliable dalam menyelesaikan task."
+PRF0183,EMP0167,2022-annual,2023-01-20,2.5,EMP0163,4.4,4.9,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0184,EMP0083,2023-annual,2024-01-20,3.9,EMP0261,4.4,4.1,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0185,EMP0125,2023-mid,2023-07-15,4.5,EMP0235,2.0,3.0,"Performa di bawah ekspektasi, perlu PIP."
+PRF0186,EMP0376,2024-annual,2025-01-20,1.5,EMP0393,1.5,3.2,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0187,EMP0385,2023-mid,2023-07-15,4.1,EMP0426,5.0,4.8,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0188,EMP0440,2022-mid,2022-07-15,1.7,EMP0304,5.0,2.6,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0189,EMP0151,2024-mid,2024-07-15,3.5,EMP0209,4.2,4.1,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0190,EMP0243,2022-annual,2023-01-20,3.5,EMP0327,2.3,4.0,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0191,EMP0139,2024-mid,2024-07-15,2.9,EMP0436,2.2,2.7,"Top performer, kandidat kuat untuk promosi."
+PRF0192,EMP0374,2022-mid,2022-07-15,3.0,EMP0119,4.7,3.5,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0193,EMP0098,2022-annual,2023-01-20,4.0,EMP0436,3.9,4.1,"Performa konsisten, target tercapai sepanjang periode."
+PRF0194,EMP0067,2022-annual,2023-01-20,1.7,EMP0439,3.1,3.4,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0195,EMP0143,2023-annual,2024-01-20,1.9,EMP0132,4.0,2.9,Sangat baik dalam stakeholder management.
+PRF0196,EMP0265,2022-mid,2022-07-15,2.7,EMP0269,2.9,2.2,Perlu lebih disiplin dalam time management.
+PRF0197,EMP0155,2023-annual,2024-01-20,2.3,EMP0337,4.5,4.6,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0198,EMP0431,2024-mid,2024-07-15,4.8,EMP0379,3.5,3.7,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0199,EMP0174,2022-mid,2022-07-15,4.7,EMP0367,2.5,3.9,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0200,EMP0316,2022-annual,2023-01-20,3.7,EMP0344,4.6,2.7,Perlu lebih disiplin dalam time management.
+PRF0201,EMP0166,2023-mid,2023-07-15,2.7,EMP0172,2.0,5.0,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0202,EMP0182,2024-annual,2025-01-20,4.6,EMP0164,2.2,2.6,"Top performer, kandidat kuat untuk promosi."
+PRF0203,EMP0244,2022-mid,2022-07-15,3.9,EMP0361,4.3,4.1,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0204,EMP0498,2022-annual,2023-01-20,2.9,EMP0019,3.2,5.0,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0205,EMP0020,2022-mid,2022-07-15,3.8,EMP0109,1.7,2.4,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0206,EMP0221,2022-mid,2022-07-15,2.6,EMP0125,2.5,3.4,Perlu lebih disiplin dalam time management.
+PRF0207,EMP0256,2023-mid,2023-07-15,3.2,EMP0319,4.4,3.0,"Performa di bawah ekspektasi, perlu PIP."
+PRF0208,EMP0039,2022-annual,2023-01-20,2.0,EMP0171,4.1,5.0,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0209,EMP0225,2023-mid,2023-07-15,4.5,EMP0225,4.9,4.9,Sangat baik dalam stakeholder management.
+PRF0210,EMP0141,2023-mid,2023-07-15,3.3,EMP0454,3.6,2.2,Perlu lebih disiplin dalam time management.
+PRF0211,EMP0304,2023-mid,2023-07-15,4.8,EMP0038,3.2,3.7,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0212,EMP0435,2023-annual,2024-01-20,5.0,EMP0472,1.9,2.9,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0213,EMP0058,2022-annual,2023-01-20,2.4,EMP0303,2.8,3.9,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0214,EMP0057,2024-mid,2024-07-15,5.0,EMP0300,4.5,2.7,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0215,EMP0304,2022-annual,2023-01-20,3.5,EMP0038,2.8,2.9,Perlu lebih disiplin dalam time management.
+PRF0216,EMP0358,2024-mid,2024-07-15,4.2,EMP0192,4.6,3.5,Perlu lebih disiplin dalam time management.
+PRF0217,EMP0049,2024-annual,2025-01-20,4.3,EMP0367,3.8,4.8,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0218,EMP0077,2023-annual,2024-01-20,3.8,EMP0482,2.7,4.1,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0219,EMP0367,2024-annual,2025-01-20,5.0,EMP0216,3.8,4.9,"Performa di bawah ekspektasi, perlu PIP."
+PRF0220,EMP0411,2022-mid,2022-07-15,3.9,EMP0272,4.9,3.5,"Performa konsisten, target tercapai sepanjang periode."
+PRF0221,EMP0460,2023-annual,2024-01-20,1.7,EMP0109,3.5,4.7,Sangat baik dalam stakeholder management.
+PRF0222,EMP0172,2022-mid,2022-07-15,2.7,EMP0059,2.1,4.8,"Top performer, kandidat kuat untuk promosi."
+PRF0223,EMP0237,2024-annual,2025-01-20,1.8,EMP0119,3.8,4.3,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0224,EMP0218,2022-mid,2022-07-15,1.6,EMP0210,4.9,4.3,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0225,EMP0494,2022-annual,2023-01-20,3.2,EMP0067,4.9,2.2,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0226,EMP0088,2022-annual,2023-01-20,2.9,EMP0350,4.0,2.4,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0227,EMP0495,2024-mid,2024-07-15,2.8,EMP0216,4.0,2.6,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0228,EMP0351,2022-annual,2023-01-20,4.4,EMP0135,3.8,3.1,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0229,EMP0354,2024-annual,2025-01-20,2.9,EMP0061,2.9,4.5,"Performa di bawah ekspektasi, perlu PIP."
+PRF0230,EMP0341,2022-mid,2022-07-15,2.0,EMP0304,1.9,4.2,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0231,EMP0194,2023-annual,2024-01-20,1.5,EMP0008,3.9,4.2,"Performa konsisten, target tercapai sepanjang periode."
+PRF0232,EMP0157,2023-mid,2023-07-15,4.4,EMP0265,4.1,4.5,"Performa konsisten, target tercapai sepanjang periode."
+PRF0233,EMP0225,2024-mid,2024-07-15,1.7,EMP0203,2.4,3.6,"Performa konsisten, target tercapai sepanjang periode."
+PRF0234,EMP0376,2023-mid,2023-07-15,3.3,EMP0393,3.3,4.2,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0235,EMP0131,2024-annual,2025-01-20,4.0,EMP0202,4.2,4.3,"Solid performer, reliable dalam menyelesaikan task."
+PRF0236,EMP0003,2023-mid,2023-07-15,2.1,EMP0106,3.2,4.5,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0237,EMP0197,2023-mid,2023-07-15,4.0,EMP0202,3.5,4.7,"Performa di bawah ekspektasi, perlu PIP."
+PRF0238,EMP0171,2023-mid,2023-07-15,2.5,EMP0222,2.4,2.5,Perlu lebih disiplin dalam time management.
+PRF0239,EMP0313,2023-mid,2023-07-15,3.0,EMP0367,4.0,3.6,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0240,EMP0028,2022-annual,2023-01-20,2.9,EMP0107,3.9,3.8,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0241,EMP0219,2022-annual,2023-01-20,4.5,EMP0030,4.3,4.0,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0242,EMP0383,2023-mid,2023-07-15,4.3,EMP0008,2.9,3.3,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0243,EMP0232,2022-mid,2022-07-15,3.1,EMP0355,2.8,2.8,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0244,EMP0271,2023-annual,2024-01-20,3.6,EMP0067,2.1,2.3,"Solid performer, reliable dalam menyelesaikan task."
+PRF0245,EMP0265,2024-mid,2024-07-15,2.5,EMP0269,3.2,3.1,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0246,EMP0327,2024-annual,2025-01-20,4.7,EMP0136,1.6,2.9,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0247,EMP0165,2022-annual,2023-01-20,2.0,EMP0413,2.0,2.6,"Top performer, kandidat kuat untuk promosi."
+PRF0248,EMP0121,2024-annual,2025-01-20,2.9,EMP0313,5.0,2.7,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0249,EMP0072,2023-annual,2024-01-20,1.9,EMP0217,4.1,4.0,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0250,EMP0220,2022-annual,2023-01-20,2.7,EMP0114,4.8,3.1,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0251,EMP0311,2024-annual,2025-01-20,2.3,EMP0209,1.5,4.7,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0252,EMP0324,2022-mid,2022-07-15,1.6,EMP0313,5.0,4.3,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0253,EMP0139,2024-annual,2025-01-20,2.4,EMP0436,4.2,4.2,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0254,EMP0447,2023-annual,2024-01-20,2.7,EMP0091,3.0,3.0,Sangat baik dalam stakeholder management.
+PRF0255,EMP0282,2022-annual,2023-01-20,2.0,EMP0427,3.1,4.2,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0256,EMP0448,2022-annual,2023-01-20,1.9,EMP0299,2.7,3.7,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0257,EMP0214,2024-mid,2024-07-15,3.7,EMP0393,3.6,2.1,Perlu lebih disiplin dalam time management.
+PRF0258,EMP0201,2024-annual,2025-01-20,4.3,EMP0151,4.4,4.6,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0259,EMP0357,2022-annual,2023-01-20,4.0,EMP0430,4.2,3.8,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0260,EMP0229,2024-mid,2024-07-15,2.2,EMP0174,3.2,2.7,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0261,EMP0009,2022-annual,2023-01-20,2.0,EMP0112,3.4,3.1,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0262,EMP0372,2022-annual,2023-01-20,2.1,EMP0225,4.8,3.6,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0263,EMP0078,2022-mid,2022-07-15,2.0,EMP0301,4.3,4.6,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0264,EMP0199,2023-mid,2023-07-15,3.2,EMP0465,2.1,3.0,"Solid performer, reliable dalam menyelesaikan task."
+PRF0265,EMP0367,2022-mid,2022-07-15,1.9,EMP0099,2.3,2.7,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0266,EMP0216,2022-mid,2022-07-15,4.2,EMP0427,3.9,4.7,"Performa konsisten, target tercapai sepanjang periode."
+PRF0267,EMP0247,2024-mid,2024-07-15,3.4,EMP0069,3.5,2.4,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0268,EMP0348,2023-annual,2024-01-20,2.4,EMP0052,4.6,2.6,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0269,EMP0013,2024-annual,2025-01-20,1.5,EMP0055,2.2,2.7,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0270,EMP0036,2023-mid,2023-07-15,2.2,EMP0207,1.9,3.9,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0271,EMP0368,2022-mid,2022-07-15,4.3,EMP0265,2.2,2.8,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0272,EMP0090,2022-mid,2022-07-15,3.7,EMP0435,4.9,2.4,Sangat baik dalam stakeholder management.
+PRF0273,EMP0030,2022-annual,2023-01-20,4.6,EMP0216,3.7,2.0,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0274,EMP0133,2023-mid,2023-07-15,2.3,EMP0119,1.9,3.6,Perlu lebih disiplin dalam time management.
+PRF0275,EMP0331,2022-mid,2022-07-15,3.7,EMP0228,2.8,4.8,Sangat baik dalam stakeholder management.
+PRF0276,EMP0323,2023-annual,2024-01-20,1.9,EMP0066,4.8,3.7,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0277,EMP0498,2022-mid,2022-07-15,3.4,EMP0019,4.6,4.0,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0278,EMP0203,2022-annual,2023-01-20,2.8,EMP0132,4.0,2.9,Perlu lebih disiplin dalam time management.
+PRF0279,EMP0396,2022-mid,2022-07-15,4.4,EMP0452,2.0,3.1,Sangat baik dalam stakeholder management.
+PRF0280,EMP0298,2024-annual,2025-01-20,3.9,EMP0299,4.3,3.4,Sangat baik dalam stakeholder management.
+PRF0281,EMP0101,2024-annual,2025-01-20,2.1,EMP0492,2.5,3.0,Perlu lebih disiplin dalam time management.
+PRF0282,EMP0125,2024-annual,2025-01-20,2.0,EMP0235,4.4,2.6,"Solid performer, reliable dalam menyelesaikan task."
+PRF0283,EMP0444,2022-annual,2023-01-20,3.0,EMP0051,3.4,3.9,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0284,EMP0318,2024-annual,2025-01-20,4.0,EMP0261,2.0,5.0,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0285,EMP0343,2022-mid,2022-07-15,3.7,EMP0071,3.5,2.7,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0286,EMP0403,2024-mid,2024-07-15,3.6,EMP0434,3.6,4.7,Sangat baik dalam stakeholder management.
+PRF0287,EMP0082,2024-mid,2024-07-15,3.9,EMP0393,4.5,4.0,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0288,EMP0330,2022-annual,2023-01-20,3.9,EMP0373,1.6,2.5,"Solid performer, reliable dalam menyelesaikan task."
+PRF0289,EMP0059,2022-mid,2022-07-15,2.8,EMP0220,3.5,4.0,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0290,EMP0464,2023-mid,2023-07-15,4.3,EMP0385,4.2,4.0,Perlu lebih disiplin dalam time management.
+PRF0291,EMP0261,2022-mid,2022-07-15,1.6,EMP0221,2.7,3.2,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0292,EMP0083,2022-annual,2023-01-20,4.6,EMP0261,4.1,3.6,Sangat baik dalam stakeholder management.
+PRF0293,EMP0224,2022-mid,2022-07-15,3.8,EMP0091,1.6,3.9,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0294,EMP0473,2022-mid,2022-07-15,5.0,EMP0214,3.2,3.4,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0295,EMP0490,2024-mid,2024-07-15,4.4,EMP0141,3.5,3.6,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0296,EMP0066,2022-annual,2023-01-20,2.0,EMP0207,3.5,4.2,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0297,EMP0277,2022-annual,2023-01-20,4.6,EMP0362,1.5,3.6,"Top performer, kandidat kuat untuk promosi."
+PRF0298,EMP0353,2023-annual,2024-01-20,2.6,EMP0299,4.5,3.1,"Top performer, kandidat kuat untuk promosi."
+PRF0299,EMP0240,2024-annual,2025-01-20,1.9,EMP0486,2.7,4.3,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0300,EMP0149,2022-annual,2023-01-20,4.7,EMP0416,3.0,2.6,Sangat baik dalam stakeholder management.
+PRF0301,EMP0245,2022-mid,2022-07-15,5.0,EMP0304,2.3,3.8,"Solid performer, reliable dalam menyelesaikan task."
+PRF0302,EMP0167,2023-mid,2023-07-15,4.7,EMP0163,2.5,2.6,"Solid performer, reliable dalam menyelesaikan task."
+PRF0303,EMP0335,2024-mid,2024-07-15,2.6,EMP0167,4.1,3.2,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0304,EMP0171,2023-annual,2024-01-20,3.8,EMP0401,2.8,2.2,"Performa konsisten, target tercapai sepanjang periode."
+PRF0305,EMP0400,2024-mid,2024-07-15,3.3,EMP0319,2.3,2.2,Perlu lebih disiplin dalam time management.
+PRF0306,EMP0290,2023-annual,2024-01-20,4.5,EMP0362,1.6,2.4,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0307,EMP0430,2022-annual,2023-01-20,4.8,EMP0286,4.8,3.1,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0308,EMP0076,2022-mid,2022-07-15,2.3,EMP0058,4.1,2.5,Perlu lebih disiplin dalam time management.
+PRF0309,EMP0214,2022-annual,2023-01-20,3.8,EMP0171,3.1,4.2,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0310,EMP0079,2022-annual,2023-01-20,2.2,EMP0344,4.8,2.6,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0311,EMP0375,2024-annual,2025-01-20,3.3,EMP0099,2.4,2.6,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0312,EMP0281,2024-annual,2025-01-20,3.0,EMP0209,2.9,4.4,"Solid performer, reliable dalam menyelesaikan task."
+PRF0313,EMP0407,2024-annual,2025-01-20,1.9,EMP0421,3.6,2.9,"Performa di bawah ekspektasi, perlu PIP."
+PRF0314,EMP0014,2022-mid,2022-07-15,3.0,EMP0440,4.0,4.2,Perlu lebih disiplin dalam time management.
+PRF0315,EMP0087,2023-annual,2024-01-20,3.0,EMP0164,4.9,4.2,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0316,EMP0311,2024-mid,2024-07-15,2.6,EMP0209,4.7,3.3,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0317,EMP0029,2023-mid,2023-07-15,3.5,EMP0174,3.5,4.1,Sangat baik dalam stakeholder management.
+PRF0318,EMP0137,2023-annual,2024-01-20,3.1,EMP0300,2.8,3.1,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0319,EMP0381,2023-annual,2024-01-20,1.8,EMP0265,5.0,4.4,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0320,EMP0195,2024-mid,2024-07-15,4.4,EMP0008,3.8,3.8,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0321,EMP0312,2023-mid,2023-07-15,1.8,EMP0299,3.0,4.7,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0322,EMP0072,2024-annual,2025-01-20,4.0,EMP0217,3.8,3.9,"Performa di bawah ekspektasi, perlu PIP."
+PRF0323,EMP0481,2023-mid,2023-07-15,1.9,EMP0192,2.5,4.3,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0324,EMP0267,2023-annual,2024-01-20,2.4,EMP0242,2.5,3.3,"Solid performer, reliable dalam menyelesaikan task."
+PRF0325,EMP0007,2024-mid,2024-07-15,4.4,EMP0321,2.4,3.5,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0326,EMP0224,2024-annual,2025-01-20,3.9,EMP0091,4.9,3.6,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0327,EMP0446,2022-mid,2022-07-15,3.4,EMP0129,1.7,4.3,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0328,EMP0350,2023-annual,2024-01-20,2.6,EMP0378,3.3,3.7,Sangat baik dalam stakeholder management.
+PRF0329,EMP0483,2023-mid,2023-07-15,2.9,EMP0163,2.7,5.0,"Performa di bawah ekspektasi, perlu PIP."
+PRF0330,EMP0238,2022-annual,2023-01-20,2.2,EMP0046,3.4,4.7,Perlu lebih disiplin dalam time management.
+PRF0331,EMP0136,2023-mid,2023-07-15,3.1,EMP0106,1.8,3.6,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0332,EMP0092,2023-mid,2023-07-15,3.4,EMP0017,2.3,3.3,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0333,EMP0250,2022-annual,2023-01-20,2.4,EMP0427,1.7,4.5,"Performa di bawah ekspektasi, perlu PIP."
+PRF0334,EMP0244,2024-mid,2024-07-15,2.6,EMP0361,2.3,2.1,"Top performer, kandidat kuat untuk promosi."
+PRF0335,EMP0252,2024-annual,2025-01-20,4.1,EMP0262,1.7,2.7,"Performa di bawah ekspektasi, perlu PIP."
+PRF0336,EMP0132,2023-annual,2024-01-20,3.5,EMP0452,3.6,4.0,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0337,EMP0269,2024-mid,2024-07-15,2.9,EMP0477,3.6,3.9,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0338,EMP0494,2024-mid,2024-07-15,4.8,EMP0067,2.5,4.6,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0339,EMP0138,2022-mid,2022-07-15,2.4,EMP0221,2.9,3.0,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0340,EMP0239,2022-mid,2022-07-15,4.4,EMP0173,3.9,3.2,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0341,EMP0440,2024-annual,2025-01-20,2.3,EMP0304,3.1,2.0,"Performa di bawah ekspektasi, perlu PIP."
+PRF0342,EMP0378,2024-mid,2024-07-15,2.2,EMP0019,4.5,3.3,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0343,EMP0145,2023-annual,2024-01-20,2.8,EMP0059,1.5,2.9,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0344,EMP0168,2023-annual,2024-01-20,1.7,EMP0465,3.2,2.8,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0345,EMP0423,2022-mid,2022-07-15,3.1,EMP0036,4.1,3.7,Sangat baik dalam stakeholder management.
+PRF0346,EMP0235,2022-mid,2022-07-15,4.1,EMP0125,1.8,2.2,"Top performer, kandidat kuat untuk promosi."
+PRF0347,EMP0074,2024-mid,2024-07-15,1.9,EMP0164,2.7,5.0,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0348,EMP0279,2024-mid,2024-07-15,4.0,EMP0114,4.4,3.2,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0349,EMP0327,2023-annual,2024-01-20,4.9,EMP0136,3.4,3.2,"Performa di bawah ekspektasi, perlu PIP."
+PRF0350,EMP0080,2024-mid,2024-07-15,4.0,EMP0465,4.0,3.9,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0351,EMP0162,2022-annual,2023-01-20,3.7,EMP0465,1.6,4.5,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0352,EMP0033,2024-mid,2024-07-15,2.6,EMP0492,3.6,2.6,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0353,EMP0071,2024-mid,2024-07-15,4.5,EMP0052,3.0,4.1,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0354,EMP0433,2022-annual,2023-01-20,1.5,EMP0017,4.4,3.5,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0355,EMP0487,2023-annual,2024-01-20,4.1,EMP0379,4.2,2.1,"Solid performer, reliable dalam menyelesaikan task."
+PRF0356,EMP0372,2024-annual,2025-01-20,2.7,EMP0225,4.5,2.6,"Performa di bawah ekspektasi, perlu PIP."
+PRF0357,EMP0038,2024-annual,2025-01-20,1.5,EMP0335,5.0,4.7,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0358,EMP0136,2022-mid,2022-07-15,2.1,EMP0106,2.5,3.1,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0359,EMP0237,2022-mid,2022-07-15,1.8,EMP0119,3.4,4.7,"Performa di bawah ekspektasi, perlu PIP."
+PRF0360,EMP0001,2023-mid,2023-07-15,1.7,EMP0486,4.1,4.0,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0361,EMP0102,2023-annual,2024-01-20,3.6,EMP0223,3.6,4.3,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0362,EMP0040,2024-annual,2025-01-20,2.2,EMP0017,2.9,4.4,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0363,EMP0280,2023-annual,2024-01-20,1.6,EMP0286,2.7,2.4,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0364,EMP0019,2023-mid,2023-07-15,4.3,EMP0350,4.3,2.7,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0365,EMP0208,2024-annual,2025-01-20,3.5,EMP0319,3.4,2.2,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0366,EMP0389,2023-annual,2024-01-20,4.3,EMP0486,3.2,3.4,"Performa di bawah ekspektasi, perlu PIP."
+PRF0367,EMP0293,2024-mid,2024-07-15,1.5,EMP0496,2.6,4.8,"Solid performer, reliable dalam menyelesaikan task."
+PRF0368,EMP0006,2022-annual,2023-01-20,4.5,EMP0430,4.0,4.3,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0369,EMP0458,2024-annual,2025-01-20,3.5,EMP0358,4.0,4.3,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0370,EMP0216,2023-annual,2024-01-20,1.6,EMP0170,4.7,4.1,"Solid performer, reliable dalam menyelesaikan task."
+PRF0371,EMP0162,2023-annual,2024-01-20,3.0,EMP0465,2.0,3.8,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0372,EMP0475,2024-mid,2024-07-15,4.3,EMP0486,1.8,2.6,"Solid performer, reliable dalam menyelesaikan task."
+PRF0373,EMP0458,2023-mid,2023-07-15,2.7,EMP0358,4.9,2.1,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0374,EMP0314,2024-mid,2024-07-15,4.8,EMP0362,4.2,2.8,Sangat baik dalam stakeholder management.
+PRF0375,EMP0099,2022-mid,2022-07-15,4.8,EMP0030,4.4,3.4,Sangat baik dalam stakeholder management.
+PRF0376,EMP0414,2023-mid,2023-07-15,1.8,EMP0135,4.8,3.5,"Performa di bawah ekspektasi, perlu PIP."
+PRF0377,EMP0070,2024-mid,2024-07-15,3.4,EMP0034,2.8,4.1,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0378,EMP0371,2023-mid,2023-07-15,3.4,EMP0350,2.9,2.3,Perlu lebih disiplin dalam time management.
+PRF0379,EMP0364,2024-annual,2025-01-20,4.7,EMP0038,4.8,2.5,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0380,EMP0144,2022-mid,2022-07-15,4.3,EMP0061,4.1,4.2,Sangat baik dalam stakeholder management.
+PRF0381,EMP0458,2023-annual,2024-01-20,2.3,EMP0358,1.7,3.2,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0382,EMP0431,2022-mid,2022-07-15,2.8,EMP0379,1.8,3.0,Sangat baik dalam stakeholder management.
+PRF0383,EMP0045,2024-mid,2024-07-15,1.8,EMP0483,1.9,3.7,"Performa konsisten, target tercapai sepanjang periode."
+PRF0384,EMP0326,2022-mid,2022-07-15,4.4,EMP0492,1.7,2.2,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0385,EMP0369,2023-mid,2023-07-15,3.8,EMP0124,2.0,4.0,Sangat baik dalam stakeholder management.
+PRF0386,EMP0300,2022-mid,2022-07-15,4.6,EMP0219,3.7,3.8,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0387,EMP0283,2023-annual,2024-01-20,2.2,EMP0434,2.1,3.1,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0388,EMP0002,2024-annual,2025-01-20,3.3,EMP0386,3.2,4.2,"Top performer, kandidat kuat untuk promosi."
+PRF0389,EMP0062,2023-annual,2024-01-20,1.7,EMP0439,4.3,2.7,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0390,EMP0001,2024-annual,2025-01-20,2.5,EMP0486,3.8,3.8,"Performa di bawah ekspektasi, perlu PIP."
+PRF0391,EMP0279,2024-annual,2025-01-20,3.8,EMP0114,3.3,3.8,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0392,EMP0371,2023-annual,2024-01-20,4.4,EMP0350,4.5,4.6,Perlu lebih disiplin dalam time management.
+PRF0393,EMP0264,2022-mid,2022-07-15,2.9,EMP0344,1.9,4.3,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0394,EMP0195,2022-annual,2023-01-20,3.4,EMP0008,4.9,3.1,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0395,EMP0022,2023-annual,2024-01-20,2.1,EMP0051,1.7,4.3,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0396,EMP0255,2024-annual,2025-01-20,2.3,EMP0303,3.0,3.6,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0397,EMP0054,2024-annual,2025-01-20,4.3,EMP0099,4.2,4.8,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0398,EMP0030,2023-annual,2024-01-20,4.2,EMP0242,2.4,4.2,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0399,EMP0451,2023-mid,2023-07-15,4.4,EMP0174,4.6,4.1,Perlu lebih disiplin dalam time management.
+PRF0400,EMP0031,2023-mid,2023-07-15,3.6,EMP0361,4.7,2.8,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0401,EMP0118,2022-annual,2023-01-20,4.2,EMP0427,4.4,2.8,"Solid performer, reliable dalam menyelesaikan task."
+PRF0402,EMP0398,2023-annual,2024-01-20,2.6,EMP0074,2.5,4.6,"Performa konsisten, target tercapai sepanjang periode."
+PRF0403,EMP0322,2023-annual,2024-01-20,4.4,EMP0301,1.5,4.0,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0404,EMP0244,2024-annual,2025-01-20,4.1,EMP0361,4.4,4.7,"Performa konsisten, target tercapai sepanjang periode."
+PRF0405,EMP0079,2024-annual,2025-01-20,2.9,EMP0344,2.0,4.8,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0406,EMP0497,2023-mid,2023-07-15,2.7,EMP0344,3.0,3.7,Sangat baik dalam stakeholder management.
+PRF0407,EMP0222,2022-mid,2022-07-15,3.7,EMP0321,3.4,4.5,"Solid performer, reliable dalam menyelesaikan task."
+PRF0408,EMP0361,2022-mid,2022-07-15,3.8,EMP0393,3.2,2.4,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0409,EMP0173,2022-mid,2022-07-15,2.6,EMP0035,3.8,4.0,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0410,EMP0048,2022-mid,2022-07-15,3.7,EMP0465,3.1,4.6,Sangat baik dalam stakeholder management.
+PRF0411,EMP0452,2024-mid,2024-07-15,4.7,EMP0394,2.1,4.5,Sangat baik dalam stakeholder management.
+PRF0412,EMP0001,2022-mid,2022-07-15,4.2,EMP0486,3.4,3.4,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0413,EMP0028,2022-mid,2022-07-15,2.9,EMP0107,1.8,3.8,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0414,EMP0270,2024-mid,2024-07-15,2.2,EMP0125,1.8,4.8,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0415,EMP0016,2024-annual,2025-01-20,3.2,EMP0158,3.3,3.9,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0416,EMP0092,2022-mid,2022-07-15,3.1,EMP0017,2.5,4.1,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0417,EMP0198,2022-mid,2022-07-15,3.3,EMP0401,3.5,2.0,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0418,EMP0078,2023-mid,2023-07-15,4.9,EMP0301,2.9,3.8,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0419,EMP0359,2023-mid,2023-07-15,4.9,EMP0288,1.8,4.3,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0420,EMP0305,2023-annual,2024-01-20,2.0,EMP0413,4.0,3.2,"Performa konsisten, target tercapai sepanjang periode."
+PRF0421,EMP0085,2024-annual,2025-01-20,4.2,EMP0272,2.6,3.6,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0422,EMP0415,2024-annual,2025-01-20,4.8,EMP0413,4.6,3.8,Sangat baik dalam stakeholder management.
+PRF0423,EMP0120,2024-annual,2025-01-20,3.9,EMP0410,3.2,2.1,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0424,EMP0370,2024-mid,2024-07-15,2.8,EMP0107,2.1,3.5,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0425,EMP0091,2022-mid,2022-07-15,4.4,EMP0373,2.5,2.5,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0426,EMP0043,2022-mid,2022-07-15,2.8,EMP0265,4.8,4.9,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0427,EMP0366,2022-annual,2023-01-20,1.8,EMP0286,4.8,3.0,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0428,EMP0335,2023-annual,2024-01-20,4.9,EMP0071,2.7,3.0,Perlu lebih disiplin dalam time management.
+PRF0429,EMP0430,2024-mid,2024-07-15,2.9,EMP0286,1.6,3.6,Perlu lebih disiplin dalam time management.
+PRF0430,EMP0258,2023-mid,2023-07-15,4.4,EMP0129,4.4,2.9,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0431,EMP0366,2024-annual,2025-01-20,4.6,EMP0286,3.1,2.3,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0432,EMP0353,2024-annual,2025-01-20,1.7,EMP0299,4.2,2.0,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0433,EMP0469,2023-mid,2023-07-15,4.7,EMP0284,4.6,3.0,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0434,EMP0346,2022-annual,2023-01-20,1.8,EMP0051,4.0,3.5,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0435,EMP0474,2024-mid,2024-07-15,4.7,EMP0171,1.6,3.8,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0436,EMP0228,2023-mid,2023-07-15,2.3,EMP0335,3.8,2.7,"Top performer, kandidat kuat untuk promosi."
+PRF0437,EMP0321,2024-annual,2025-01-20,4.0,EMP0125,4.0,2.0,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0438,EMP0164,2023-mid,2023-07-15,4.6,EMP0114,4.7,3.7,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0439,EMP0453,2022-annual,2023-01-20,2.4,EMP0401,4.1,4.2,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0440,EMP0183,2022-annual,2023-01-20,4.4,EMP0401,4.7,3.9,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0441,EMP0205,2024-annual,2025-01-20,2.5,EMP0367,1.6,4.7,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0442,EMP0368,2024-annual,2025-01-20,4.3,EMP0265,3.3,2.8,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0443,EMP0333,2024-annual,2025-01-20,4.3,EMP0262,2.2,4.5,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0444,EMP0137,2024-annual,2025-01-20,4.6,EMP0300,3.2,4.3,"Top performer, kandidat kuat untuk promosi."
+PRF0445,EMP0030,2023-mid,2023-07-15,4.6,EMP0367,1.7,2.4,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0446,EMP0151,2022-mid,2022-07-15,3.0,EMP0051,3.4,2.7,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0447,EMP0185,2024-annual,2025-01-20,3.2,EMP0486,4.8,4.6,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0448,EMP0110,2023-annual,2024-01-20,4.1,EMP0061,1.8,2.3,"Performa konsisten, target tercapai sepanjang periode."
+PRF0449,EMP0155,2022-mid,2022-07-15,4.9,EMP0337,4.3,3.7,"Top performer, kandidat kuat untuk promosi."
+PRF0450,EMP0432,2024-annual,2025-01-20,4.5,EMP0388,2.1,3.2,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0451,EMP0049,2022-annual,2023-01-20,3.3,EMP0367,3.7,4.4,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0452,EMP0126,2023-annual,2024-01-20,2.3,EMP0172,2.7,3.5,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0453,EMP0425,2024-mid,2024-07-15,4.9,EMP0046,4.2,4.6,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0454,EMP0418,2022-annual,2023-01-20,3.0,EMP0052,4.2,2.9,"Performa di bawah ekspektasi, perlu PIP."
+PRF0455,EMP0474,2023-annual,2024-01-20,4.8,EMP0171,2.0,4.2,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0456,EMP0430,2023-annual,2024-01-20,4.4,EMP0286,2.0,2.9,Perlu lebih disiplin dalam time management.
+PRF0457,EMP0433,2023-annual,2024-01-20,2.1,EMP0017,3.7,2.6,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0458,EMP0420,2024-annual,2025-01-20,1.7,EMP0174,3.1,3.6,"Performa di bawah ekspektasi, perlu PIP."
+PRF0459,EMP0328,2023-annual,2024-01-20,4.2,EMP0360,3.4,3.0,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0460,EMP0202,2024-mid,2024-07-15,2.4,EMP0299,2.8,3.7,"Performa di bawah ekspektasi, perlu PIP."
+PRF0461,EMP0060,2024-annual,2025-01-20,3.3,EMP0071,3.2,2.0,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0462,EMP0418,2022-mid,2022-07-15,2.9,EMP0203,3.0,4.7,Perlu lebih disiplin dalam time management.
+PRF0463,EMP0169,2023-mid,2023-07-15,1.7,EMP0143,1.9,3.6,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0464,EMP0270,2022-mid,2022-07-15,2.5,EMP0125,4.0,4.5,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0465,EMP0439,2023-annual,2024-01-20,4.0,EMP0035,2.0,3.9,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0466,EMP0160,2024-mid,2024-07-15,2.2,EMP0379,3.9,4.5,Perlu lebih disiplin dalam time management.
+PRF0467,EMP0355,2022-mid,2022-07-15,4.7,EMP0104,3.4,3.8,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0468,EMP0282,2023-mid,2023-07-15,2.8,EMP0427,4.1,2.4,"Top performer, kandidat kuat untuk promosi."
+PRF0469,EMP0210,2024-mid,2024-07-15,3.8,EMP0046,1.6,4.5,Perlu lebih disiplin dalam time management.
+PRF0470,EMP0276,2022-mid,2022-07-15,4.6,EMP0444,1.8,4.4,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0471,EMP0146,2023-mid,2023-07-15,2.3,EMP0379,3.7,2.4,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0472,EMP0318,2024-mid,2024-07-15,2.9,EMP0261,2.5,2.9,"Top performer, kandidat kuat untuk promosi."
+PRF0473,EMP0019,2024-mid,2024-07-15,4.3,EMP0301,3.6,4.8,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0474,EMP0031,2022-annual,2023-01-20,4.0,EMP0361,2.6,4.8,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0475,EMP0445,2023-mid,2023-07-15,1.7,EMP0427,4.3,4.6,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0476,EMP0273,2023-annual,2024-01-20,4.3,EMP0360,3.9,3.1,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0477,EMP0089,2023-mid,2023-07-15,4.4,EMP0428,4.6,4.4,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0478,EMP0400,2022-mid,2022-07-15,3.1,EMP0319,3.7,4.5,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0479,EMP0366,2023-mid,2023-07-15,1.6,EMP0286,1.6,2.1,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0480,EMP0240,2023-mid,2023-07-15,4.3,EMP0486,2.6,2.9,"Solid performer, reliable dalam menyelesaikan task."
+PRF0481,EMP0014,2024-mid,2024-07-15,3.6,EMP0440,2.8,4.1,Perlu lebih disiplin dalam time management.
+PRF0482,EMP0334,2024-mid,2024-07-15,2.7,EMP0313,3.4,3.2,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0483,EMP0301,2023-annual,2024-01-20,3.4,EMP0379,3.3,4.5,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0484,EMP0109,2022-annual,2023-01-20,2.9,EMP0220,4.8,5.0,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0485,EMP0137,2023-mid,2023-07-15,4.6,EMP0300,1.9,3.7,"Top performer, kandidat kuat untuk promosi."
+PRF0486,EMP0168,2022-annual,2023-01-20,3.2,EMP0465,2.4,3.4,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0487,EMP0238,2024-annual,2025-01-20,2.3,EMP0046,1.9,4.7,"Solid performer, reliable dalam menyelesaikan task."
+PRF0488,EMP0319,2022-mid,2022-07-15,4.5,EMP0059,4.8,2.6,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0489,EMP0051,2022-mid,2022-07-15,2.1,EMP0060,2.3,3.8,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0490,EMP0048,2024-annual,2025-01-20,3.4,EMP0465,4.8,3.3,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0491,EMP0031,2024-annual,2025-01-20,3.1,EMP0361,3.9,4.9,Perlu lebih disiplin dalam time management.
+PRF0492,EMP0281,2023-mid,2023-07-15,4.8,EMP0209,4.1,4.7,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0493,EMP0435,2024-annual,2025-01-20,4.3,EMP0472,3.4,2.9,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0494,EMP0471,2022-mid,2022-07-15,4.0,EMP0466,3.2,2.0,"Performa konsisten, target tercapai sepanjang periode."
+PRF0495,EMP0289,2023-mid,2023-07-15,2.3,EMP0367,2.8,4.6,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0496,EMP0221,2024-annual,2025-01-20,2.7,EMP0125,1.5,4.0,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0497,EMP0330,2024-mid,2024-07-15,2.8,EMP0373,4.0,2.5,"Performa di bawah ekspektasi, perlu PIP."
+PRF0498,EMP0361,2024-annual,2025-01-20,4.5,EMP0393,1.9,4.9,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0499,EMP0170,2024-mid,2024-07-15,3.8,EMP0362,1.9,3.7,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0500,EMP0115,2022-annual,2023-01-20,2.2,EMP0235,4.5,3.2,"Performa di bawah ekspektasi, perlu PIP."
+PRF0501,EMP0041,2022-annual,2023-01-20,2.1,EMP0107,3.4,2.8,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0502,EMP0190,2024-mid,2024-07-15,2.0,EMP0272,2.4,4.4,"Solid performer, reliable dalam menyelesaikan task."
+PRF0503,EMP0272,2024-annual,2025-01-20,2.2,EMP0119,4.5,4.7,Perlu lebih disiplin dalam time management.
+PRF0504,EMP0445,2024-annual,2025-01-20,4.2,EMP0427,3.8,5.0,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0505,EMP0245,2024-annual,2025-01-20,3.5,EMP0304,3.8,2.1,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0506,EMP0376,2022-annual,2023-01-20,2.9,EMP0393,4.9,2.1,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0507,EMP0352,2023-mid,2023-07-15,3.4,EMP0172,5.0,2.3,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0508,EMP0375,2024-mid,2024-07-15,2.4,EMP0099,4.7,2.6,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0509,EMP0005,2022-mid,2022-07-15,3.3,EMP0436,4.0,3.7,"Performa di bawah ekspektasi, perlu PIP."
+PRF0510,EMP0482,2022-annual,2023-01-20,1.8,EMP0034,4.9,4.0,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0511,EMP0077,2024-annual,2025-01-20,4.3,EMP0482,2.7,2.5,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0512,EMP0468,2023-annual,2024-01-20,2.1,EMP0360,1.6,3.2,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0513,EMP0141,2022-annual,2023-01-20,3.5,EMP0209,1.8,4.3,"Performa konsisten, target tercapai sepanjang periode."
+PRF0514,EMP0183,2024-mid,2024-07-15,2.6,EMP0401,4.0,4.8,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0515,EMP0269,2024-annual,2025-01-20,2.8,EMP0477,3.7,3.6,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0516,EMP0070,2022-mid,2022-07-15,3.9,EMP0034,4.0,3.7,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0517,EMP0177,2023-mid,2023-07-15,2.8,EMP0361,4.9,3.7,Sangat baik dalam stakeholder management.
+PRF0518,EMP0157,2024-mid,2024-07-15,4.0,EMP0265,3.5,2.8,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0519,EMP0447,2024-mid,2024-07-15,3.7,EMP0091,3.2,4.3,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0520,EMP0472,2022-mid,2022-07-15,1.9,EMP0360,4.2,3.2,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0521,EMP0389,2024-mid,2024-07-15,3.9,EMP0486,2.7,3.5,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0522,EMP0074,2022-mid,2022-07-15,2.9,EMP0164,3.0,3.5,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0523,EMP0466,2023-mid,2023-07-15,2.8,EMP0278,2.2,4.4,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0524,EMP0256,2024-annual,2025-01-20,1.8,EMP0319,4.4,2.9,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0525,EMP0135,2024-mid,2024-07-15,2.4,EMP0187,3.6,3.8,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0526,EMP0397,2024-mid,2024-07-15,4.9,EMP0012,3.8,4.4,"Top performer, kandidat kuat untuk promosi."
+PRF0527,EMP0149,2023-annual,2024-01-20,3.0,EMP0416,3.2,2.4,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0528,EMP0091,2024-mid,2024-07-15,3.6,EMP0373,1.5,4.4,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0529,EMP0130,2023-annual,2024-01-20,2.9,EMP0278,2.8,2.1,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0530,EMP0055,2023-annual,2024-01-20,1.8,EMP0114,2.3,2.3,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0531,EMP0392,2024-mid,2024-07-15,3.3,EMP0355,1.5,2.8,Perlu lebih disiplin dalam time management.
+PRF0532,EMP0133,2024-annual,2025-01-20,2.2,EMP0119,4.9,3.5,"Top performer, kandidat kuat untuk promosi."
+PRF0533,EMP0258,2022-annual,2023-01-20,4.2,EMP0129,2.4,3.8,"Performa konsisten, target tercapai sepanjang periode."
+PRF0534,EMP0043,2023-mid,2023-07-15,1.8,EMP0265,4.5,3.6,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0535,EMP0233,2022-mid,2022-07-15,1.8,EMP0109,4.8,4.3,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0536,EMP0247,2022-annual,2023-01-20,4.4,EMP0069,4.4,4.1,"Performa konsisten, target tercapai sepanjang periode."
+PRF0537,EMP0271,2023-mid,2023-07-15,2.6,EMP0067,3.7,4.4,"Solid performer, reliable dalam menyelesaikan task."
+PRF0538,EMP0290,2022-mid,2022-07-15,3.5,EMP0362,1.8,4.9,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0539,EMP0440,2023-mid,2023-07-15,2.3,EMP0304,3.8,2.1,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0540,EMP0182,2022-annual,2023-01-20,3.6,EMP0164,3.5,3.4,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0541,EMP0336,2022-annual,2023-01-20,2.9,EMP0467,2.1,2.1,Sangat baik dalam stakeholder management.
+PRF0542,EMP0228,2023-annual,2024-01-20,1.9,EMP0172,4.3,4.3,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0543,EMP0472,2023-annual,2024-01-20,2.1,EMP0360,2.6,4.0,"Performa konsisten, target tercapai sepanjang periode."
+PRF0544,EMP0334,2023-annual,2024-01-20,2.8,EMP0313,4.3,3.7,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0545,EMP0284,2023-annual,2024-01-20,4.9,EMP0298,4.6,4.7,"Solid performer, reliable dalam menyelesaikan task."
+PRF0546,EMP0156,2023-mid,2023-07-15,4.9,EMP0308,1.9,4.5,Sangat baik dalam stakeholder management.
+PRF0547,EMP0174,2024-mid,2024-07-15,2.8,EMP0170,3.9,3.9,"Top performer, kandidat kuat untuk promosi."
+PRF0548,EMP0037,2022-annual,2023-01-20,4.6,EMP0401,3.1,2.4,Sangat baik dalam stakeholder management.
+PRF0549,EMP0148,2022-mid,2022-07-15,2.7,EMP0157,3.9,2.3,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0550,EMP0061,2024-mid,2024-07-15,3.9,EMP0192,2.2,4.4,Perlu lebih disiplin dalam time management.
+PRF0551,EMP0071,2024-annual,2025-01-20,4.5,EMP0439,1.5,4.9,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0552,EMP0313,2024-annual,2025-01-20,2.7,EMP0220,3.3,4.1,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0553,EMP0111,2023-annual,2024-01-20,3.7,EMP0235,3.4,4.3,"Performa konsisten, target tercapai sepanjang periode."
+PRF0554,EMP0485,2022-mid,2022-07-15,4.7,EMP0224,3.3,4.0,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0555,EMP0374,2023-mid,2023-07-15,2.2,EMP0119,2.7,3.1,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0556,EMP0325,2023-annual,2024-01-20,4.5,EMP0308,4.4,4.5,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0557,EMP0095,2024-annual,2025-01-20,4.4,EMP0141,4.8,4.7,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0558,EMP0245,2023-mid,2023-07-15,2.9,EMP0304,2.5,3.5,"Top performer, kandidat kuat untuk promosi."
+PRF0559,EMP0358,2022-mid,2022-07-15,2.8,EMP0192,2.0,3.2,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0560,EMP0108,2023-mid,2023-07-15,3.8,EMP0284,4.6,4.3,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0561,EMP0200,2022-annual,2023-01-20,3.6,EMP0288,4.3,4.4,Perlu lebih disiplin dalam time management.
+PRF0562,EMP0280,2024-mid,2024-07-15,2.7,EMP0286,3.1,4.2,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0563,EMP0080,2023-mid,2023-07-15,3.7,EMP0465,4.4,3.9,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0564,EMP0459,2024-mid,2024-07-15,4.1,EMP0182,2.7,4.5,"Hasil kerja exceed expectation, bonus direkomendasikan."
+PRF0565,EMP0152,2023-mid,2023-07-15,4.1,EMP0435,2.5,3.3,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0566,EMP0128,2023-annual,2024-01-20,4.5,EMP0243,3.8,4.2,"Top performer, kandidat kuat untuk promosi."
+PRF0567,EMP0391,2024-annual,2025-01-20,2.4,EMP0321,4.2,2.7,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0568,EMP0185,2023-annual,2024-01-20,2.1,EMP0486,3.8,3.7,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0569,EMP0062,2022-mid,2022-07-15,3.9,EMP0439,4.1,3.8,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0570,EMP0192,2023-annual,2024-01-20,2.3,EMP0454,3.7,3.0,"Performa konsisten, target tercapai sepanjang periode."
+PRF0571,EMP0299,2023-annual,2024-01-20,2.3,EMP0298,4.3,3.0,"Performa di bawah ekspektasi, perlu PIP."
+PRF0572,EMP0069,2024-annual,2025-01-20,4.5,EMP0337,1.6,4.9,"Performa di bawah ekspektasi, perlu PIP."
+PRF0573,EMP0126,2022-mid,2022-07-15,1.5,EMP0172,2.3,2.6,Perlu lebih disiplin dalam time management.
+PRF0574,EMP0441,2023-annual,2024-01-20,3.4,EMP0167,4.7,3.7,"Top performer, kandidat kuat untuk promosi."
+PRF0575,EMP0332,2023-mid,2023-07-15,4.0,EMP0225,1.9,3.2,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0576,EMP0281,2022-mid,2022-07-15,2.6,EMP0209,4.1,2.1,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0577,EMP0473,2023-mid,2023-07-15,2.5,EMP0214,4.2,3.4,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0578,EMP0121,2022-mid,2022-07-15,2.2,EMP0313,4.9,4.6,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0579,EMP0201,2022-mid,2022-07-15,2.7,EMP0151,4.0,3.2,"Top performer, kandidat kuat untuk promosi."
+PRF0580,EMP0068,2023-annual,2024-01-20,4.3,EMP0058,4.0,4.5,Perlu fokus pada peningkatan kualitas output dan dokumentasi.
+PRF0581,EMP0343,2023-mid,2023-07-15,1.9,EMP0071,4.3,4.6,"Inisiatif tinggi, proaktif mengambil tanggung jawab tambahan."
+PRF0582,EMP0127,2022-annual,2023-01-20,2.8,EMP0119,2.3,3.6,Sangat baik dalam stakeholder management.
+PRF0583,EMP0029,2022-annual,2023-01-20,3.5,EMP0174,2.2,4.7,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0584,EMP0456,2023-annual,2024-01-20,2.9,EMP0163,2.5,3.3,Perlu lebih disiplin dalam time management.
+PRF0585,EMP0439,2024-annual,2025-01-20,4.8,EMP0410,2.9,3.3,"Performa konsisten, target tercapai sepanjang periode."
+PRF0586,EMP0388,2023-annual,2024-01-20,2.4,EMP0301,4.5,4.9,"Komunikasi tertulis perlu diperbaiki, laporan kurang detail."
+PRF0587,EMP0036,2024-mid,2024-07-15,3.2,EMP0207,4.4,3.7,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0588,EMP0222,2024-annual,2025-01-20,2.4,EMP0321,2.7,2.4,"Performa konsisten, target tercapai sepanjang periode."
+PRF0589,EMP0151,2023-mid,2023-07-15,4.8,EMP0378,3.5,4.5,Perlu improvement di komunikasi dengan tim cross-functional.
+PRF0590,EMP0246,2023-mid,2023-07-15,1.7,EMP0223,1.8,2.5,"Sikap profesional baik, technical skill perlu diasah lagi."
+PRF0591,EMP0225,2022-annual,2023-01-20,1.7,EMP0192,4.3,2.3,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0592,EMP0435,2022-mid,2022-07-15,3.6,EMP0472,1.9,2.9,"Performa di bawah ekspektasi, perlu PIP."
+PRF0593,EMP0068,2024-annual,2025-01-20,2.4,EMP0058,4.6,3.4,Sangat baik dalam stakeholder management.
+PRF0594,EMP0294,2024-annual,2025-01-20,3.1,EMP0454,3.3,5.0,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0595,EMP0008,2023-annual,2024-01-20,4.4,EMP0009,3.0,2.8,"Target tercapai 80%, masih ada ruang improvement di delivery."
+PRF0596,EMP0294,2022-annual,2023-01-20,4.6,EMP0454,3.1,4.0,"Kolaborasi tim sangat baik, leadership menonjol."
+PRF0597,EMP0292,2022-mid,2022-07-15,4.0,EMP0109,3.2,3.8,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
+PRF0598,EMP0494,2023-annual,2024-01-20,2.7,EMP0067,4.8,4.7,Sangat baik dalam stakeholder management.
+PRF0599,EMP0169,2024-annual,2025-01-20,4.2,EMP0143,3.7,2.6,"Performa konsisten, target tercapai sepanjang periode."
+PRF0600,EMP0471,2024-mid,2024-07-15,2.2,EMP0466,3.1,4.2,Cocok untuk rotasi ke tim/proyek strategis berikutnya.
