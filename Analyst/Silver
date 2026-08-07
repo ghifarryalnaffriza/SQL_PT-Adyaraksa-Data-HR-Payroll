@@ -1,0 +1,624 @@
+/* =====================================================================
+   PT ADYARAKSA — SILVER LAYER
+   HR People Analytics
+   ===================================================================== */
+
+USE AdyaraksaHR;
+GO
+
+-- =========================================================
+-- Create schema
+-- =========================================================
+IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = 'silver')
+    EXEC('CREATE SCHEMA silver');
+GO
+
+-- =========================================================
+-- Create table
+-- =========================================================
+IF OBJECT_ID('silver.departments', 'U') IS NOT NULL
+    DROP TABLE silver.departments;
+GO
+
+CREATE TABLE silver.departments (
+    dept_id           VARCHAR(10),
+    dept_name         VARCHAR(80),
+    division          VARCHAR(40),
+    location          VARCHAR(50),
+    head_emp_id       VARCHAR(20),
+    annual_budget_idr BIGINT,
+    is_synthetic      BIT, 
+    dwh_create_date   DATETIME2 DEFAULT GETDATE()
+);
+GO
+
+IF OBJECT_ID('silver.employees', 'U') IS NOT NULL
+    DROP TABLE silver.employees;
+GO
+
+CREATE TABLE silver.employees (
+    emp_id          VARCHAR(20),
+    full_name       NVARCHAR(100),
+    email           VARCHAR(120),
+    dept_id         VARCHAR(10),
+    position        VARCHAR(80),
+    level_jabatan   VARCHAR(20),
+    hire_date       DATE,
+    hire_year       INT,
+    tenure_years    DECIMAL(5,2),
+    birth_date      DATE,
+    age             INT,
+    gender          VARCHAR(10),
+    marital_status  VARCHAR(20),
+    education       VARCHAR(10),
+    city            VARCHAR(50),
+    status          VARCHAR(20),
+    manager_id      VARCHAR(20),
+    dwh_create_date DATETIME2 DEFAULT GETDATE()
+);
+GO
+
+IF OBJECT_ID('silver.attendance', 'U') IS NOT NULL
+    DROP TABLE silver.attendance;
+GO
+
+CREATE TABLE silver.attendance (
+    record_id        VARCHAR(20),
+    emp_id           VARCHAR(20),
+    att_date         DATE,
+    check_in         TIME(0),
+    check_out        TIME(0),
+    work_hours       DECIMAL(5,2),
+    status           VARCHAR(20),
+    is_hari_kerja    BIT,
+    is_lupa_clockout BIT,
+    dwh_create_date  DATETIME2 DEFAULT GETDATE()
+);
+GO
+
+IF OBJECT_ID('silver.performance', 'U') IS NOT NULL
+    DROP TABLE silver.performance;
+GO
+
+CREATE TABLE silver.performance (
+    review_id       VARCHAR(20),
+    emp_id          VARCHAR(20),
+    review_period   VARCHAR(20),
+    review_year     INT,
+    review_cycle    VARCHAR(10),
+    review_date     DATE,
+    overall_score   DECIMAL(3,1),
+    kpi_score       DECIMAL(3,1),
+    attitude_score  DECIMAL(3,1),
+    reviewer_id     VARCHAR(20),
+    dwh_create_date DATETIME2 DEFAULT GETDATE()
+);
+GO
+
+IF OBJECT_ID('silver.salary_history', 'U') IS NOT NULL
+    DROP TABLE silver.salary_history;
+GO
+
+CREATE TABLE silver.salary_history (
+    record_id          VARCHAR(20),
+    emp_id             VARCHAR(20),
+    effective_date_raw VARCHAR(20),
+    effective_date     DATE,
+    base_salary_idr    BIGINT,
+    allowances_idr     BIGINT,
+    total_idr          BIGINT,
+    change_reason      VARCHAR(30),
+    dwh_create_date    DATETIME2 DEFAULT GETDATE()
+);
+GO
+
+/* =====================================================================
+   Cek kualitas data di Bronze
+   ===================================================================== */
+
+-- =========================================================
+-- bronze.employees
+-- =========================================================
+-- PK: NULL & duplikat
+SELECT emp_id, COUNT(*) AS jml
+FROM bronze.employees
+GROUP BY emp_id
+HAVING COUNT(*) > 1 OR emp_id IS NULL;
+
+-- Missing values kolom
+SELECT
+    SUM(CASE WHEN full_name IS NULL OR full_name = '' THEN 1 ELSE 0 END) AS null_nama,
+    SUM(CASE WHEN dept_id IS NULL OR dept_id = '' THEN 1 ELSE 0 END)     AS null_dept,
+    SUM(CASE WHEN hire_date IS NULL THEN 1 ELSE 0 END)                   AS null_hire,
+    SUM(CASE WHEN birth_date IS NULL THEN 1 ELSE 0 END)                  AS null_birth,
+    SUM(CASE WHEN status IS NULL OR status = '' THEN 1 ELSE 0 END)       AS null_status
+FROM bronze.employees;
+
+-- Unwanted spaces
+SELECT emp_id
+FROM bronze.employees
+WHERE full_name <> TRIM(full_name)
+   OR position  <> TRIM(position)
+   OR city      <> TRIM(city);
+
+-- Sebaran teks jabatan (dasar pemetaan level_jabatan)
+SELECT position, COUNT(*) AS jml FROM bronze.employees GROUP BY position;
+
+-- Outlier / invalid value: umur & tanggal tidak wajar
+SELECT emp_id, birth_date, hire_date
+FROM bronze.employees
+WHERE birth_date > GETDATE()
+   OR hire_date  > GETDATE()
+   OR DATEDIFF(YEAR, birth_date, GETDATE()) NOT BETWEEN 17 AND 70;
+
+-- Structural error: direkrut sebelum lahir / direkrut di bawah umur
+SELECT emp_id, birth_date, hire_date,
+       DATEDIFF(YEAR, birth_date, hire_date) AS umur_saat_direkrut
+FROM bronze.employees
+WHERE hire_date < birth_date
+   OR DATEDIFF(YEAR, birth_date, hire_date) < 17;
+
+-- Referential integrity: karyawan -> departemen
+SELECT DISTINCT e.dept_id
+FROM bronze.employees e
+WHERE NULLIF(TRIM(e.dept_id), '') IS NOT NULL
+  AND e.dept_id NOT IN (SELECT dept_id FROM bronze.departments);
+
+-- Referential integrity: manager_id harus karyawan yang terdaftar (self-join)
+SELECT DISTINCT e.manager_id
+FROM bronze.employees e
+WHERE NULLIF(TRIM(e.manager_id), '') IS NOT NULL
+  AND e.manager_id NOT IN (SELECT emp_id FROM bronze.employees);
+
+-- Business logic: karyawan tidak boleh jadi manajer dirinya sendiri
+SELECT emp_id, manager_id FROM bronze.employees WHERE emp_id = manager_id;
+
+-- =========================================================
+-- bronze.departments
+-- =========================================================
+-- PK: NULL & duplikat
+SELECT dept_id, COUNT(*) AS jml
+FROM bronze.departments
+GROUP BY dept_id
+HAVING COUNT(*) > 1 OR dept_id IS NULL;
+
+-- Outlier: anggaran tidak wajar
+SELECT * FROM bronze.departments WHERE annual_budget_idr <= 0;
+
+-- Referential integrity: kepala departemen harus karyawan terdaftar
+SELECT DISTINCT d.head_emp_id
+FROM bronze.departments d
+WHERE NULLIF(TRIM(d.head_emp_id), '') IS NOT NULL
+  AND d.head_emp_id NOT IN (SELECT emp_id FROM bronze.employees);
+
+-- =========================================================
+-- bronze.attendance
+-- =========================================================
+-- PK: NULL & duplikat
+SELECT record_id, COUNT(*) AS jml
+FROM bronze.attendance
+GROUP BY record_id
+HAVING COUNT(*) > 1 OR record_id IS NULL;
+
+-- Duplikat logis: satu karyawan tidak boleh punya 2 record di hari sama
+SELECT emp_id, date, COUNT(*) AS jml
+FROM bronze.attendance
+GROUP BY emp_id, date
+HAVING COUNT(*) > 1;
+
+-- Missing values: pola check_out kosong per status (DQ #4)
+SELECT
+    status,
+    COUNT(*)                                            AS jml,
+    SUM(CASE WHEN check_out IS NULL THEN 1 ELSE 0 END)  AS check_out_kosong,
+    SUM(CASE WHEN work_hours IS NULL THEN 1 ELSE 0 END) AS work_hours_kosong
+FROM bronze.attendance
+GROUP BY status;
+
+-- Structural error: check_out sebelum check_in
+SELECT record_id, check_in, check_out
+FROM bronze.attendance
+WHERE check_out < check_in;
+
+-- Outlier: jam kerja tidak wajar
+SELECT * FROM bronze.attendance WHERE work_hours < 0 OR work_hours > 16;
+
+-- Referential integrity: absensi -> karyawan
+SELECT DISTINCT a.emp_id
+FROM bronze.attendance a
+WHERE a.emp_id NOT IN (SELECT emp_id FROM bronze.employees);
+
+-- Business logic: absensi sebelum tanggal masuk kerja
+SELECT a.record_id, a.date, e.hire_date
+FROM bronze.attendance a
+JOIN bronze.employees e ON a.emp_id = e.emp_id
+WHERE a.date < e.hire_date;
+
+-- =========================================================
+-- bronze.performance
+-- =========================================================
+-- PK: NULL & duplikat
+SELECT review_id, COUNT(*) AS jml
+FROM bronze.performance
+GROUP BY review_id
+HAVING COUNT(*) > 1 OR review_id IS NULL;
+
+-- Duplikat logis: satu karyawan satu review per periode
+SELECT emp_id, review_period, COUNT(*) AS jml
+FROM bronze.performance
+GROUP BY emp_id, review_period
+HAVING COUNT(*) > 1;
+
+-- Standardisasi kolom low-cardinality
+SELECT DISTINCT review_period FROM bronze.performance;
+
+-- Outlier: skor di luar skala 1-5
+SELECT *
+FROM bronze.performance
+WHERE overall_score  NOT BETWEEN 1 AND 5
+   OR kpi_score      NOT BETWEEN 1 AND 5
+   OR attitude_score NOT BETWEEN 1 AND 5;
+
+-- Business logic: karyawan tidak menilai dirinya sendiri
+SELECT review_id, emp_id, reviewer_id
+FROM bronze.performance
+WHERE emp_id = reviewer_id;
+
+-- =========================================================
+-- bronze.salary_history
+-- =========================================================
+-- PK: NULL & duplikat
+SELECT record_id, COUNT(*) AS jml
+FROM bronze.salary_history
+GROUP BY record_id
+HAVING COUNT(*) > 1 OR record_id IS NULL;
+
+-- Duplikat logis: double-entry emp_id + tanggal berlaku (DQ #3)
+SELECT emp_id, effective_date, COUNT(*) AS jml
+FROM bronze.salary_history
+GROUP BY emp_id, effective_date
+HAVING COUNT(*) > 1;
+-- Ekspektasi: 8 baris duplikat
+
+-- Inkonsistensi format tanggal (DQ #2)
+SELECT
+    CASE
+        WHEN effective_date LIKE '[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]' THEN 'ISO (YYYY-MM-DD)'
+        WHEN effective_date LIKE '[0-9][0-9]/[0-9][0-9]/[0-9][0-9][0-9][0-9]' THEN 'DD/MM/YYYY'
+        WHEN effective_date LIKE '[0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]' THEN 'DD-MM-YYYY'
+        ELSE 'lainnya'
+    END      AS format_tanggal,
+    COUNT(*) AS jml
+FROM bronze.salary_history
+GROUP BY
+    CASE
+        WHEN effective_date LIKE '[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]' THEN 'ISO (YYYY-MM-DD)'
+        WHEN effective_date LIKE '[0-9][0-9]/[0-9][0-9]/[0-9][0-9][0-9][0-9]' THEN 'DD/MM/YYYY'
+        WHEN effective_date LIKE '[0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]' THEN 'DD-MM-YYYY'
+        ELSE 'lainnya'
+    END;
+
+-- Outlier: nominal tidak wajar
+SELECT *
+FROM bronze.salary_history
+WHERE base_salary_idr <= 0 OR allowances_idr < 0 OR total_idr <= 0;
+
+-- Business logic: total = base + allowances
+SELECT record_id, base_salary_idr, allowances_idr, total_idr
+FROM bronze.salary_history
+WHERE total_idr <> base_salary_idr + allowances_idr;
+
+-- Referential integrity: riwayat gaji -> karyawan
+SELECT DISTINCT s.emp_id
+FROM bronze.salary_history s
+WHERE s.emp_id NOT IN (SELECT emp_id FROM bronze.employees);
+GO
+
+/* =====================================================================
+   Load Silver
+   ===================================================================== */
+
+-- =========================================================
+-- silver.departments
+-- DQ #1: ditambah baris sintetis 'UNASSIGNED' supaya karyawan tanpa
+--        departemen tetap muncul saat di-JOIN (INNER JOIN akan
+--        membuang mereka bila baris ini tidak ada)
+-- =========================================================
+TRUNCATE TABLE silver.departments;
+
+INSERT INTO silver.departments (
+    dept_id, dept_name, division, location, head_emp_id,
+    annual_budget_idr, is_synthetic
+)
+SELECT
+    TRIM(dept_id),
+    TRIM(dept_name),
+    TRIM(division),
+    TRIM(location),
+    NULLIF(TRIM(head_emp_id), ''),
+    annual_budget_idr,
+    0
+FROM bronze.departments;
+
+INSERT INTO silver.departments (
+    dept_id, dept_name, division, location, head_emp_id,
+    annual_budget_idr, is_synthetic
+)
+VALUES ('UNASSIGNED', 'Belum di-assign', 'Belum di-assign', NULL, NULL, NULL, 1);
+GO
+
+-- =========================================================
+-- silver.employees
+-- =========================================================
+TRUNCATE TABLE silver.employees;
+
+INSERT INTO silver.employees (
+    emp_id, full_name, email, dept_id, position, level_jabatan,
+    hire_date, hire_year, tenure_years, birth_date, age, gender,
+    marital_status, education, city, status, manager_id
+)
+SELECT
+    TRIM(emp_id),
+    TRIM(full_name),
+    LOWER(TRIM(email)),                                  -- email disamakan lowercase
+    -- DQ #1: kosong bukan berarti data hilang — mereka karyawan
+    -- onboarding yang belum ditempatkan
+    COALESCE(NULLIF(TRIM(dept_id), ''), 'UNASSIGNED'),
+    TRIM(position),
+    -- Level jabatan diturunkan dari teks jabatan; urutan CASE penting
+    -- karena 'Senior Manager' harus masuk Manager, bukan Senior
+    CASE
+        WHEN LOWER(position) LIKE '%head%'    OR LOWER(position) LIKE '%director%'
+          OR LOWER(position) LIKE '%vp%'      OR LOWER(position) LIKE '%chief%'
+             THEN '4-Leadership'
+        WHEN LOWER(position) LIKE '%manager%' OR LOWER(position) LIKE '%lead%'
+             THEN '3-Manager/Lead'
+        WHEN LOWER(position) LIKE '%senior%'
+             THEN '2-Senior'
+        ELSE '1-Staff/Junior'
+    END,
+    hire_date,
+    YEAR(hire_date),
+    -- Tanggal snapshot dipatok 2025-01-01 (bukan GETDATE) supaya angka
+    -- tenure & umur tetap sama setiap kali script dijalankan ulang —
+    -- hasil analisis jadi reproducible
+    CAST(DATEDIFF(DAY, hire_date, '2025-01-01') / 365.25 AS DECIMAL(5,2)),
+    birth_date,
+    DATEDIFF(YEAR, birth_date, '2025-01-01')
+        - CASE WHEN DATEADD(YEAR, DATEDIFF(YEAR, birth_date, '2025-01-01'), birth_date) > '2025-01-01'
+               THEN 1 ELSE 0 END,
+    TRIM(gender),
+    TRIM(marital_status),
+    TRIM(education),
+    TRIM(city),
+    TRIM(status),
+    NULLIF(TRIM(manager_id), '')                         -- kosong = pucuk pimpinan
+FROM bronze.employees;
+GO
+
+-- =========================================================
+-- silver.attendance
+-- =========================================================
+TRUNCATE TABLE silver.attendance;
+
+INSERT INTO silver.attendance (
+    record_id, emp_id, att_date, check_in, check_out,
+    work_hours, status, is_hari_kerja, is_lupa_clockout
+)
+SELECT
+    TRIM(record_id),
+    TRIM(emp_id),
+    date,
+    check_in,
+    check_out,
+    work_hours,
+    TRIM(status),
+    -- Hari kerja efektif: absent/leave/holiday tidak dihitung
+    CASE WHEN TRIM(status) IN ('present','late','wfh') THEN 1 ELSE 0 END,
+    -- DQ #4: check_out kosong hanya bermasalah bila statusnya hari kerja.
+    -- Pada absent/leave/holiday, kosong justru benar.
+    CASE WHEN TRIM(status) IN ('present','late','wfh') AND check_out IS NULL
+         THEN 1 ELSE 0 END
+FROM bronze.attendance;
+GO
+-- Keputusan analitis: baris lupa clock-out DIKELUARKAN dari rata-rata
+-- work_hours (bukan diimputasi) karena hanya 30 dari 2.600 hari kerja
+-- (1,2%) sehingga eksklusi tidak menggeser rata-rata. Barisnya tetap
+-- disimpan dan diberi flag demi auditability.
+
+-- =========================================================
+-- silver.performance
+-- =========================================================
+TRUNCATE TABLE silver.performance;
+
+INSERT INTO silver.performance (
+    review_id, emp_id, review_period, review_year, review_cycle,
+    review_date, overall_score, kpi_score, attitude_score, reviewer_id
+)
+SELECT
+    TRIM(review_id),
+    TRIM(emp_id),
+    TRIM(review_period),
+    TRY_CAST(LEFT(TRIM(review_period), 4) AS INT),   -- format periode: 'YYYY-...'
+    -- Siklus review: mid-year vs annual, dibedakan karena polanya beda
+    CASE WHEN LOWER(review_period) LIKE '%mid%' THEN 'mid' ELSE 'annual' END,
+    review_date,
+    overall_score,
+    kpi_score,
+    attitude_score,
+    NULLIF(TRIM(reviewer_id), '')
+FROM bronze.performance;
+GO
+
+-- =========================================================
+-- silver.salary_history
+-- DQ #2 parse 3 format tanggal | DQ #3 buang duplikat double-entry
+-- =========================================================
+TRUNCATE TABLE silver.salary_history;
+
+WITH parsed AS (
+    SELECT
+        TRIM(record_id)      AS record_id,
+        TRIM(emp_id)         AS emp_id,
+        TRIM(effective_date) AS effective_date_raw,
+        -- Deteksi format per baris lewat pola, bukan tebak-tebakan:
+        -- DD/MM/YYYY (style 103) dan DD-MM-YYYY (style 105) sama-sama
+        -- day-first, jadi salah pilih style menukar hari dengan bulan
+        CASE
+            WHEN effective_date LIKE '[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'
+                THEN TRY_CONVERT(DATE, effective_date, 23)    -- ISO
+            WHEN effective_date LIKE '[0-9][0-9]/[0-9][0-9]/[0-9][0-9][0-9][0-9]'
+                THEN TRY_CONVERT(DATE, effective_date, 103)   -- DD/MM/YYYY
+            WHEN effective_date LIKE '[0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]'
+                THEN TRY_CONVERT(DATE, effective_date, 105)   -- DD-MM-YYYY
+        END                  AS effective_date,
+        base_salary_idr,
+        allowances_idr,
+        total_idr,
+        TRIM(change_reason)  AS change_reason
+    FROM bronze.salary_history
+),
+dedup AS (
+    SELECT *,
+        -- Double-entry: baris pertama (record_id terkecil) dipertahankan
+        ROW_NUMBER() OVER (PARTITION BY emp_id, effective_date
+                           ORDER BY record_id) AS rn
+    FROM parsed
+)
+INSERT INTO silver.salary_history (
+    record_id, emp_id, effective_date_raw, effective_date,
+    base_salary_idr, allowances_idr, total_idr, change_reason
+)
+SELECT
+    record_id, emp_id, effective_date_raw, effective_date,
+    base_salary_idr, allowances_idr, total_idr, change_reason
+FROM dedup
+WHERE rn = 1;   -- buang 8 duplikat -> 1.492 baris
+GO
+
+/* =====================================================================
+   Validasi hasil Silver
+   ===================================================================== */
+
+-- =========================================================
+-- silver.employees
+-- =========================================================
+-- PK: NULL & duplikat
+SELECT emp_id, COUNT(*) AS jml
+FROM silver.employees
+GROUP BY emp_id
+HAVING COUNT(*) > 1 OR emp_id IS NULL;
+
+-- Missing values kolom wajib
+SELECT
+    SUM(CASE WHEN dept_id IS NULL THEN 1 ELSE 0 END)       AS null_dept,
+    SUM(CASE WHEN hire_date IS NULL THEN 1 ELSE 0 END)     AS null_hire,
+    SUM(CASE WHEN level_jabatan IS NULL THEN 1 ELSE 0 END) AS null_level,
+    SUM(CASE WHEN tenure_years IS NULL THEN 1 ELSE 0 END)  AS null_tenure
+FROM silver.employees;
+
+-- Unwanted spaces
+SELECT emp_id
+FROM silver.employees
+WHERE full_name <> TRIM(full_name)
+   OR position  <> TRIM(position)
+   OR city      <> TRIM(city);
+
+-- Outlier / invalid value
+SELECT *
+FROM silver.employees
+WHERE age NOT BETWEEN 17 AND 70
+   OR tenure_years < 0;
+
+-- Referential integrity: setiap karyawan punya departemen yang ada
+SELECT DISTINCT e.dept_id
+FROM silver.employees e
+WHERE e.dept_id NOT IN (SELECT dept_id FROM silver.departments);
+
+-- Referential integrity: manager_id (self-join)
+SELECT DISTINCT e.manager_id
+FROM silver.employees e
+WHERE e.manager_id IS NOT NULL
+  AND e.manager_id NOT IN (SELECT emp_id FROM silver.employees);
+
+-- Kolom turunan (ekspektasi: 4 level terisi, tanpa NULL)
+SELECT level_jabatan, COUNT(*) AS jml FROM silver.employees GROUP BY level_jabatan;
+
+-- =========================================================
+-- silver.departments
+-- =========================================================
+-- PK: NULL & duplikat
+SELECT dept_id, COUNT(*) AS jml
+FROM silver.departments
+GROUP BY dept_id
+HAVING COUNT(*) > 1 OR dept_id IS NULL;
+
+-- =========================================================
+-- silver.attendance
+-- =========================================================
+-- PK: NULL & duplikat
+SELECT record_id, COUNT(*) AS jml
+FROM silver.attendance
+GROUP BY record_id
+HAVING COUNT(*) > 1 OR record_id IS NULL;
+
+-- Structural error: check_out sebelum check_in
+SELECT record_id, check_in, check_out
+FROM silver.attendance
+WHERE check_out < check_in;
+
+-- Outlier jam kerja
+SELECT * FROM silver.attendance WHERE work_hours < 0 OR work_hours > 16;
+
+-- Referential integrity
+SELECT DISTINCT a.emp_id
+FROM silver.attendance a
+WHERE a.emp_id NOT IN (SELECT emp_id FROM silver.employees);
+
+-- Kolom turunan: konsistensi flag vs status asal (ekspektasi: 0 baris)
+SELECT *
+FROM silver.attendance
+WHERE (status IN ('present','late','wfh') AND is_hari_kerja = 0)
+   OR (status NOT IN ('present','late','wfh') AND is_hari_kerja = 1)
+   OR (is_lupa_clockout = 1 AND (is_hari_kerja = 0 OR check_out IS NOT NULL));
+
+-- =========================================================
+-- silver.performance
+-- =========================================================
+-- PK: NULL & duplikat
+SELECT review_id, COUNT(*) AS jml
+FROM silver.performance
+GROUP BY review_id
+HAVING COUNT(*) > 1 OR review_id IS NULL;
+
+-- Outlier: skor di luar skala 1-5
+SELECT *
+FROM silver.performance
+WHERE overall_score  NOT BETWEEN 1 AND 5
+   OR kpi_score      NOT BETWEEN 1 AND 5
+   OR attitude_score NOT BETWEEN 1 AND 5;
+
+-- Referential integrity
+SELECT DISTINCT p.emp_id
+FROM silver.performance p
+WHERE p.emp_id NOT IN (SELECT emp_id FROM silver.employees);
+
+-- =========================================================
+-- silver.salary_history
+-- =========================================================
+-- PK: NULL & duplikat
+SELECT record_id, COUNT(*) AS jml
+FROM silver.salary_history
+GROUP BY record_id
+HAVING COUNT(*) > 1 OR record_id IS NULL;
+
+-- Business logic: total = base + allowances
+SELECT record_id, base_salary_idr, allowances_idr, total_idr
+FROM silver.salary_history
+WHERE total_idr <> base_salary_idr + allowances_idr;
+
+-- Business logic: gaji berlaku sebelum karyawan masuk kerja
+SELECT s.record_id, s.effective_date, e.hire_date
+FROM silver.salary_history s
+JOIN silver.employees e ON s.emp_id = e.emp_id
+WHERE s.effective_date < e.hire_date;
